@@ -1,19 +1,15 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-# IO
-name = raw_input('Please input your name：')  # raw_input 返回的是string
-print 'Hi', name
-
-# Data type: Integer\ Float\ String\ Boolean\ None
-print 'Integer:', 1
-print 'Float  :', 3.14, 1e-5
-print 'String :', 'python'
-print 'String :', 'I\'m OK'
-print 'String :', '\\\n\\'
-print 'String :', '\\\t\\'
-print 'String :', r'\\\t\\'      # 此时\没有转义效果
-print 'String :', '''line1
+# Data type: integer\ float\ string\ boolean\ None
+print 'integer:', 1
+print 'float  :', 3.14, 1e-5
+print 'string :', 'python'
+print 'string :', 'I\'m OK'
+print 'string :', '\\\n\\'
+print 'string :', '\\\t\\'
+print 'string :', r'\\\t\\'      # 此时\没有转义效果
+print 'string :', '''line1
 ... line2'''
 print 'Boolean:', True, not True, True and False, True or False
 print None
@@ -64,47 +60,31 @@ print d.get('Thomas', -1)
 d.pop('Bob')    # 删除key 对应的value也会删除
 
 # Data type: set
+## set和dict类似，也是一组key的集合，但不存储value
+## key不能重复
+s = set([1, 2, 3])
+print 'set:', s
+s = set([1, 1, 2, 2, 3, 3])
+print 'set:', s
+s.add(4)            # 添加key
+print 'set:', s
+s.add(4)            # 重复添加无效
+print 'set:', s
+s.remove(4)         # 删除key
+print 'set:', s
+## set可以看成数学意义上的无序和无重复元素的集合，因此，两个set可以做数学意义上的交集、并集等操作：
+s1 = set([1, 2, 3])
+s2 = set([2, 3, 4])
+print 'set:', s1 & s2
+print 'set:', s1 | s2
 
-
-# String and Coding
-
-# if
-age = 3
-if age >= 18:
-    print 'adult'
-elif age >= 6:
-    print 'teenager'
-else:
-    print 'kid'
-
-age = 20
-if age >= 6:
-    print 'teenager'
-elif age >= 18:
-    print 'adult'
-else:
-    print 'kid'
-## 只要x是非零数值、非空字符串、非空list等，就判断为True，否则为False
-x = raw_input('please input x to judge:')
-if x:
-    print 'True'
-
-# loop: for x in y \ while
-## for x in y
-names = ['Michael', 'Bob', 'Tracy']
-for student in names:
-    print student
-
-sum = 0
-for x in range(101):
-    sum = sum + x
-print sum
-
-## while
-sum = 0
-n = 99
-while n > 0:
-    sum = sum + n
-    n = n - 2
-print sum
-
+## 可变对象：list\
+## 不变对象：string\
+## 对于不变对象来说，调用对象自身的任意方法，也不会改变该对象自身的内容
+a = ['c', 'b', 'a']
+a.sort()
+print 'a =', a
+a = 'abc'
+b = a.replace('a', 'A')
+print b
+print a
