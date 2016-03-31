@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-# Data type: integer\ float\ string\ boolean\ None
+# Data type: integer\ float\ string\ bool\ None
 print 'integer:', 1
 print 'float  :', 3.14, 1e-5
 print 'string :', 'python'
@@ -11,7 +11,7 @@ print 'string :', '\\\t\\'
 print 'string :', r'\\\t\\'      # 此时\没有转义效果
 print 'string :', '''line1
 ... line2'''
-print 'Boolean:', True, not True, True and False, True or False
+print 'Bool   :', True, not True, True and False, True or False
 print None
 
 # Data type: List
