@@ -2,19 +2,31 @@
 # -*- coding:utf-8 -*-
 
 # Data type: integer\ float\ string\ bool\ None
+## ''和''''效果相同 ''''''中间可以任意添加''或者''''
 print 'integer:', 1
 print 'float  :', 3.14, 1e-5
 print 'string :', 'python'
 print 'string :', 'I\'m OK'
 print 'string :', '\\\n\\'
 print 'string :', '\\\t\\'
-print 'string :', r'\\\t\\'      # 此时\没有转义效果
+print 'string :', r'\\\t\\'      # 加r则不转义
 print 'string :', '''line1
-... line2'''
+line2'''
 print 'Bool   :', True, not True, True and False, True or False
 print None
 
+## string详细：索引 切片 分割 连接
+a = 'I am OK.'
+b = a.split()
+print b
+
+s = ';'
+li = ['apple', 'pear', 'orange']
+fruit = s.join(li)
+print fruit
+
 # Data type: List
+## 元素的type可以不同
 classmates = ['Michael', 'Bob', 'Tracy']
 print 'List:', classmates
 print 'length of List:', len(classmates)
@@ -88,3 +100,19 @@ a = 'abc'
 b = a.replace('a', 'A')
 print b
 print a
+
+# 变量可以为任意数据类型
+a = 123
+print 'the type of a is', type(a)
+a = '123'
+print 'the type of a is', type(a)
+a = True
+print 'the type of a is', type(a)
+a = ('1', '2', '3')
+print 'the type of a is', type(a)
+a = ['1', '2', '3']
+print 'the type of a is', type(a)
+a = {'a': 1, 'b': 2, 'c': 3}
+print 'the type of a is', type(a)
+a = set([1,2,3])
+print 'the type of a is', type(a)
