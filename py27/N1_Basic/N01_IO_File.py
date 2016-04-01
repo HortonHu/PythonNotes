@@ -10,7 +10,9 @@ print 'Hi', name
 age = input('Please input your age：')
 print 'the type of age is ', type(age)
 
-
+# import
+from math import pi as math_pi
+print math_pi
 
 # operation
 ##  //get a integer  /divide
@@ -41,7 +43,7 @@ print 'Today is %s.' % 'Friday'
 print "%s's score is %d" % ('Mike', 87)
 
 ## file
-f = open('data.txt','r')    # r: 读 w: 写入 会覆盖     a: 添加
+f = open('data.txt', 'r')    # r: 读 w: 写入 会覆盖     a: 添加
 data = f.read()
 l = f.readline()    # 读取一行内容
 ll = f.readlines()  # 把内容按行读取至一个list中
@@ -50,6 +52,34 @@ print l, type(l)
 print ll, type(ll)
 f.close()
 
-f = open('data.txt','a')    # w: 写入 会覆盖     a: 添加
+f = open('data.txt', 'a')    # w: 写入 会覆盖     a: 添加
 f.write('\n987654321\n')
 f.close()
+
+
+f = file(r'F:\Python\PythonStudy\py27\N1_Basic\scores.txt', 'r')
+lines = f.readlines()
+#print lines
+f.close()
+
+results = []
+
+for line in lines:
+   #print line
+   data = line.split()
+   #print data
+
+   sum = 0
+   for score in data[1:]:
+       sum += int(score)
+   result = '%s \t: %d\n' % (data[0], sum)
+   #print result
+
+   results.append(result)
+
+print results
+output = file(r'F:\Python\PythonStudy\py27\N1_Basic\result.txt', 'w')   # 注意r
+output.writelines(results)
+output.close()
+
+

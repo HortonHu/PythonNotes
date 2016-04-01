@@ -23,6 +23,9 @@ if x:
     print 'True'
 
 # loop: for x in y \ while
+## continue 跳出当前循环
+## break 跳出整个循环
+
 ## for x in y
 names = ['Michael', 'Bob', 'Tracy']
 for student in names:
@@ -40,3 +43,12 @@ while n > 0:
     sum = sum + n
     n = n - 2
 print sum
+
+## try ... except
+try:
+    f = file('non-exist.txt')
+    print 'File opened!'
+    f.close()
+except:
+    print 'File not exists.'
+print 'Done'
