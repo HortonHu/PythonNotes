@@ -36,12 +36,15 @@ b = 2
 a, b = b, a+b
 print a, b
 
-## % 格式化  %d 整数  %f 浮点数 %s 字符串
+# % 格式化  %d 整数  %f 浮点数 %s 字符串   %x	十六进制整数
+## 格式化整数和浮点数还可以指定是否补0和整数与小数的位数
+## %s永远起作用，它会把任何数据类型转换为字符串
+## 字符串里面的%是一个普通字符时候需要转义
 print 'My age is %d' % 1024
 print 'Price is %.4f' % 4.99
 print 'Today is %s.' % 'Friday'
 print "%s's score is %d" % ('Mike', 87)
-
+print 'growth rate: %d %%' % 7
 ## file
 f = open('data.txt', 'r')    # r: 读 w: 写入 会覆盖     a: 添加
 data = f.read()
