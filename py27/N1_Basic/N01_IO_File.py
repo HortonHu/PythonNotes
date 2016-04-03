@@ -15,7 +15,7 @@ from math import pi as math_pi
 print math_pi
 
 # operation
-##  //get a integer  /divide
+# // get a integer  / divide
 print 5 // 4
 print 5.1 // 4
 print 5 / 4
@@ -37,9 +37,9 @@ a, b = b, a+b
 print a, b
 
 # % 格式化  %d 整数  %f 浮点数 %s 字符串   %x	十六进制整数
-## 格式化整数和浮点数还可以指定是否补0和整数与小数的位数
-## %s永远起作用，它会把任何数据类型转换为字符串
-## 字符串里面的%是一个普通字符时候需要转义
+# 格式化整数和浮点数还可以指定是否补0和整数与小数的位数
+# %s永远起作用，它会把任何数据类型转换为字符串
+# 字符串里面的%是一个普通字符时候需要转义
 print 'My age is %d' % 1024
 print 'Price is %.4f' % 4.99
 print 'Today is %s.' % 'Friday'
@@ -62,13 +62,13 @@ f.close()
 
 f = file(r'F:\Python\PythonStudy\py27\N1_Basic\scores.txt', 'r')
 lines = f.readlines()
-#print lines
+# print lines
 f.close()
 
 results = []
 
 for line in lines:
-   #print line
+   print line
    data = line.split()
    #print data
 
