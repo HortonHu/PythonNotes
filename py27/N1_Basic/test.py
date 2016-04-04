@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-print
+
+def my_sum():
+	print 'sum'
+	pass
+
+
 
 
 

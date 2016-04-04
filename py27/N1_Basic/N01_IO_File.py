@@ -12,6 +12,7 @@ print 'the type of age is ', type(age)
 
 # import
 from math import pi as math_pi
+
 print math_pi
 
 # operation
@@ -21,19 +22,19 @@ print 5.1 // 4
 print 5 / 4
 print 5.0 / 4
 
-## **power
+# **power
 print 2 ** 3
 
 print '123', '456'
-print '123'+'456'
+print '123' + '456'
 
 """This is comment too"""
 
-## =
-## python中运算的顺序是，先把“=”右边的结果算出了，再赋值给左边的变量
+# =
+# python中运算的顺序是，先把“=”右边的结果算出了，再赋值给左边的变量
 a = 1
 b = 2
-a, b = b, a+b
+a, b = b, a + b
 print a, b
 
 # % 格式化  %d 整数  %f 浮点数 %s 字符串   %x	十六进制整数
@@ -45,20 +46,19 @@ print 'Price is %.4f' % 4.99
 print 'Today is %s.' % 'Friday'
 print "%s's score is %d" % ('Mike', 87)
 print 'growth rate: %d %%' % 7
-## file
-f = open('data.txt', 'r')    # r: 读 w: 写入 会覆盖     a: 添加
+# file
+f = open('data.txt', 'r')  # r: 读 w: 写入 会覆盖     a: 添加
 data = f.read()
-l = f.readline()    # 读取一行内容
+l = f.readline()  # 读取一行内容
 ll = f.readlines()  # 把内容按行读取至一个list中
 print data
 print l, type(l)
 print ll, type(ll)
 f.close()
 
-f = open('data.txt', 'a')    # w: 写入 会覆盖     a: 添加
+f = open('data.txt', 'a')  # w: 写入 会覆盖     a: 添加
 f.write('\n987654321\n')
 f.close()
-
 
 f = file(r'F:\Python\PythonStudy\py27\N1_Basic\scores.txt', 'r')
 lines = f.readlines()
@@ -68,21 +68,19 @@ f.close()
 results = []
 
 for line in lines:
-   print line
-   data = line.split()
-   #print data
+	print line
+	data = line.split()
+	# print data
 
-   sum = 0
-   for score in data[1:]:
-       sum += int(score)
-   result = '%s \t: %d\n' % (data[0], sum)
-   #print result
+	sum = 0
+	for score in data[1:]:
+		sum += int(score)
+	result = '%s \t: %d\n' % (data[0], sum)
+	# print result
 
-   results.append(result)
+	results.append(result)
 
 print results
-output = file(r'F:\Python\PythonStudy\py27\N1_Basic\result.txt', 'w')   # 注意r
+output = file(r'F:\Python\PythonStudy\py27\N1_Basic\result.txt', 'w')  # 注意r
 output.writelines(results)
 output.close()
-
-
