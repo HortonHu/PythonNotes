@@ -2,21 +2,23 @@
 # -*- coding:utf-8 -*-
 
 # String and Coding
+# ASCII 转换
 print ord('A')
 print chr(65)
+# Unicode
 print u'中'
 print u'\u4e2d'
 
-# 把u'xxx'转换为UTF-8编码的'xxx'用encode('utf-8')方法：
+# Unicode to UTF-8 : encode('utf-8')
 print u'ABC'.encode('utf-8')
 print u'中文'.encode('utf-8')
-
-# UTF-8编码表示的字符串'xxx'转换为Unicode字符串u'xxx'用decode('utf-8')
+# UTF-8 to Unicode : decode('utf-8')
 'abc'.decode('utf-8')
 '\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')
 print '\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')
 
-len(u'ABC')
-len('ABC')
-len(u'中文')
-len('\xe4\xb8\xad\xe6\x96\x87')
+# 各种编码方式字节大小
+len(u'ABC')				# unicode
+len('ABC')				# ASCII
+len(u'中')				# Unicode 中
+len('\xe4\xb8\xad')		# UTF-8 中
