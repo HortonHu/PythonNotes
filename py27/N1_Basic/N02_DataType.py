@@ -3,6 +3,8 @@
 
 # Data type: int\ float\ string\ bool\ None
 # ''和''''效果相同 '''...'''or"""..."""中间可以任意添加''或者'''' 也可以当做一种注释
+# The only difference between the two is that within single quotes you don’t need to escape "
+# (but you have to escape \') and vice versa.
 print 'integer:', 1
 print 'float  :', 3.14, 1e-5
 print 'string :', 'python'
@@ -16,8 +18,9 @@ line2'''							# 多行字符串
 print 'Bool   :', True, not True, True and False, True or False
 print None
 
-# string ''  分割 连接
+# Data type: string ''
 # + * index slice
+# methods: split() join()
 # immutable
 a = 'I am OK.'
 b = a.split()
@@ -28,15 +31,15 @@ li = ['apple', 'pear', 'orange']
 fruit = s.join(li)
 print fruit
 
-# Data type: List ['a', 'b', 'c']
-# 有序
-# 元素的type可以不同
+# Data type: List ['a', 'b', 'c'] [1, 2, 3]
+# + index slice nestable
+# mutable
+# method: append() insert()
+# item的type可以不同
 classmates = ['Michael', 'Bob', 'Tracy']
 print 'List:', classmates
 print 'length of List:', len(classmates)
-print u'List序号从0开始，最后一个为n-1或者-1，可类推-2'
-print classmates[2], classmates[-1]
-classmates.append('Adam')   # 末尾插入
+classmates.append('Adam')   	# 末尾插入
 print 'List:', classmates
 classmates.insert(1, 'Jack')    # 指定位置插入
 print 'List:', classmates

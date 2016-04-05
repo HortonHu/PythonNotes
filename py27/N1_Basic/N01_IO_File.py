@@ -38,7 +38,8 @@ print '123' + '456'
 """This is comment too"""
 
 # =
-# python中运算的顺序是，先把“=”右边的结果算出了，再赋值给左边的变量
+# The expressions on the right-hand side are all evaluated first before any of the assignments take place.
+# The right-hand side expressions are evaluated from the left to the right.
 a = 1
 b = 2
 a, b = b, a + b
