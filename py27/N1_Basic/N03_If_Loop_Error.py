@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 
 # if
+# elif is a substitute for switch case
 age = 3
 if age >= 18:
 	print 'adult'
@@ -27,9 +28,28 @@ if x:
 # break 跳出整个循环
 
 # for x in y
-names = ['Michael', 'Bob', 'Tracy']
-for student in names:
-	print student
+# If you need to modify the sequence you are iterating over while inside the loop
+# (for example to duplicate selected items), it is recommended that you first make a copy.
+words = ['cat', 'window', 'defenestrate']
+for w in words[:]:  # Loop over a slice copy of the entire list.
+	if len(w) > 6:
+		words.insert(0, w)
+		pass
+
+print words
+
+# Loop statements may have an else clause, a loop’s else clause runs when no break occurs.
+# it is executed when the loop terminates through exhaustion of the list (with for)
+# or when the condition becomes false (with while), but not when the loop is terminated by a break statement.
+for n in range(2, 10):
+	for x in range(2, n):
+		if n % x == 0:
+			print n, 'equals', x, '*', n / x
+			break
+	else:
+		# loop fell through without finding a factor
+		print n, 'is a prime number'
+
 
 sum = 0
 for x in range(101):
