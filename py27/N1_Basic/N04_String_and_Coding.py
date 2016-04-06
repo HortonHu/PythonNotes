@@ -8,7 +8,7 @@ print chr(65)
 # Unicode
 print u'中'
 print u'\u4e2d'
-
+    
 # Unicode to UTF-8 : encode('utf-8')
 print u'ABC'.encode('utf-8')
 print u'中文'.encode('utf-8')
@@ -22,3 +22,4 @@ len(u'ABC')				# unicode
 len('ABC')				# ASCII
 len(u'中')				# Unicode 中
 len('\xe4\xb8\xad')		# UTF-8 中
+

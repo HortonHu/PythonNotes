@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-# Data type: int\ float\ string\ bool\ None
+# Data type: int\ float\ string\ bool\ None     
 # ''和''''效果相同 '''...'''or"""..."""中间可以任意添加''或者'''' 也可以当做一种注释
 # The only difference between the two is that within single quotes you don’t need to escape "
 # (but you have to escape \') and vice versa.
@@ -32,9 +32,9 @@ fruit = s.join(li)
 print fruit
 
 # Data type: List ['a', 'b', 'c'] [1, 2, 3]
-# + index slice nestable
+# + index slice nestable del
 # mutable
-# method: append() insert()
+# methods: append(x) extend(L) insert(i, x) remove(x) pop([i]) index(x) count(x) sort() reverse()
 # item的type可以不同
 classmates = ['Michael', 'Bob', 'Tracy']
 print 'List:', classmates
@@ -51,9 +51,19 @@ classmates[1] = 'Sarah'     # 直接替换指定位置元素
 print 'List:', classmates
 s = ['python', 'java', ['asp', 'php'], 'scheme']    # list可嵌套
 
+# use collections.deque which was designed to have fast appends and pops from both ends.
+from collections import deque
+queue = deque(["Eric", "John", "Michael"])
+queue.append("Terry")           # Terry arrives
+queue.append("Graham")          # Graham arrives
+queue.popleft()                 # The first to arrive now leaves
+queue.popleft()                 # The second to arrive now leaves
+print queue
+
 # Data type: Tuple: ('a', 'b', 'c')
-# 有序
-#  Tuple和list非常类似，但是tuple一旦初始化就不能修改，更安全
+# index
+# immutable
+# Tuple和list非常类似，但是tuple一旦初始化就不能修改，更安全
 classmates = ('Michael', 'Bob', 'Tracy')
 print 'Tuple:', classmates
 print classmates[0], classmates[1]
@@ -61,7 +71,9 @@ t = (1)                 # 特例，按照数学运算定义
 tt = (1,)               # 消除歧义
 print type(t), type(tt)
 
-# Data type: dict 	{'key':value}
+# Data type: dict 	{key: value}
+# key : immutable
+# mutable
 # dict全称dictionary，在其他语言中也称为map，使用键-值（'key':value）存储，具有极快的查找速度
 # list比较，dict有以下几个特点：
 # 1.查找和插入的速度极快，不会随着key的增加而增加
@@ -80,8 +92,8 @@ print d.get('Thomas', -1)
 d.pop('Bob')    # 删除key 对应的value也会删除
 
 # Data type: set{'key'}
-# set和dict类似，也是一组key的集合，但不存储value
-# key不能重复
+# set和dict类似，也是一组key的集合，但不存储value, key不能重复
+#
 # s = set([1, 2, 3]) 也可以这样定义
 s = {'1', '2', '3'}
 print 'set:', s
@@ -92,13 +104,14 @@ print 'set:', s
 s.add(4)            # 重复添加无效
 print 'set:', s
 s.remove(4)         # 删除key
-print 'set:', s
-# set可以看成数学意义上的无序和无重复元素的集合，因此，两个set可以做数学意义上的交集、并集等操作：
+print 'set:', s             
+# set可以看成数学意义上的无序和无重复元素的集合
+# 因此，两个set可以做数学意义上的 - 交集、并集等操作
 s1 = {'1', '2', '3'}
 s2 = {'2', '3', '4'}
 print 'set:', s1 & s2
 print 'set:', s1 | s2
-
+    
 # 可变对象：list\
 # 不变对象：string\
 # 对于不变对象来说，调用对象自身的任意方法，也不会改变该对象自身的内容
@@ -125,3 +138,4 @@ a = {'a': 1, 'b': 2, 'c': 3}
 print 'the type of a is', type(a)
 a = {'1', '2', '3'}
 print 'the type of a is', type(a)
+

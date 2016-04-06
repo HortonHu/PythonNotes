@@ -8,12 +8,36 @@ def add(x, y, f):
 
 print add(-5, 6, abs)
 
-# map/reduce
-# map()函数接收两个参数，一个是函数，一个是序列，map将传入的函数依次作用到序列的每个元素，并把结果作为新的list返回。
+
+# filter(function, sequence)
+# returns a sequence consisting of those items from the sequence for which function(item) is true.
+# If sequence is a str, unicode or tuple, the result will be of the same type; otherwise, it is always a list.
+def f(x):
+    return x % 3 == 0 or x % 5 == 0
+print filter(f, range(2, 25))
+
+# map(function, sequence)
+# calls function(item) for each of the sequence’s items and returns a list of the return values.
 print map(str, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+# More than one sequence may be passed;
+# the function must then have as many arguments as there are sequences
+# and is called with the corresponding item from each sequence (or None if some sequence is shorter than another).
+seq = range(8)
+
+
+def add(x, y):
+    return x + y
+print map(add, seq, seq)
+
+
+# reduce(function, sequence)
 # reduce把一个函数作用在一个序列[x1, x2, x3...]上，
-# 这个函数必须接收两个参数，reduce把结果继续和序列的下一个元素做累积计算
-# reduce(f, [x1, x2, x3, x4]) = f(f(f(x1, x2), x3), x4)
+# returns a single value constructed by calling the binary function function on the first two items of the sequence,
+# then on the result and the next item, and so on. like: reduce(f, [x1, x2, x3, x4]) = f(f(f(x1, x2), x3), x4)
+def add(x, y):
+    return x + y
+print reduce(add, range(1, 11))
+# A third argument can be passed to indicate the starting value.
 
 
 def fn(x, y):
@@ -49,11 +73,6 @@ def str2int(s):
 # Python提供的sum()函数可以接受一个list并求和，请编写一个prod()函数，可以接受一个list并利用reduce()求积。
 
 
-# filter
-# filter()也接收一个函数和一个序列。
-# 把传入的函数依次作用于每个元素，然后根据返回值是True还是False决定保留还是丢弃该元素。
-
-
 # sorted
 # 也可以接收一个比较函数来实现自定义的排序
 print sorted([36, 5, 12, 9, 21])
@@ -79,3 +98,4 @@ def cmp_ignore_case(s1, s2):    # 忽略大小写进行字符串排序
         return 1
     return 0
 print sorted(['bob', 'about', 'Zoo', 'Credit'], cmp_ignore_case)
+
