@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-# Data type: int\ float\ string\ bool\ None     
+# Data type: int\ float\ string\ bool\ None
 # ''和''''效果相同 '''...'''or"""..."""中间可以任意添加''或者'''' 也可以当做一种注释
 # The only difference between the two is that within single quotes you don’t need to escape "
 # (but you have to escape \') and vice versa.
@@ -17,6 +17,7 @@ print 'string :', '''line1
 line2'''							# 多行字符串
 print 'Bool   :', True, not True, True and False, True or False
 print None
+
 
 # Data type: string ''
 # + * index slice
@@ -104,14 +105,14 @@ print 'set:', s
 s.add(4)            # 重复添加无效
 print 'set:', s
 s.remove(4)         # 删除key
-print 'set:', s             
+print 'set:', s
 # set可以看成数学意义上的无序和无重复元素的集合
 # 因此，两个set可以做数学意义上的 - 交集、并集等操作
 s1 = {'1', '2', '3'}
 s2 = {'2', '3', '4'}
 print 'set:', s1 & s2
 print 'set:', s1 | s2
-    
+
 # 可变对象：list\
 # 不变对象：string\
 # 对于不变对象来说，调用对象自身的任意方法，也不会改变该对象自身的内容
@@ -138,4 +139,3 @@ a = {'a': 1, 'b': 2, 'c': 3}
 print 'the type of a is', type(a)
 a = {'1', '2', '3'}
 print 'the type of a is', type(a)
-
