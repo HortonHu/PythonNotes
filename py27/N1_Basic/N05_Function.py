@@ -121,13 +121,3 @@ def fact(n):
     return n * fact(n - 1)
 
 # Lambda Expressions: Small anonymous functions
-
-
-
-
-
-
-
-
-
-

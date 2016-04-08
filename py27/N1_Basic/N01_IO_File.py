@@ -99,4 +99,3 @@ print results
 output = file(r'F:\Python\PythonStudy\py27\N1_Basic\result.txt', 'w')  # 注意r
 output.writelines(results)
 output.close()
-
