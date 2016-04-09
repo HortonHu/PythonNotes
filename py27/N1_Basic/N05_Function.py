@@ -10,6 +10,7 @@ print a(-1)
 
 # 定义函数 def ...():
 def my_abs(x):
+    # 参数检查
     if not isinstance(x, (int, float)):
         raise TypeError('bad operand type')
     if x >= 0:

@@ -19,10 +19,12 @@ print 'Bool   :', True, not True, True and False, True or False
 print None
 
 
-# Data type: string ''
+# Data type: string 'abc'
 # + * index slice
 # methods: split() join()
-# immutable
+# immutable.
+# 对于不变对象来说，调用对象自身的任意方法，也不会改变该对象自身的内容。
+# 相反，这些方法会创建新的对象并返回，这样，就保证了不可变对象本身永远是不可变的。
 a = 'I am OK.'
 b = a.split()
 print b
@@ -32,11 +34,12 @@ li = ['apple', 'pear', 'orange']
 fruit = s.join(li)
 print fruit
 
-# Data type: List ['a', 'b', 'c'] [1, 2, 3]
+# Data type: List ['a', 'b', 'c'] or [1, 2, 3]
 # + index slice nestable del
 # mutable
 # methods: append(x) extend(L) insert(i, x) remove(x) pop([i]) index(x) count(x) sort() reverse()
 # item的type可以不同
+# 遍历list的时候可以用list[:]复制一个相同的list来遍历
 classmates = ['Michael', 'Bob', 'Tracy']
 print 'List:', classmates
 print 'length of List:', len(classmates)
@@ -65,11 +68,13 @@ print queue
 # index
 # immutable
 # Tuple和list非常类似，但是tuple一旦初始化就不能修改，更安全
+# tuple所谓的“不变”是说，tuple的每个元素，指向永远不变。
+# 如果元素是可变的 则该元素可变 相当于tuple的内容还是改变了
 classmates = ('Michael', 'Bob', 'Tracy')
 print 'Tuple:', classmates
 print classmates[0], classmates[1]
 t = (1)                 # 特例，按照数学运算定义
-tt = (1,)               # 消除歧义
+tt = (1,)               # 用,来消除歧义
 print type(t), type(tt)
 
 # Data type: dict 	{key: value}
