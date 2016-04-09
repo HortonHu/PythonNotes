@@ -50,7 +50,8 @@ print [s.lower() if isinstance(s, str) else s for s in L]      # 引入判断 �
 
 # 生成器 Generator
 # generator保存的是算法  算完之后就没有了
-# 创建L和g的区别仅在于最外层的[]和()
+# 相比列表生成式更节约空间 适用于较大的生成
+# 方法一：把一个列表生成式的[]改成()，就创建了一个generator：
 g = (x * x for x in range(5))
 print g.next()
 print g.next()
@@ -58,22 +59,23 @@ print g.next()
 print g.next()
 print g.next()
 
-for n in g:
+for n in g:         # 通常都是用for来迭代出generator而不是用next()
     print n
 
 
-# 一个函数定义中包含yield关键字，那这个函数就编程 generater
+# generator的另一种生成方式：通过函数
+# 一个函数定义中包含yield关键字，那这个函数就变成generator
 # generator的函数，在每次调用next()的时候执行，遇到yield语句返回，再次执行时从上次返回的yield语句处继续执行。
 # generator的工作原理，它是在for循环的过程中不断计算出下一个元素，并在适当的条件结束for循环。
 # 对于函数改成的generator来说，遇到return语句或者执行到函数体最后一行语句，就是结束generator的指令，for循环随之结束
 def fib(max):
     n, a, b = 0, 0, 1
     while n < max:
-        yield b
+        yield b             # 中断 并返回b
         a, b = b, a + b
         n += 1
 
-
+# 要用创建一个generator的方法而不是fib(6).next() 否则一直停在第一步
 a = fib(6)
 print a.next()
 print a.next()
@@ -90,7 +92,6 @@ def odd():
     yield 3
     print 'step 3'
     yield 5
-
 
 o = odd()
 o.next()
