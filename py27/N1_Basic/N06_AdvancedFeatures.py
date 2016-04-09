@@ -6,8 +6,11 @@ L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
 print L[0:3]
 print L[1:3]
 print L[-2:]
+print L[::2]
 
 # 迭代 Iteration
+# 默认情况下，dict迭代的是key。如果要迭代value，可以用for value in d.itervalues()
+# 如果要同时迭代key和value，可以用for k, v in d.iteritems()
 d = {'a': 1, 'b': 2, 'c': 3}
 for key in d:
     print key
@@ -33,7 +36,7 @@ for i, value in enumerate(['A', 'B', 'C']):
     print i, value
     pass
 
-# 列表生成式 List Comprehensions 替代循环
+# 列表生成式 List Comprehensions 替代简单的循环
 print [x * x for x in range(1, 11)]
 print [x * x for x in range(1, 11) if x % 2 == 0]  # 筛选出仅偶数的平方
 print [m + n for m in 'ABC' for n in 'XYZ']  # 使用两层循环，可以生成全排列
@@ -42,6 +45,8 @@ d = {'x': 'A', 'y': 'B', 'z': 'C'}
 print [k + '=' + v for k, v in d.iteritems()]  # 同时迭代k,v
 L = ['Hello', 'World', 'IBM', 'Apple']
 print [s.lower() for s in L]  # 改为小写
+L = ['Hello', 'World', 18, 'Apple', None]
+print [s.lower() if isinstance(s, str) else s for s in L]      # 引入判断 变成条件表达式
 
 # 生成器 Generator
 # generator保存的是算法  算完之后就没有了
