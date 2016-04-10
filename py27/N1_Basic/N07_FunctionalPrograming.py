@@ -26,7 +26,7 @@ print map(add, range(8), range(8))
 
 
 # reduce(function, sequence)
-# reduce把一个函数作用在一个序列[x1, x2, x3...]上，
+# reduce把一个函数作用在一个序列[x1, x2, x3   ]上，
 # 把结果继续和序列的下一个元素做累积计算  reduce(f, [x1, x2, x3, x4]) = f(f(f(x1, x2), x3), x4)
 def add(x, y):
     return x + y
@@ -137,7 +137,43 @@ def count():
             return i*i
         fs.append(f)
     return fs
+f1, f2, f3 = count()
+print f1(), f2(), f3()
+# 返回的函数引用了变量i，但它并非立刻执行。等到3个函数都返回时，它们所引用的变量i已经变成了3，因此最终结果为9。
 
 
+# 如果一定要引用循环变量方法是再创建一个函数，用该函数的参数绑定循环变量当前的值，
+# 无论该循环变量后续如何更改，已绑定到函数参数的值不变：
+def count():
+        fs = []
+        for i in range(1, 4):
+            def f(j):
+                def g():                # 绑定循环变量当前的值
+                    return j*j
+                return g
+            fs.append(f(i))
+        return fs
+f1, f2, f3 = count()
+print f1(), f2(), f3()
 
+# 或者修改为以下形式
+f1, f2, f3 = [(lambda i=j: i ** 2) for j in range(1, 4)]
+
+# lambda 函数
+# 关键字lambda表示匿名函数，冒号前面的x表示函数参数。
+# 匿名函数也是一个函数对象，也可以把匿名函数赋值给一个变量，再利用变量来调用该函数
+# 也可以把匿名函数作为返回值返回
+print map(lambda x: x * x, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+f = lambda x: x * x
+print f(5)
+
+
+def build(x, y):
+    return lambda: x * x + y * y
+
+# lambda后面有无参数区别
+a, b = 1, 2
+aa = lambda: a ** 2 + b ** 2        # 无参数时使用外部变量
+aa = lambda a, b: a ** 2 + b ** 2   # 有参数时使用传入变量
+print aa()
 
