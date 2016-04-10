@@ -2,18 +2,12 @@
 # -*- coding:utf-8 -*-
 
 
-def odd():
-    print 'step 1'
-    yield 1
-    print 'step 2'
-    yield 2
-    print 'step 3'
-    yield 3
+def not_su(n):
+    for i in range(2, n/2):         # 判断只需要用一半的数
+        if n % i == 0:
+            return False
+    else:
+        return  True
 
-if __name__ == '__main__':
-    o = odd()
-    while True:
-        try:
-            print o.next()
-        except:
-            break
+l = range(1, 101)
+print filter(not_su, l)
