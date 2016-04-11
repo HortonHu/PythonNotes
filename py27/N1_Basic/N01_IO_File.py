@@ -62,7 +62,7 @@ print 'Today is %s.' % 'Friday'
 print "%s's score is %d" % ('Mike', 87)
 print 'growth rate: %d %%' % 7
 # file
-f = open('data.txt', 'r')  # r: 读 w: 写入 会覆盖     a: 添加
+f = open('Data.txt', 'r')  # r: 读 w: 写入 会覆盖     a: 添加
 data = f.read()
 l = f.readline()  # 读取一行内容
 ll = f.readlines()  # 把内容按行读取至一个list中
@@ -71,7 +71,7 @@ print l, type(l)
 print ll, type(ll)
 f.close()
 
-f = open('data.txt', 'a')  # w: 写入 会覆盖     a: 添加
+f = open('Data.txt', 'a')  # w: 写入 会覆盖     a: 添加
 f.write('\n987654321\n')
 f.close()
 
