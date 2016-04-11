@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N1_Basic/Test_sayhi.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/result.txt" afterPath="$PROJECT_DIR$/py27/N1_Basic/data_result.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/scores.txt" afterPath="$PROJECT_DIR$/py27/N1_Basic/Data_scores.txt" />
+    <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N1_Basic/N01_IO_File.py" afterPath="$PROJECT_DIR$/py27/N1_Basic/N01_IO_File.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py" afterPath="$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N1_Basic/test.py" afterPath="$PROJECT_DIR$/py27/N1_Basic/test.py" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -418,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1460373005555</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <created>1460378022398</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1460378022398</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
