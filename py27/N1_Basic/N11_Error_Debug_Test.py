@@ -143,3 +143,52 @@ except ZeroDivisionError:
 
 main()
 
+
+# 调试
+# 方法一：print
+# 方法二：断言    凡是用print来辅助查看的地方，都可以用断言（assert）来替代：
+# 如果断言失败，assert语句本身就会抛出AssertionError：
+# 启动Python解释器时可以用-O参数来关闭assert：
+def foo(s):
+    n = int(s)
+    assert n != 0, 'n is zero!'
+    return 10 / n
+
+def main():
+    foo('0')
+
+# 方法三：logging
+# 和assert比，logging不会抛出错误，而且可以输出到文件：
+import logging
+logging.basicConfig(level=logging.INFO)
+
+s = '0'
+n = int(s)
+logging.info('n = %d' % n)
+print 10 / n
+# 输出 INFO:root:n = 0
+# logging允许指定记录信息的级别，有debug，info，warning，error等几个级别，
+# 当指定level=INFO时，logging.debug就不起作用了。同理，指定level=WARNING后，debug和info就不起作用了。
+# 这样一来，可以放心地输出不同级别的信息，也不用删除，最后统一控制输出哪个级别的信息。
+# logging的另一个好处是通过简单的配置，一条语句可以同时输出到不同的地方，比如console和文件。
+
+# 方法四：pdb
+s = '0'
+n = int(s)
+print 10 / n
+# $ python -m pdb err.py
+
+# pdb.set_trace()
+# 也是用pdb，但是不需要单步执行，
+# 只需要import pdb，然后，在可能出错的地方放一个pdb.set_trace()，就可以设置一个断点：
+import pdb
+
+s = '0'
+n = int(s)
+pdb.set_trace() # 运行到这里会自动暂停
+print 10 / n
+# 运行代码，程序会自动在pdb.set_trace()暂停并进入pdb调试环境，可以用命令p查看变量，或者用命令c继续运行：
+
+
+
+
