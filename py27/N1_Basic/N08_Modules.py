@@ -71,3 +71,28 @@ im = Image.open('C:\Users\dell\Documents\GitHub\PythonStudy\py27\N1_Basic\Pic.jp
 print im.format, im.size, im.mode
 im.thumbnail((im.size[0]/2, im.size[1]/2))
 im.show()
+
+# 使用__future__ 必须放在文件头 使整个文件使用新版本特性
+# 通过unicode_literals来使用Python 3.x的新的语法
+from __future__ import unicode_literals
+
+print '\'xxx\' is unicode?', isinstance('xxx', unicode)
+print 'u\'xxx\' is unicode?', isinstance(u'xxx', unicode)
+print '\'xxx\' is str?', isinstance('xxx', str)
+print 'b\'xxx\' is str?', isinstance(b'xxx', str)
+
+# Python 2.x中，对于除法有两种情况，如果是整数相除，结果仍是整数，余数会被扔掉，这种除法叫“地板除”
+# 在Python 3.x中，所有的除法都是精确除法，地板除用//表示：
+from __future__ import division
+
+print '10 / 3 =', 10 / 3
+print '10.0 / 3 =', 10.0 / 3
+print '10 // 3 =', 10 // 3
+
+
+
+
+
+
+
+

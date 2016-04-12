@@ -22,3 +22,6 @@ len('ABC')				# ASCII
 len(u'中')				# Unicode 中
 len('\xe4\xb8\xad')		# UTF-8 中
 
+# 2.x里的字符串用'xxx'表示str，Unicode字符串用u'xxx'表示unicode
+# 而在3.x中，所有字符串都被视为unicode
+# 2.x中以'xxx'表示的str在3.x中就必须写成b'xxx'，以此表示“二进制字符串”。
