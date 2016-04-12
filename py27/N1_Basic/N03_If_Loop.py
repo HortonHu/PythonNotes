@@ -64,12 +64,4 @@ while n > 0:
     n -= 2
 print sum
 
-# try ... except
-try:
-    f = file('non-exist.txt')
-    print 'File opened!'
-    f.close()
-except:
-    print 'File not exists.'
-print 'Done'
 
