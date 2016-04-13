@@ -90,7 +90,23 @@ print '10.0 / 3 =', 10.0 / 3
 print '10 // 3 =', 10 // 3
 
 
+# 常用内建模块
+# collections
 
+# base64
+
+# struct
+
+# hashlib
+
+# itertools
+
+# XML
+
+# HTMLParser
+
+# 常用第三方模块
+# PIL
 
 
 
