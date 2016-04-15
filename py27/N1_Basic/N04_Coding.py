@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+# 用chardet判断字符编码
+# confidence是预测这种编码的可能性，encoding是编码名称。
+import chardet
+print chardet.detect(s)
+
 # ASCII 转换
 print ord('A')
 print chr(65)

@@ -16,8 +16,7 @@ std2 = { 'name': 'Bob', 'score': 81 }
 # 面向对象的程序设计思想
 # Student这种数据类型应该被视为一个对象，这个对象拥有name和score这两个属性（Property）
 class Student(object):
-
-    def __init__(self, name, score):
+    def __init__(self, name, score):    # 如果没有加self则会报错TypeError: Student() takes no arguments (1 given)
         self.name = name
         self.score = score
 

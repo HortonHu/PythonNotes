@@ -59,6 +59,23 @@ def main():
     finally:
         print 'finally...'
 
+# 获得错误信息
+try:
+    # some error
+    a = 1 / 0
+except Exception, e:
+    print e
+
+# 获得更详细的信息
+try:
+    # some error
+    a = 1 / 0
+except:
+    import traceback
+
+    traceback.print_exc()
+
+
 # 调用堆栈
 # 如果错误没有被捕获，它就会一直往上抛，最后被Python解释器捕获，打印一个错误信息，然后程序退出
 def foo(s):
