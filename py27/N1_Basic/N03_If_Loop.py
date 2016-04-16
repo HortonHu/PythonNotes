@@ -48,6 +48,7 @@ for n in range(2, 10):
             break
     else:
         # loop fell through without finding a factor
+        # 从for或while循环中break终止 ，任何对应的循环else块将不执行
         print n, 'is a prime number'
 
 
