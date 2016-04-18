@@ -40,6 +40,7 @@ print '123' + '456'
 # =
 # The expressions on the right-hand side are all evaluated first before any of the assignments take place.
 # The right-hand side expressions are evaluated from the left to the right.
+# a = b = c被处理为a = (b = c)。
 a = 1
 b = 2
 a, b = b, a + b
