@@ -7,5 +7,9 @@ Web sites：
 - http://doc.python.org/
 
 Books:
-- A Byte of Python
-
+- A Byte of Python(简明Python教程)
+- Python核心编程
+- Head First Python
+- Dive Into Python
+- Python源码剖析
+- 笨办法学 Python
