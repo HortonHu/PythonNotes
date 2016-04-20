@@ -13,3 +13,5 @@ Books:
 - Dive Into Python
 - Python源码剖析
 - 笨办法学 Python
+- python科学计算
+- Python技术手册
