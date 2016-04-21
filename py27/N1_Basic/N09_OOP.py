@@ -9,8 +9,8 @@
 def print_score(std):
     print '%s: %s' % (std['name'], std['score'])
 
-std1 = { 'name': 'Michael', 'score': 98 }
-std2 = { 'name': 'Bob', 'score': 81 }
+std1 = {'name': 'Michael', 'score': 98}
+std2 = {'name': 'Bob', 'score': 81}
 
 
 # 面向对象的程序设计思想
@@ -115,7 +115,7 @@ bart = Student('Bart Simpson', 98)
 # 双下划线开头的实例变量是不是一定不能从外部访问呢？其实也不是。
 # 不能直接访问__name是因为Python解释器对外把__name变量改成了_Student__name，
 # 所以，仍然可以通过_Student__name来访问__name变量：
-print bart._Student__name
+# print bart._Student__name
 # 但是强烈建议你不要这么干，因为不同版本的Python解释器可能会把__name改成不同的变量名。
 
 

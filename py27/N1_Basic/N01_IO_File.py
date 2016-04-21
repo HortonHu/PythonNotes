@@ -2,51 +2,52 @@
 # -*- coding:utf-8 -*-
 
 # IO
-# raw_input（） return string
-# input() return value
-# input equal to eval(raw_input(prompt))
+# raw_input()   返回 string
+# input()       返回 value
 name = raw_input('Please input your name：')
 print 'Hi', name
 age = input('Please input your age：')
 print 'the type of age is ', type(age)
 
-# without print, \n is included in the output
-# with print, \n produces a new line
+# 在交互模式下不用print, \n 等表示为原型
+# 用了print则发挥特定的作用
 s = '1\n2'
 s
 print s
 
 # import
 from math import pi as math_pi
-
 print math_pi
 
-# operation
-# / division    // floor division
-print 5 / 4  # int / int -> int
-print 5.0 / 4  # int / float -> float
-print 5 // 4         # explicit floor division discards the fractional part
-print 5.1 // 4
+# 操作符
+# / 除法      // 地板除 整除
+print 5 / 4         # int / int     -> int   和//效果相同
+print 5.0 / 4       # int / float   -> float 精确除法
+print 5 // 4        # int / int     -> int
+print 5.1 // 4      # int / float   -> float 浮点数的整除
 
 
-# **power
+# ** power
 print 2 ** 3
 
 print '123', '456'
-print '123' + '456'
+print '123' + '456'     # 和'123''456' 效果相同
 
+# 三引号注释 内部均不转义
 """This is comment too"""
 
-# =
-# The expressions on the right-hand side are all evaluated first before any of the assignments take place.
-# The right-hand side expressions are evaluated from the left to the right.
-# a = b = c被处理为a = (b = c)。
+# = 先算出右侧值 再赋给左边 计算过程从左往右
 a = 1
 b = 2
 a, b = b, a + b
 print a, b
 
-# In interactive mode, the last printed expression is assigned to the variable _.
+# a = b = c被处理为a = (b = c)。
+c = 3
+a = b = c
+print a, b, c
+
+# 交互模式下，最近的没有被赋值的计算结果被赋给_.
 tax = 12.5 / 100
 price = 100.50
 price * tax
