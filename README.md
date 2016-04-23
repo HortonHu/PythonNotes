@@ -15,3 +15,4 @@ Books:
 - 笨办法学 Python
 - python科学计算
 - Python技术手册
+- Python宝典

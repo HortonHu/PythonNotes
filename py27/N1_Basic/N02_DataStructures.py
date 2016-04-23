@@ -21,6 +21,8 @@ print None
 # methods: split() join()
 # immutable.
 # ''和''''效果相同 '''...'''or"""..."""中间可以任意添加''或者'''' 也可以当做一种注释 通常用于doc_comment
+# ' "包含对方的时候均不需要转义
+# 对于较长的语句 可以用\来续行 \后不能有# 也不能有任何字符
 # The only difference between the two is that within single quotes you don’t need to escape "
 # (but you have to escape \') and vice versa.
 # 对于不变对象来说，调用对象自身的任意方法，也不会改变该对象自身的内容。
@@ -141,3 +143,5 @@ a = {'a': 1, 'b': 2, 'c': 3}
 print 'the type of a is', type(a)
 a = {'1', '2', '3'}
 print 'the type of a is', type(a)
+
+
