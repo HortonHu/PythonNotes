@@ -2,13 +2,10 @@
 # -*- coding:utf-8 -*-
 
 # Data type: int\ float\ string\ bool\ None
-# ''和''''效果相同 '''...'''or"""..."""中间可以任意添加''或者'''' 也可以当做一种注释
-# The only difference between the two is that within single quotes you don’t need to escape "
-# (but you have to escape \') and vice versa.
 print 'integer:', 1
 print 'float  :', 3.14, 1e-5
 print 'string :', 'python'
-print 'string :', 'I\'m OK'			# 加/有避免转义的作用
+print 'string :', 'I\'m OK'			# 加\有避免转义的作用
 print 'string :', '\\\n\\'
 print 'string :', '\\\t\\'
 print 'string :', r'\\\t\\'      	# 加r则不转义 个人认为比加/好用
@@ -23,6 +20,9 @@ print None
 # + * index slice
 # methods: split() join()
 # immutable.
+# ''和''''效果相同 '''...'''or"""..."""中间可以任意添加''或者'''' 也可以当做一种注释 通常用于doc_comment
+# The only difference between the two is that within single quotes you don’t need to escape "
+# (but you have to escape \') and vice versa.
 # 对于不变对象来说，调用对象自身的任意方法，也不会改变该对象自身的内容。
 # 相反，这些方法会创建新的对象并返回，这样，就保证了不可变对象本身永远是不可变的。
 a = 'I am OK.'
@@ -35,8 +35,7 @@ fruit = s.join(li)
 print fruit
 
 # Data type: List ['a', 'b', 'c'] or [1, 2, 3]
-# + index slice nestable del
-# mutable
+# +/index/slice/nestable/del/mutable
 # methods: append(x) extend(L) insert(i, x) remove(x) pop([i]) index(x) count(x) sort() reverse()
 # item的type可以不同
 # 遍历list的时候可以用list[:]复制一个相同的list来遍历
@@ -55,7 +54,7 @@ classmates[1] = 'Sarah'     # 直接替换指定位置元素
 print 'List:', classmates
 s = ['python', 'java', ['asp', 'php'], 'scheme']    # list可嵌套
 
-# use collections.deque which was designed to have fast appends and pops from both ends.
+# 用collections.deque构造双端队列来快速的从任意方向pop或append
 from collections import deque
 queue = deque(["Eric", "John", "Michael"])
 queue.append("Terry")           # Terry arrives
@@ -65,8 +64,7 @@ queue.popleft()                 # The second to arrive now leaves
 print queue
 
 # Data type: Tuple: ('a', 'b', 'c')
-# index
-# immutable
+# index/immutable
 # Tuple和list非常类似，但是tuple一旦初始化就不能修改，更安全
 # tuple所谓的“不变”是说，tuple的每个元素，指向永远不变。
 # 如果元素是可变的 则该元素可变 相当于tuple的内容还是改变了
@@ -78,8 +76,7 @@ tt = (1,)               # 用,来消除歧义
 print type(t), type(tt)
 
 # Data type: dict 	{key: value}
-# key : immutable
-# mutable
+# key是immutable 但是整体是mutable
 # dict全称dictionary，在其他语言中也称为map，使用键-值（'key':value）存储，具有极快的查找速度
 # list比较，dict有以下几个特点：
 # 1.查找和插入的速度极快，不会随着key的增加而增加
@@ -118,8 +115,8 @@ s2 = {'2', '3', '4'}
 print 'set:', s1 & s2
 print 'set:', s1 | s2
 
-# 可变对象：list\
-# 不变对象：string\
+# 可变对象：list/
+# 不变对象：string/
 # 对于不变对象来说，调用对象自身的任意方法，也不会改变该对象自身的内容
 a = ['c', 'b', 'a']
 a.sort()

@@ -65,41 +65,30 @@ print "%s's score is %d" % ('Mike', 87)
 print 'growth rate: %d %%' % 7
 
 
-# file
+# File
 f = open('Data_scores.txt', 'r')  # r:读 w:写(覆盖) a:添加
-data = f.read()
-l = f.readline()  # 读取一行内容
-ll = f.readlines()  # 把内容按行读取至一个list中
-print data
+data = f.read()     # 读取全部内容 sting 位置指针已经到文件尾
+l = f.readline()    # 读取一行内容 string
+ll = f.readlines()  # 剩下内容内容按行读取至一个list中
+print data, type(data)
 print l, type(l)
 print ll, type(ll)
 f.close()
 
-f = open('Data_scores.txt', 'a')  # w: 写入 会覆盖     a: 添加
+f = open('Data_scores.txt', 'a')  # w: 覆盖 a: 添加
 f.write('\n987654321\n')
 f.close()
 
+
 f = file(r'C:\Users\dell\Documents\GitHub\PythonStudy\py27\N1_Basic\Data_scores.txt', 'r')
 lines = f.readlines()
-# print lines
 f.close()
-
 results = []
-
 for line in lines:
-    print line
-    data = line.split()
-    # print data
+    data = line.split()                                             # 按照空格分开
+    result = '%s \t: %d\n' % (data[0], sum(map(int, data[1:])))     # 算出每个人总成绩
+    results.append(result)                                          # 构成一个新list
 
-    sum = 0
-    for score in data[1:]:
-        sum += int(score)
-    result = '%s \t: %d\n' % (data[0], sum)
-    # print result
-
-    results.append(result)
-
-print results
 output = file(r'C:\Users\dell\Documents\GitHub\PythonStudy\py27\N1_Basic\Data_result.txt', 'w')  # 注意r
 output.writelines(results)
 output.close()
