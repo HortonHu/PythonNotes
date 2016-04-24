@@ -2,27 +2,19 @@
 # -*- coding:utf-8 -*-
 
 
-# 函数式编程的一个特点就是，允许把函数本身作为参数传入另一个函数，还允许返回一个函数！
-# Python对函数式编程提供部分支持。由于Python允许使用变量，因此，Python不是纯函数式编程语言。
 # 把函数作为参数传入，这样的函数称为高阶函数，函数式编程就是指这种高度抽象的编程范式。
-def add(x, y, f):
-    return f(x) + f(y)
-print add(-5, 6, abs)
-
+# 函数式编程的一个特点就是，允许把函数本身作为参数传入另一个函数，还允许返回一个函数
+# Python对函数式编程提供部分支持。由于Python允许使用变量，因此，Python不是纯函数式编程语言。
 # 函数名其实就是指向函数的变量
-
+def my_add(x, y, f):
+    return f(x) + f(y)
+print my_add(-5, 6, abs)
 
 # map(function, sequence)
 # 将传入的函数依次作用到序列的每个元素，并把结果作为新的list返回
 print map(str, [1, 2, 3, 4, 5, 6, 7, 8, 9])
-# More than one sequence may be passed;
-# the function must then have as many arguments as there are sequences
-# and is called with the corresponding item from each sequence (or None if some sequence is shorter than another).
-
-
-def add(x, y):
-    return x + y
-print map(add, range(8), range(8))
+# 当传入多个list时候 传入函数的变量数必须和list数字 并且长度要相同
+print map(lambda x, y: x+y, range(8), range(8))
 
 
 # reduce(function, sequence)

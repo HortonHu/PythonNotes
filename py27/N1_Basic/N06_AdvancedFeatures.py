@@ -38,11 +38,12 @@ for i, value in enumerate(['A', 'B', 'C']):
 # 列表生成式 List Comprehensions
 # 替代简单的循环
 print [x * x for x in range(1, 11)]
-print [x * x for x in range(1, 11) if x % 2 == 0]  # 筛选出仅偶数的平方
-print [m + n for m in 'ABC' for n in 'XYZ']  # 使用两层循环，可以生成全排列
+print [x * x for x in range(1, 11) if x % 2 == 0]   # 筛选出仅偶数的平方
+print [m + n for m in 'ABC' for n in 'XYZ']         # 使用两层循环，可以生成全排列
 print [(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
+
 d = {'x': 'A', 'y': 'B', 'z': 'C'}
-print [k + '=' + v for k, v in d.iteritems()]  # 同时迭代k,v
+print [k + '=' + v for k, v in d.iteritems()]       # 同时迭代k,v
 L = ['Hello', 'World', 'IBM', 'Apple']
 print [s.lower() for s in L]  # 改为小写
 L = ['Hello', 'World', 18, 'Apple', None]
@@ -56,9 +57,6 @@ g = (x * x for x in range(5))
 print g.next()
 print g.next()
 print g.next()
-print g.next()
-print g.next()
-
 for n in g:         # 通常都是用for来迭代出generator而不是用next()
     print n
 
@@ -68,7 +66,7 @@ for n in g:         # 通常都是用for来迭代出generator而不是用next()
 # generator的函数，在每次调用next()的时候执行，遇到yield语句返回，再次执行时从上次返回的yield语句处继续执行。
 # generator的工作原理，它是在for循环的过程中不断计算出下一个元素，并在适当的条件结束for循环。
 # 对于函数改成的generator来说，遇到return语句或者执行到函数体最后一行语句，就是结束generator的指令，for循环随之结束
-def fib(max):
+def fib(max):               # 生成小于max的fib数列
     n, a, b = 0, 0, 1
     while n < max:
         yield b             # 中断 并返回b

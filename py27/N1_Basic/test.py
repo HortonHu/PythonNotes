@@ -1,15 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-a = 0
-n = 10
-while n > 0:
-    a += n
-    n -= 1
-    if n == 9:
-        continue
 
-else:
-    a = 1000
+def f(s1, s2):
+    if s1 > s2:
+        return True
+    else:
+        return False
 
-print a
+print map(f, [1, 2, 3, 4, 5], [10, 6, 7, 8, 9])
