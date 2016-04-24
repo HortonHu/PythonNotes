@@ -8,21 +8,19 @@ print L[1:3]
 print L[-2:]
 print L[::2]
 
+
 # 迭代 Iteration
 # 默认情况下，dict迭代的是key。如果要迭代value，可以用for value in d.itervalues()
-# 如果要同时迭代key和value，可以用for k, v in d.iteritems()
+# 同时迭代key和value，可以用for k, v in d.iteritems()
 d = {'a': 1, 'b': 2, 'c': 3}
 for key in d:
     print key
-    pass
 
 for value in d.itervalues():  # 迭代value
     print value
-    pass
 
 for k, v in d.iteritems():  # 同时迭代key和value
     print k, 'is the key of', v
-    pass
 
 # 通过collections模块的Iterable类型判断是否可迭代
 from collections import Iterable
@@ -31,12 +29,14 @@ print isinstance('abc', Iterable)
 print isinstance([1, 2, 3], Iterable)
 print isinstance(123, Iterable)
 
-# 同时迭代索引和元素本身 enumerate函数可以把一个list变成索引-元素对
+# enumerate函数可以把一个list变成索引-元素对
+# 同时迭代index和元素本身
 for i, value in enumerate(['A', 'B', 'C']):
     print i, value
-    pass
 
-# 列表生成式 List Comprehensions 替代简单的循环
+
+# 列表生成式 List Comprehensions
+# 替代简单的循环
 print [x * x for x in range(1, 11)]
 print [x * x for x in range(1, 11) if x % 2 == 0]  # 筛选出仅偶数的平方
 print [m + n for m in 'ABC' for n in 'XYZ']  # 使用两层循环，可以生成全排列

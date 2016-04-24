@@ -4,6 +4,7 @@
 # 用chardet判断字符编码
 # confidence是预测这种编码的可能性，encoding是编码名称。
 import chardet
+s = u'abc'.encode('utf-8')
 print chardet.detect(s)
 
 # ASCII 转换
