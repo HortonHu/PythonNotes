@@ -31,31 +31,23 @@ if x:
 # for x in y
 # 在循环内想要改变被循环的数据时，要创建一个拷贝
 words = ['cat', 'window', 'defenestrate']
-for w in words[:]:  # Loop over a slice copy of the entire list.
+for w in words[:]:  # 创建拷贝
     if len(w) > 6:
         words.insert(0, w)
         pass
 
 print words
 
-# Loop statements may have an else clause, a loop’s else clause runs when no break occurs.
-# it is executed when the loop terminates through exhaustion of the list (with for)
-# or when the condition becomes false (with while), but not when the loop is terminated by a break statement.
+# 循环后可以跟一个else 当循环中没有break时候执行
+# 如果是else 同样是在没有break的情况下执行（即没有遇到false情况）
 for n in range(2, 10):
     for x in range(2, n):
         if n % x == 0:
             print n, 'equals', x, '*', n / x        # 在后面加上逗号可以不换行打印
             break
     else:
-        # loop fell through without finding a factor
         # 从for或while循环中break终止 ，任何对应的循环else块将不执行
         print n, 'is a prime number'
-
-
-temp = 0
-for x in range(101):
-    temp += x
-print temp
 
 # while
 temp = 0
