@@ -103,8 +103,11 @@ f2 = lazy_sum(1, 3, 5, 7, 9)
 print f1 == f2
 
 
-# 闭包 相关参数和变量都保存在返回的函数中
+# 闭包
+# 相关参数和变量都保存在返回的函数中
 # 返回闭包时牢记的一点就是：返回函数不要引用任何循环变量，或者后续会发生变化的变量。
+
+# 返回的函数引用了变量i，但它并非立刻执行。等到3个函数都返回时，它们所引用的变量i已经变成了3，因此最终结果为9。
 def count():
     fs = []
     for i in range(1, 4):
@@ -114,10 +117,9 @@ def count():
     return fs
 f1, f2, f3 = count()
 print f1(), f2(), f3()
-# 返回的函数引用了变量i，但它并非立刻执行。等到3个函数都返回时，它们所引用的变量i已经变成了3，因此最终结果为9。
 
 
-# 如果一定要引用循环变量方法是再创建一个函数，用该函数的参数绑定循环变量当前的值，
+# 如果一定要引用循环变量 可以再创建一个函数，用该函数的参数绑定循环变量当前的值，
 # 无论该循环变量后续如何更改，已绑定到函数参数的值不变：
 def count():
         fs = []
@@ -132,6 +134,7 @@ f1, f2, f3 = count()
 print f1(), f2(), f3()
 
 # 或者修改为以下形式
+# 生成一个list 每个元素都是一个待执行的函数
 f1, f2, f3 = [(lambda i=j: i ** 2) for j in range(1, 4)]
 
 # lambda 函数
@@ -157,22 +160,19 @@ print aa()
 # 本质上，decorator就是一个返回函数的高阶函数。
 # Python的decorator可以用函数实现，也可以用类实现。
 def log(func):
-    def wrapper(*args, **kw):
+    def wrapper(*args, **kw):                   # 在wrapper()函数内，首先打印日志，再紧接着调用原始函数。
         print 'call %s():' % func.__name__      # 通过__name__属性，可以拿到函数的名字
         return func(*args, **kw)
     return wrapper
 # wrapper()函数的参数定义是(*args, **kw)，因此，wrapper()函数可以接受任意参数的调用。
-# 在wrapper()函数内，首先打印日志，再紧接着调用原始函数。
 
 
-# 把decorator置于函数的定义处 相当于执行了语句：now = log(now)
-# @要放在 def 前
+# 把decorator置于函数的定义处 相当于执行了语句：now = log(now)    @要放在 def 前
 @log
 def now():
     print '2016-04-11'
+    print 'After decorator now.__name__ =:', now.__name__   # 经过装饰后，now()的name变成wrapper
 now()
-# 经过装饰后，now()的name变成wrapper
-print 'After decorator now.__name__ =:', now.__name__
 
 
 # decorator需要参数时：
@@ -185,7 +185,7 @@ def log(text):
     return decorator
 
 
-@log('execute')     # 相当于 now = log('execute')(now)
+@log('Executing')     # 相当于 now = log('execute')(now)
 def now():
     print '2016-04-11'
 now()
