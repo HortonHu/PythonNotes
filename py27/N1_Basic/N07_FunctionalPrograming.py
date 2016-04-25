@@ -17,49 +17,29 @@ print map(str, [1, 2, 3, 4, 5, 6, 7, 8, 9])
 print map(lambda x, y: x+y, range(8), range(8))
 
 
-# reduce(function, sequence)
-# reduce把一个函数作用在一个序列[x1, x2, x3   ]上，
+# reduce(function, sequence, initial=None)
+# 第三个参数被当做初始值 默认不存在
+# reduce把一个函数作用在一个序列[x1, x2, x3]上，
 # 把结果继续和序列的下一个元素做累积计算  reduce(f, [x1, x2, x3, x4]) = f(f(f(x1, x2), x3), x4)
-def add(x, y):
-    return x + y
-print reduce(add, range(1, 11))
-# A third argument can be passed to indicate the starting value.
+print reduce(lambda x, y: x+y, range(1, 11))
 
 
-def fn(x, y):
-    return x * 10 + y
-
-
-def char2num(s):
-    return {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}[s]
-
-print reduce(fn, map(char2num, '13579'))
-
-
-# str2int的map\reduce实现
+# str2int的map reduce实现
 def str2int(s):
-    def fn(x, y):
-        return x * 10 + y
     def char2num(s):
         return {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}[s]
-    return reduce(fn, map(char2num, s))
+    return reduce(lambda x, y: 10*x+y, map(char2num, s))
 
 
-# 加入lambda函数进一步化简
-def char2num(s):
-    return {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}[s]
-
-
-def str2int(s):
-    return reduce(lambda x, y: x*10+y, map(char2num, s))
-
-#  练习 利用map()函数，把用户输入的不规范的英文名字，变为首字母大写，其他小写的规范名字。
+#  练习
+# 利用map()函数，把用户输入的不规范的英文名字，变为首字母大写，其他小写的规范名字。
 # 输入：['adam', 'LISA', 'barT']，输出：['Adam', 'Lisa', 'Bart']。
 # title()是string中的内建方法，使字符串转为标题格式：首字母大写，其他小写。
 # capitalize()也有类似功能
 print map(lambda s: s.title(), ['adam', 'LISA', 'barT'])
 
 
+# 练习
 # Python提供的sum()函数可以接受一个list并求和，请编写一个prod()函数，可以接受一个list并利用reduce()求积。
 def prod(l):
     return reduce(lambda x, y: x*y, l)
@@ -72,16 +52,19 @@ print prod([1, 2, 3, 4])
 def f(x):
     return x % 3 == 0 or x % 5 == 0
 print filter(f, range(2, 25))
+
+# 练习
 # 请尝试用filter()删除1~100的素数。
 filter(lambda x: not any(map(lambda y: x % y == 0, range(2, x))), range(2, 100))
 
 
-# sorted
+# sorted(iterable, cmp=None, key=None, reverse=False)
 # 通常规定，对于两个元素x和y，如果认为x < y，则返回-1，如果认为x == y，则返回0，如果认为x > y，则返回1
+print sorted([36, 5, 12, 9, 21])                    # 正序排序
+print sorted([36, 5, 12, 9, 21], None, None, True)  # 反序排序
+
+
 # 也可以接收一个比较函数来实现自定义的排序
-print sorted([36, 5, 12, 9, 21])
-
-
 def reversed_cmp(x, y):
     if x > y:
         return -1
@@ -106,14 +89,14 @@ print sorted(['bob', 'Boa', 'Bob',  'about', 'Zoo', 'Credit'], cmp_ignore_case) 
 # 返回函数
 def lazy_sum(*args):
     def my_sum():
-        ax = 0
+        temp = 0
         for n in args:
-            ax = ax + n
-        return ax
+            temp = temp + n
+        return temp
     return my_sum
 f = lazy_sum(1, 3, 5, 7, 9)
 print f         # 返回函数
-print f()       # 返回结果
+print f()       # 此时才运行 返回结果
 # 调用lazy_sum()时，每次调用都会返回一个新的函数，即使传入相同的参数：
 f1 = lazy_sum(1, 3, 5, 7, 9)
 f2 = lazy_sum(1, 3, 5, 7, 9)
