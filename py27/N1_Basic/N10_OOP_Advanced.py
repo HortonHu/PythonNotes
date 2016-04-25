@@ -2,12 +2,13 @@
 # -*- coding:utf-8 -*-
 
 
-
 # 给所有实例都绑定方法，可以给class绑定方法：
 class Student(object):
         pass
 
 from types import MethodType
+
+
 def set_score(self, score):
         self.score = score
 
@@ -25,6 +26,7 @@ s = Student()
 s.name = 'horton'
 s.age = 22
 s.score = 100       # 由于'score'没有被放到__slots__中，所以不能绑定score属性，试图绑定score将得到AttributeError的错误。
+
 
 # __slots__定义的属性仅对当前类起作用，对继承的子类是不起作用的：
 # 除非在子类中也定义__slots__，这样，子类允许定义的属性就是自身的__slots__加上父类的__slots__。
@@ -107,42 +109,53 @@ class Student(object):
 class Animal(object):       # 整体
     pass
 
+
 # 大类:
 class Mammal(Animal):       # 哺乳动物
     def mam(self):
         print 'It is mammal.'
     pass
 
+
 class Bird(Animal):         # 鸟类
     def bir(self):
         print 'It is bird'
     pass
 
+
 # 各种动物:
 class Dog(Mammal):          # 狗
     pass
 
+
 class Bat(Mammal):          # 蝙蝠
     pass
+
 
 class Parrot(Bird):         # 鹦鹉
     pass
 
+
 class Ostrich(Bird):        # 鸵鸟
     pass
+
 
 class Runnable(object):     # 能跑
     def run(self):
         print('Running...')
 
+
 class Flyable(object):      # 能飞
     def fly(self):
         print('Flying...')
+
 
 # 多重继承
 # 对于需要Runnable功能的动物，就多继承一个Runnable，例如Dog：
 class Dog(Mammal, Runnable):
     pass
+
+
 # 对于需要Flyable功能的动物，就多继承一个Flyable，例如Bat：
 class Bat(Mammal, Flyable):
     pass

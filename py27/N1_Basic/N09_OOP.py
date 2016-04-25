@@ -8,7 +8,6 @@
 # 为了表示一个学生的成绩，面向过程的程序可以用一个dict表示：
 def print_score(std):
     print '%s: %s' % (std['name'], std['score'])
-
 std1 = {'name': 'Michael', 'score': 98}
 std2 = {'name': 'Bob', 'score': 81}
 
@@ -56,12 +55,11 @@ class Student(object):
 # class后面紧接着是类名，即Student，类名通常是大写开头的单词，紧接着是(object)，表示该类是从哪个类继承下来的
 # 如果没有合适的继承类，就使用object类，这是所有类最终都会继承的类。
 # 定义好了类，就可以根据类创建出实例，创建实例是通过类名+()实现的：
+# 类中定义的函数(method)只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。
+# 类的方法和普通函数没有什么区别，所以，你仍然可以用默认参数、可变参数和关键字参数。
 bart = Student('Bart Simpson', 59)
 print bart
 print Student
-
-# 类中定义的函数(method)只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。
-# 类的方法和普通函数没有什么区别，所以，你仍然可以用默认参数、可变参数和关键字参数。
 
 
 # 数据封装
@@ -75,7 +73,6 @@ bart.get_grade()
 # 如果要让内部属性不被外部访问，可以把属性的名称前加上两个下划线__
 # 在Python中，实例的变量名如果以__开头，就变成了一个私有变量（private），只有内部可以访问，外部不能访问
 class Student(object):
-
     def __init__(self, name, score):
         self.__name = name
         self.__score = score
@@ -103,15 +100,14 @@ class Student(object):
 
 bart = Student('Bart Simpson', 98)
 # bart.__name 外部访问则会报错
-
-
+print bart.get_score()
+bart.set_score(100)
+print bart.get_score()
 # 需要注意的是，在Python中，变量名类似__xxx__的，也就是以双下划线开头，并且以双下划线结尾的，
 # 是特殊变量，特殊变量是可以直接访问的，不是private变量，
 # 所以，不能用__name__、__score__这样的变量名。
-
 # 以一个下划线开头的实例变量名，比如_name，这样的实例变量外部是可以访问的，但是，按照约定俗成的规定，
 # 当你看到这样的变量时，意思就是，“虽然我可以被访问，但是，请把我视为私有变量，不要随意访问”。
-
 # 双下划线开头的实例变量是不是一定不能从外部访问呢？其实也不是。
 # 不能直接访问__name是因为Python解释器对外把__name变量改成了_Student__name，
 # 所以，仍然可以通过_Student__name来访问__name变量：
@@ -183,11 +179,13 @@ class Animal(object):
     def run(self):
         print 'Animal is running   '
 
+
 class People(object):
     def run(self):
         print 'People is running   '
 
-class Man(People, Animal):      # j继承了People和Animal
+
+class Man(People, Animal):      # 继承了People和Animal
      pass
 mine = Man()
 mine.run()          # 按照顺序继承 会输出People is running   
@@ -199,23 +197,30 @@ class Animal(object):
     def run(self):
         print 'Animal is running   '
 
+
 class Dog(Animal):
     def run(self):
         print 'Dog is running   '
+
     def eat(self):
         print 'Eating meat'
+
 
 class Cat(Animal):
     def run(self):
         print 'Cat is running..'
+
     def eat(self):
         print 'Eating pis..'
+
 
 class Bee(object):
     def run(self):
         print 'Actually is flying..'
+
     def sleep(self):
         print 'take a nap..'
+
 
 def run_twice(animal):
     animal.run()
@@ -241,7 +246,6 @@ print type(int)==type(str)==types.TypeType
 # 对于继承关系object -> Animal -> Dog
 a = Animal()
 d = Dog()
-
 isinstance(d, Dog)
 isinstance(d, Animal)
 isinstance(a, Dog)
