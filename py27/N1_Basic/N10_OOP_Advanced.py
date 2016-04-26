@@ -197,7 +197,7 @@ print Student('Horton')
 
 
 # __iter__
-# 如果一个类想被用于for ... in循环，就必须实现一个__iter__()方法，该方法返回一个迭代对象
+# 如果一个类想被用于for  in循环，就必须实现一个__iter__()方法，该方法返回一个迭代对象
 # 然后，Python的for循环就会不断调用该迭代对象的next()方法拿到循环的下一个值，直到遇到StopIteration错误时退出循环。
 class Fib(object):
     def __init__(self):
@@ -286,15 +286,90 @@ class Student(object):
         raise AttributeError('\'Student\' object has no attribute \'%s\'' % attr)
 # 把一个类的所有属性和方法调用全部动态化处理了，不需要任何特殊手段
 
+# 链式调用
 
 
 #  __call__
+# 定义一个__call__()方法，就可以直接对实例进行调用
+class Student(object):
+    def __init__(self, name):
+        self.name = name
 
-# 使用元类
+    def __call__(self):
+        print('My name is %s.' % self.name)
+
+s = Student('Michael')
+s()
+# __call__()还可以定义参数。对实例进行直接调用就好比对一个函数进行调用一样，
+# 所以你完全可以把对象看成函数，把函数看成对象，因为这两者之间本来就没啥根本的区别。
+# 能被调用的对象就是一个Callable对象，比如函数和我们上面定义的带有__call()__的类实例：
+# 通过callable()函数，我们就可以判断一个对象是否是“可调用”对象
+print callable(Student())
+print callable(max)
+print callable([1, 2, 3])
+print callable(None)
+print callable('string')
 
 
+# 元类 type()
+# 动态语言和静态语言最大的不同，就是函数和类的定义，不是编译时定义的，而是运行时动态创建的。
+# A是一个class 它的type就是type a是一个实例 它的type是class A
+class A(object):
+    pass
+
+a = A()
+print type(A)
+print type(a)
+# class的定义是运行时动态创建的，而创建class的方法就是使用type()函数
 
 
+# type()函数既可以返回一个对象的类型，又可以创建出新的类型
+# 可以通过type()函数创建出Hello类，而无需通过class Hello(object)的定义：
+def fn(self, name='world'):     # 先定义函数
+    print('Hello, %s.' % name)
 
+Hello = type('Hello', (object,), dict(hello=fn))    # 创建Hello class
+h = Hello()
+h.hello()
+print type(Hello)
+print type(h)
+# 要创建一个class对象，type()函数依次传入3个参数：
+# 1.class的名称；
+# 2.继承的父类集合，注意Python支持多重继承，如果只有一个父类，别忘了tuple的单元素写法；
+# 3.class的方法名称与函数绑定，这里我们把函数fn绑定到方法名hello上。
+# 通过type()函数创建的类和直接写class是完全一样的，
+# 因为Python解释器遇到class定义时，仅仅是扫描一下class定义的语法，然后调用type()函数创建出class。
+# 正常情况下，我们都用class Xxx...来定义类，但是，type()函数也允许我们动态创建出类来，也就是说，动态语言本身支持运行期动态创建类
+
+
+# metaclass 元类
+# 先定义metaclass，就可以创建类，最后创建实例
+# metaclass允许你创建类或者修改类。换句话说，你可以把类看成是metaclass创建出来的“实例”。
+# metaclass是Python面向对象里最难理解，也是最难使用的魔术代码。正常情况下不会用到
+
+
+# metaclass是创建类，所以必须从`type`类型派生：
+class ListMetaclass(type):
+    def __new__(cls, name, bases, attrs):
+        attrs['add'] = lambda self, value: self.append(value)
+        return type.__new__(cls, name, bases, attrs)
+
+class MyList(list):
+    __metaclass__ = ListMetaclass # 指示使用ListMetaclass来定制类
+# 按照默认习惯，metaclass的类名总是以Metaclass结尾，以便清楚地表示这是一个metaclass：
+# 写下__metaclass__ = ListMetaclass语句时，它指示Python解释器在创建MyList时，要通过ListMetaclass.__new__()来创建
+# __new__()方法接收到的参数依次是：
+# 1.当前准备创建的类的对象；
+# 2.类的名字；
+# 3.类继承的父类集合；
+# 4.类的方法集合。
+
+# 测试一下MyList是否可以调用add()方法：
+L = MyList()
+L.add(1)
+print L
+# 普通的list没有add()方法：
+l = list()
+print l.add(1)
 
 
