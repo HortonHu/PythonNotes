@@ -153,12 +153,12 @@ class Ostrich(Bird):        # 鸵鸟
 
 class Runnable(object):     # 能跑
     def run(self):
-        print('Running...')
+        print('Running   ')
 
 
 class Flyable(object):      # 能飞
     def fly(self):
-        print('Flying...')
+        print('Flying   ')
 
 
 # 多重继承
@@ -182,16 +182,110 @@ d.run()
 
 
 # 定制类
-# __str__ 和 __repr__
+# __str__   返回用户看到的字符串
+# __repr__  返回程序开发者看到的字符串，也就是说，__repr__()是为调试服务的
+class Student(object):
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        return 'Student object (name: %s)' % self.name
+
+    __repr__ = __str__      # 偷懒写法 因为通常__repr__和__str__内容一致
+
+print Student('Horton')
 
 
 # __iter__
+# 如果一个类想被用于for ... in循环，就必须实现一个__iter__()方法，该方法返回一个迭代对象
+# 然后，Python的for循环就会不断调用该迭代对象的next()方法拿到循环的下一个值，直到遇到StopIteration错误时退出循环。
+class Fib(object):
+    def __init__(self):
+        self.a, self.b = 0, 1       # 初始化两个计数器a，b
+
+    def __iter__(self):
+        return self                 # 实例本身就是迭代对象，故返回自己
+
+    def next(self):
+        self.a, self.b = self.b, self.a + self.b    # 计算下一个值
+        if self.a > 100000:          # 退出循环的条件
+            raise StopIteration()
+        return self.a               # 返回下一个值
+
+for n in Fib():
+    print
 
 
 # __getitem__
+# 像list那样按照下标取出元素，需要实现__getitem__()方法：
+class Fib(object):
+    def __getitem__(self, n):
+        a, b = 1, 1
+        for x in range(n):
+            a, b = b, a + b
+        return a
+
+f = Fib()
+print f[0]
+print f[1]
+print f[2]
+print f[5]
+print f[10]
+print f[100]
+
+# 但是对于list的slice操作却会报错
+# __getitem__()传入的参数可能是一个int，也可能是一个切片对象slice，所以要做判断：
+class Fib(object):
+    def __getitem__(self, n):
+        if isinstance(n, int):
+            a, b = 1, 1
+            for x in range(n):
+                a, b = b, a + b
+            return a
+        if isinstance(n, slice):
+            start = n.start
+            stop = n.stop
+            a, b = 1, 1
+            L = []
+            for x in range(stop):
+                if x >= start:
+                    L.append(a)
+                a, b = b, a + b
+            return L
+
+f = Fib()
+print f[0:5]
+print f[:10]
+# 但是也没有step参数和负数 要正确实现一个__getitem__()还是有很多工作要做的
 
 
 # __getattr__
+# 调用不存在的属性时 为避免错误写一个__getattr__()方法，动态返回一个属性
+class Student(object):
+
+    def __init__(self):
+        self.name = 'Michael'
+
+    def __getattr__(self, attr):
+        if attr=='score':
+            return 99
+
+s = Student()
+print s.name
+print s.score
+print s.abc
+# 在没有找到属性的情况下，才调用__getattr__，已有的属性，比如name，不会在__getattr__中查找
+# 任意调用如s.abc都会返回None，这是因为我们定义的__getattr__默认返回就是None。
+
+
+# 要让class只响应特定的几个属性，我们就要按照约定，抛出AttributeError的错误：
+class Student(object):
+    def __getattr__(self, attr):
+        if attr=='age':
+            return lambda: 25
+        raise AttributeError('\'Student\' object has no attribute \'%s\'' % attr)
+# 把一个类的所有属性和方法调用全部动态化处理了，不需要任何特殊手段
+
 
 
 #  __call__
