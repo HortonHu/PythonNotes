@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+
 # 面向对象编程 Object Oriented Programming，简称OOP
 # OOP把对象作为程序的基本单元，一个对象包含了数据和操作数据的函数。
-
-
-# 为了表示一个学生的成绩，面向过程的程序可以用一个dict表示：
+# 面向过程的程序,为了表示一个学生的成绩可以用一个dict表示：
 def print_score(std):
     print '%s: %s' % (std['name'], std['score'])
 std1 = {'name': 'Michael', 'score': 98}
@@ -123,15 +122,17 @@ class Animal(object):
     def run(self):
         print 'Animal is running   '
 
+
 class Dog(Animal):
     def run(self):
         print 'Dog is running   '
+
 
 class Cat(Animal):
     def run(self):
         print 'Cat is running   '
 
-# 多态： 当子类和父类都存在相同的run()方法时，我们说，子类的run()覆盖了父类的run()
+# 多态： 当子类和父类都存在相同的run()方法时，子类的run()覆盖了父类的run()
 dog = Dog()
 cat = Cat()
 dog.run()
@@ -234,16 +235,16 @@ print isinstance(Bee(), Animal)
 print isinstance(Cat(), Animal)
 
 
-# 获取对象信息
+# type() 获取对象信息
 import types
 print type('abc') == types.StringType
 print type(u'abc') == types.UnicodeType
 print type([])==types.ListType
 print type(str)==types.TypeType
-print type(int)==type(str)==types.TypeType
+print type(int)==type(str)==types.TypeType      # 所有类型本身的类型就是TypeType
 
-# isinstance()
-# 对于继承关系object -> Animal -> Dog
+# isinstance(object, class-or-type-or-tuple) 用于继承关系判断 一个对象是否是某种类型
+# object -> Animal -> Dog
 a = Animal()
 d = Dog()
 isinstance(d, Dog)
@@ -258,6 +259,7 @@ isinstance(u'a', basestring)
 
 # dir() :获得一个对象的所有属性和方法 返回一个包含字符串的list
 print dir('ABC')
+
 # 类似__xxx__的属性和方法在Python中都是有特殊用途的，比如__len__方法返回长度。
 # 在Python中，如果你调用len()函数试图获取一个对象的长度，
 # 实际上，在len()函数内部，它自动去调用该对象的__len__()方法 所以，下面的代码是等价的：
@@ -280,17 +282,23 @@ hasattr(obj, 'y')           # 有属性'y'吗？
 setattr(obj, 'y', 19)       # 设置一个属性'y'为19
 hasattr(obj, 'y')           # 有属性'y'吗？
 getattr(obj, 'y')           # 获取属性'y'
-hasattr(obj, 'power')       # 有属性'power'吗？
-getattr(obj, 'power')       # 获取属性'power'
-fn = getattr(obj, 'power')  # 获取属性'power'并赋值到变量fn
+hasattr(obj, 'power')       # 有方法'power'吗？
+getattr(obj, 'power')       # 获取方法'power'
+fn = getattr(obj, 'power')  # 获取方法'power'并赋值到变量fn
 fn
 fn()
 obj.y                   # 获取属性'y'
 # 可以传入一个default参数，如果属性不存在，就返回默认值
 getattr(obj, 'z', 404)  # 获取属性'z'，如果不存在，返回默认值404
+
+
 # 只有在不知道对象信息的时候，我们才会去获取对象信息。
 # 如果可以直接写： sum = obj.x + obj.y 就不要写 sum = getattr(obj, 'x') + getattr(obj, 'y')
-
-
+# 假设我们希望从文件流fp中读取图像，我们首先要判断该fp对象是否存在read方法，
+# 如果存在，则该对象是一个流，如果不存在，则无法读取。hasattr()就派上了用场。
+def readImage(fp):
+    if hasattr(fp, 'read'):
+        return readData(fp)
+    return None
 
 

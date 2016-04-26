@@ -2,23 +2,35 @@
 # -*- coding:utf-8 -*-
 
 
-# 给所有实例都绑定方法，可以给class绑定方法：
+# 动态绑定允许我们在程序运行的过程中动态给class加上功能，这在静态语言中很难实现。
+# 给一个实例绑定的方法，对另一个实例是不起作用的：
 class Student(object):
         pass
 
+s = Student()
+s.name = 'horton'
+print s.name
+
+
+def set_score(self, score):
+    self.score = score
+
 from types import MethodType
+s.set_score = MethodType(set_score, s, Student)
+s.set_score(100)
+print s.score
 
 
+# 为了给所有实例都绑定方法，可以给class绑定方法 给class绑定方法后，所有实例均可调用：
 def set_score(self, score):
         self.score = score
 
 Student.set_score = MethodType(set_score, None, Student)
-# 给class绑定方法后，所有实例均可调用：
-# 动态绑定允许我们在程序运行的过程中动态给class加上功能，这在静态语言中很难实现。
 
 
-# 使用__slots__
-# 为了达到限制的目的，Python允许在定义class的时候，定义一个特殊的__slots__变量，来限制该class能添加的属性：
+# __slots__
+# 为了限制class的属性
+# Python允许在定义class的时候，定义一个特殊的__slots__变量，来限制该class能添加的属性：
 class Student(object):
         __slots__ = ('name', 'age')     # 用tuple定义允许绑定的属性名称
 
@@ -29,9 +41,9 @@ s.score = 100       # 由于'score'没有被放到__slots__中，所以不能绑
 
 
 # __slots__定义的属性仅对当前类起作用，对继承的子类是不起作用的：
-# 除非在子类中也定义__slots__，这样，子类允许定义的属性就是自身的__slots__加上父类的__slots__。
+# 即如果子类没有__slots__则可以随意定义属性 如果有则只能定义自身的__slots__和父类的__slots__之和
 class A(object):
-    __slots__ = ('name','age')
+    __slots__ = ('name', 'age')
     pass
 
 
@@ -45,7 +57,6 @@ c.age = 2
 c.score = 3
 
 
-# 使用@property
 # 为了限制score的范围，可以通过一个set_score()方法来设置成绩，再通过一个get_score()来获取成绩，
 # 这样，在set_score()方法里，就可以检查参数：
 class Student(object):
@@ -65,13 +76,13 @@ s.get_score()
 s.set_score(999)        # error
 
 
-# Python内置的@property装饰器就是负责把一个方法变成属性调用的：
+# @property装饰器
+# Python内置的property装饰器就是负责把一个方法变成属性调用的：
 # 把一个getter方法变成属性，只需要加上@property就可以
 # @property本身又创建了另一个装饰器@score.setter，负责把一个setter方法变成属性赋值
 class Student(object):
-
     @property
-    def score(self):
+    def score(self):        # 这是一个getter方法
         return self._score
 
     @score.setter
@@ -83,7 +94,7 @@ class Student(object):
         self._score = value
 
 s = Student()
-s.score = 60
+s.score = 60        # 方法编程属性
 s.score
 s.score = 999       # error
 
@@ -102,7 +113,7 @@ class Student(object):
 
     @property
     def age(self):
-        return 2014 - self._birth
+        return 2016 - self._birth
 
 
 # 多重继承
@@ -164,9 +175,10 @@ d = Dog()
 d.mam()
 d.run()
 
-# 以上的设计称为Mixin
+# Mixin：多重继承的设计
 # 由于Python允许使用多重继承，因此，Mixin就是一种常见的设计。
 # 只允许单一继承的语言（如Java）不能使用Mixin的设计。
+# 在设计类的时候，我们优先考虑通过多重继承来组合多个Mixin的功能，而不是设计多层次的复杂的继承关系。
 
 
 # 定制类
