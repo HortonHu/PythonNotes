@@ -203,7 +203,7 @@ import pdb
 
 s = '0'
 n = int(s)
-pdb.set_trace() # 运行到这里会自动暂停
+pdb.set_trace()     # 运行到这里会自动暂停
 print 10 / n
 # 运行代码，程序会自动在pdb.set_trace()暂停并进入pdb调试环境，可以用命令p查看变量，或者用命令c继续运行：
 
@@ -212,9 +212,8 @@ print 10 / n
 # 虽然用IDE调试起来比较方便，但是最后你会发现，logging才是终极武器。
 
 
-# 单元测试 unit test
+# 单元测试 Unit Test
 class Dict(dict):
-
     def __init__(self, **kw):
         super(Dict, self).__init__(**kw)
 
@@ -227,7 +226,7 @@ class Dict(dict):
     def __setattr__(self, key, value):
         self[key] = value
 
-# d = Dict(a=1, b=2)
+d = Dict(a=1, b=2)
 
 # 编写单元测试
 # 以test开头的方法就是测试方法，不以test开头的方法不被认为是测试方法，测试的时候不会被执行。
@@ -235,7 +234,6 @@ class Dict(dict):
 # 调用这些方法就可以断言输出是否是我们所期望的。最常用的断言就是assertEquals()
 import unittest
 
-# from mydict import Dict
 
 class TestDict(unittest.TestCase):
     def test_init(self):
@@ -278,13 +276,13 @@ if __name__ == '__main__':
 
 # setUp与tearDown
 # 单元测试中编写两个特殊的setUp()和tearDown()方法 这两个方法会分别在每调用一个测试方法的前后分别被执行。
+# 测试需要启动一个数据库，这时，就可以在setUp()方法中连接数据库，在tearDown()方法中关闭数据库
 class TestDict(unittest.TestCase):
     def setUp(self):
         print 'setUp...'
 
     def tearDown(self):
         print 'tearDown...'
-
 # 单元测试的测试用例要覆盖常用的输入组合、边界条件和异常。
 # 单元测试通过了并不意味着程序就没有bug了，但是不通过程序肯定有bug。
 
@@ -293,6 +291,7 @@ class TestDict(unittest.TestCase):
 # Python内置的“文档测试”（doctest）模块可以直接提取注释中的代码并执行测试。
 # doctest严格按照Python交互式命令行的输入和输出来判断测试结果是否正确。
 # 只有测试异常的时候，可以用...表示中间一大段烦人的输出。
+# 当模块正常导入时，doctest不会被执行。只有在命令行运行时，才执行doctest。所以，不必担心doctest会在非测试环境下执行
 class Dict(dict):
     '''
     Simple dict but also support access as x.y style.
@@ -332,8 +331,6 @@ if __name__=='__main__':
     import doctest
     doctest.testmod()
 
-# 当模块正常导入时，doctest不会被执行。
-# 只有在命令行运行时，才执行doctest。所以，不必担心doctest会在非测试环境下执行。
 
 
 

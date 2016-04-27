@@ -5,31 +5,33 @@
 
 # 读文件
 # 要以读文件的模式打开一个文件对象，使用Python内置的open()函数，传入文件名和标示符：
-f = open('/Users/michael/test.txt', 'r')
+f = open('test.txt', 'r')
 # 调用read()方法可以一次读取文件的全部内容，Python把内容读到内存，用一个str对象表示：
 f.read()
 # 最后一步是调用close()方法关闭文件。
 # 文件使用完毕后必须关闭，因为文件对象会占用操作系统的资源，并且操作系统同一时间能打开的文件数量也是有限的：
 f.close()
+
 # 由于文件读写时都有可能产生IOError，一旦出错，后面的f.close()就不会调用。
 # 所以，为了保证无论是否出错都能正确地关闭文件，我们可以使用try ... finally来实现：
 try:
     f = open('/path/to/file', 'r')
     print f.read()
 finally:
-    if f:
+    if f:           # 如果f打开过
         f.close()
 
 # Python引入了with语句来自动帮我们调用close()方法：
 # 和前面的try ... finally是一样的，但是代码更佳简洁，并且不必调用f.close()方法。
-with open('/path/to/file', 'r') as f:
+with open('C:\Users\dell\Documents\GitHub\PythonStudy\py27\N1_Basic\Data.txt', 'r') as f:
     print f.read()
 
 # read()会一次性读取文件的全部内容 文件太大时 可以反复调用read(size) 每次最多读取size个字节的内容。
 # readline()可以每次读取一行内容
 # readlines()一次读取所有内容并按行返回list 如果是配置文件 调用readlines()最方便
-for line in f.readlines():
-    print(line.strip()) # 把末尾的'\n'删掉
+with open('C:\Users\dell\Documents\GitHub\PythonStudy\py27\N1_Basic\Data.txt', 'r') as f:
+    for line in f.readlines():
+        print line.strip()  # 把末尾的'\n'删掉
 
 # file-like Object
 # 像open()函数返回的这种有个read()方法的对象，在Python中统称为file-like Object。
@@ -83,6 +85,8 @@ os.name     # 操作系统名字
 # 环境变量
 # 操作系统中定义的环境变量，全部保存在os.environ这个dict中
 # 获取某个环境变量的值，可以调用os.getenv()
+print os.environ
+print os.getenv('PATH')
 
 
 # 操作文件和目录
@@ -90,6 +94,8 @@ os.name     # 操作系统名字
 # 查看、创建和删除目录可以这么调用：
 # 查看当前目录的绝对路径:
 now_path = os.path.abspath('.')
+
+
 # 在某个目录下创建一个新目录， 首先把新目录的完整路径表示出来:
 # 把两个路径合成一个时，不要直接拼字符串，而要通过os.path.join()函数，这样可以正确处理不同操作系统的路径分隔符。
 true_path = os.path.join(now_path, 'testdir')
@@ -100,7 +106,9 @@ os.rmdir(true_path)
 
 # 同样的道理，要拆分路径时，也不要直接去拆字符串，而要通过os.path.split()
 # 把一个路径拆分为两部分，后一部分总是最后级别的目录或文件名：
-os.path.split('/Users/michael/testdir/file.txt')    # ('/Users/michael/testdir', 'file.txt')
+(a, b) = os.path.split('/Users/michael/testdir/file.txt')    # ('/Users/michael/testdir', 'file.txt')
+print a
+print b
 # os.path.splitext()可以直接让你得到文件扩展名，很多时候非常方便：
 os.path.splitext('/path/to/file.txt')               # ('/path/to/file', '.txt')
 # 这些合并、拆分路径的函数并不要求目录和文件要真实存在，它们只对字符串进行操作。
@@ -110,14 +118,18 @@ os.path.splitext('/path/to/file.txt')               # ('/path/to/file', '.txt')
 os.rename('test.txt', 'test.py')
 # 删掉文件:
 os.remove('test.py')
-# 复制文件的函数居然在os模块中不存在 因为复制文件并非由操作系统提供的系统调用
+# 复制文件的函数在os模块中不存在 因为复制文件并非由操作系统提供的系统调用
 # shutil模块提供了copyfile()的函数 可以看做是os模块的补充。
 
+# 获取当前目录
+print os.getcwd()
+# 更改当前目录
+os.chdir( "C:\\123")    # 将当前目录设为 "C:\123", 相当于DOC命令的 CD C:\123
 
 # 列出当前目录下的所有目录
 print [x for x in os.listdir('.') if os.path.isdir(x)]
 # 列出所有的.py文件
-print [x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1]=='.py']
+print [x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1] == '.py']
 
 # 练习：编写一个search(s)的函数，
 # 能在当前目录以及当前目录的所有子目录下查找文件名包含指定字符串的文件，并打印出完整路径：
