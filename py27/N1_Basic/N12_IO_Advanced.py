@@ -159,14 +159,14 @@ pickle.dumps(d)
 # pickle.dumps()方法把任意对象序列化成一个str，然后，就可以把这个str写入文件
 # 或者用另一个方法pickle.dump()直接把对象序列化后写入一个file-like Object：
 f = open('dump.txt', 'wb')
-pickle.dump(d, f)
+pickle.dump(d, f)           # 将d给pickle之后写入文件f
 f.close()
 
 # 把对象从磁盘读到内存时，可以先把内容读到一个str 然后用pickle.loads()方法反序列化出对象
 # 也可以直接用pickle.load()方法从一个file-like Object中直接反序列化出对象
 # 反序列化刚才保存的对象：
 f = open('dump.txt', 'rb')
-d = pickle.load(f)
+d = pickle.load(f)          # 从文件f中反序列化给d
 f.close()
 print d
 # 这个变量和原来的变量是完全不相干的对象，它们只是内容相同而已。
@@ -174,7 +174,7 @@ print d
 # 因此，只能用Pickle保存那些不重要的数据，不能成功地反序列化也没关系。
 
 
-# JSON
+# JSON  （JavaScript Object Notation）
 # 在不同的编程语言之间传递对象，就必须把对象序列化为标准格式，比如XML，但更好的方法是序列化为JSON，
 # 因为JSON表示出来就是一个字符串，可以被所有语言读取，也可以方便地存储到磁盘或者通过网络传输。
 # JSON不仅是标准格式，并且比XML更快，而且可以直接在Web页面中读取，非常方便。
@@ -205,6 +205,7 @@ json.loads(json_str)
 # 不过，很多时候，我们更喜欢用class表示对象，比如定义Student类，然后序列化：
 import json
 
+
 class Student(object):
     def __init__(self, name, age, score):
         self.name = name
@@ -212,11 +213,12 @@ class Student(object):
         self.score = score
 
 s = Student('Bob', 20, 88)      # 得到一个TypeError
-print(json.dumps(s))
-
+print json.dumps(s)
+# 报错是因为默认情况下，dumps()方法不知道如何将Student实例变为一个JSON的{}对象。
 # dumps()方法还提供了一大堆的可选参数
-# 因为默认情况下，dumps()方法不知道如何将Student实例变为一个JSON的{}对象。
 # 可选参数default就是把任意一个对象变成一个可序列为JSON的对象，
+
+
 # 我们只需要为Student专门写一个转换函数，再把函数传进去即可
 def student2dict(std):
     return {
@@ -225,11 +227,19 @@ def student2dict(std):
         'score': std.score
     }
 
-print(json.dumps(s, default=student2dict))
+print json.dumps(s, default=student2dict)   # 传入转化函数student2dict
 # Student实例首先被student2dict()函数转换成dict，然后再被顺利序列化为JSON
 
+# 如果遇到一个Teacher类的实例，照样无法序列化为JSON。我们可以偷个懒，把任意class的实例变为dict：
+# 因为通常class的实例都有一个__dict__属性，它就是一个dict，用来存储实例变量。也有少数例外，比如定义了__slots__的class
+print json.dumps(s, default=lambda obj: obj.__dict__)
 
 
+# 同样的道理，如果我们要把JSON反序列化为一个Student对象实例，loads()方法首先转换出一个dict对象，
+# 然后，我们传入的object_hook函数负责把dict转换为Student实例：
+def dict2student(d):
+    return Student(d['name'], d['age'], d['score'])
 
-
+json_str = '{"age": 20, "score": 88, "name": "Bob"}'
+print(json.loads(json_str, object_hook=dict2student))
 
