@@ -183,6 +183,7 @@ def run_thread(n):
 
 
 # 多核CPU
+# GIL锁
 
 
 # ThreadLocal
