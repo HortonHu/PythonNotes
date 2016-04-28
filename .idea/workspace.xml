@@ -37,8 +37,8 @@
       <file leaf-file-name="N08_Modules.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="400" column="12" selection-start-line="400" selection-start-column="12" selection-end-line="400" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -783,7 +783,14 @@
       <option name="project" value="LOCAL" />
       <updated>1461808534204</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="update">
+      <created>1461809910389</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1461809910389</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1308,8 +1315,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="400" column="12" selection-start-line="400" selection-start-column="12" selection-end-line="400" selection-end-column="12" />
           <folding />
         </state>
       </provider>

@@ -271,12 +271,131 @@ def login(username, password):
 
 
 # itertools
+# Python的内建模块itertools提供了非常有用的用于操作迭代对象的函数
+# 首先，我们看看itertools提供的几个“无限”迭代器：
+import itertools
+natuals = itertools.count(1)
+for n in natuals:
+    print n
+# 因为count()会创建一个无限的迭代器，所以上述代码会打印出自然数序列，根本停不下来，只能按Ctrl+C退出
+# cycle()会把传入的一个序列无限重复下去：
+import itertools
+cs = itertools.cycle('ABC')         # 注意字符串也是序列的一种
+for c in cs:
+    print c
 
+# repeat()负责把一个元素无限重复下去，不过如果提供第二个参数就可以限定重复次数
+ns = itertools.repeat('A', 10)      # 打印10次'A'
+for n in ns:
+    print n
 
+# 无限序列只有在for迭代时才会无限地迭代下去，
+# 如果只是创建了一个迭代对象，它不会事先把无限个元素生成出来，事实上也不可能在内存中创建无限多个元素。
+# 无限序列虽然可以无限迭代下去，但是通常我们会通过takewhile()等函数根据条件判断来截取出一个有限的序列
+natuals = itertools.count(1)
+ns = itertools.takewhile(lambda x: x <= 10, natuals)
+for n in ns:        # 打印出1到10
+    print n
 
+# itertools提供的几个迭代器操作函数更加有用：
+# chain()
+# chain()可以把一组迭代对象串联起来，形成一个更大的迭代器：
+for c in itertools.chain('ABC', 'XYZ'):
+    print c
+# 迭代效果：'A' 'B' 'C' 'X' 'Y' 'Z'
+
+# groupby()
+# groupby()把迭代器中相邻的重复元素挑出来放在一起：
+for key, group in itertools.groupby('AAABBBCCAAA'):
+    print key, list(group) # 为什么这里要用list()函数呢？
+
+# 实际上挑选规则是通过函数完成的，只要作用于函数的两个元素返回的值相等，这两个元素就被认为是在一组的，而函数返回值作为组的key。
+# 如果我们要忽略大小写分组，就可以让元素'A'和'a'都返回相同的key：
+for key, group in itertools.groupby('AaaBBbcCAAa', lambda c: c.upper()):
+    print key, list(group)
+
+# imap()
+# imap()和map()的区别在于，imap()可以作用于无穷序列，并且，如果两个序列的长度不一致，以短的那个为准。
+for x in itertools.imap(lambda x, y: x * y, [10, 20, 30], itertools.count(1)):
+    print x
+# 注意imap()返回一个迭代对象，而map()返回list。当你调用map()时，已经计算完毕：
+r = map(lambda x: x*x, [1, 2, 3])
+print r             # r已经计算出来了
+# 调用imap()时，并没有进行任何计算：
+r = itertools.imap(lambda x: x*x, [1, 2, 3])
+print r             # r只是一个迭代对象
+
+# 必须用for循环对r进行迭代，才会在每次循环过程中计算出下一个元素
+for x in r:
+    print x
+
+# 说明imap()实现了“惰性计算”，也就是在需要获得结果的时候才计算。类似imap()这样能够实现惰性计算的函数就可以处理无限序列
+r = itertools.imap(lambda x: x*x, itertools.count(1))
+for n in itertools.takewhile(lambda x: x<100, r):
+    print n
+
+# 如果把imap()换成map()去处理无限序列会有什么结果？
+r = map(lambda x: x*x, itertools.count(1))
+
+# ifilter()
+# 不用多说了，ifilter()就是filter()的惰性实现。
 
 
 # XML
+# 操作XML有两种方法：DOM和SAX。
+# DOM会把整个XML读入内存，解析为树，因此占用内存大，解析慢，优点是可以任意遍历树的节点。
+# SAX是流模式，边读边解析，占用内存小，解析快，缺点是我们需要自己处理事件
+# 正常情况下，优先考虑SAX，因为DOM实在太占内存
+
+# 在Python中使用SAX解析XML非常简洁，
+# 通常我们关心的事件是start_element，end_element和char_data，准备好这3个函数，然后就可以解析xml了。
+# 当SAX解析器读到一个节点时  <a href="/">python</a> 会产生3个事件：
+# 1.start_element事件，在读取<a href="/">时；
+# 2.char_data事件，在读取python时；
+# 3.end_element事件，在读取</a>时。
+from xml.parsers.expat import ParserCreate
+
+class DefaultSaxHandler(object):
+    def start_element(self, name, attrs):
+        print('sax:start_element: %s, attrs: %s' % (name, str(attrs)))
+
+    def end_element(self, name):
+        print('sax:end_element: %s' % name)
+
+    def char_data(self, text):
+        print('sax:char_data: %s' % text)
+
+xml = r'''<?xml version="1.0"?>
+<ol>
+    <li><a href="/python">Python</a></li>
+    <li><a href="/ruby">Ruby</a></li>
+</ol>
+'''
+handler = DefaultSaxHandler()
+parser = ParserCreate()
+parser.returns_unicode = True
+parser.StartElementHandler = handler.start_element
+parser.EndElementHandler = handler.end_element
+parser.CharacterDataHandler = handler.char_data
+parser.Parse(xml)
+# 当设置returns_unicode为True时，返回的所有element名称和char_data都是unicode，处理国际化更方便
+# 需要注意的是读取一大段字符串时，CharacterDataHandler可能被多次调用，所以需要自己保存起来，在EndElementHandler里面再合并
+
+# 生成XML
+# 最简单也是最有效的生成XML的方法是拼接字符串
+L = []
+L.append(r'<?xml version="1.0"?>')
+L.append(r'<root>')
+L.append(encode('some & data'))
+L.append(r'</root>')
+''.join(L)
+# 要生成复杂的XML呢？建议你不要用XML，改成JSON
+# 解析XML时，注意找出自己感兴趣的节点，响应事件时，把节点数据保存起来。解析完毕后，就可以处理数据
+
+# 练习
+# 解析Yahoo的XML格式的天气预报，获取当天和最近几天的天气
+# http://weather.yahooapis.com/forecastrss?u=c&w=2151330
+# 参数w是城市代码，要查询某个城市代码，可以在weather.yahoo.com搜索城市，浏览器地址栏的URL就包含城市代码。
 
 
 # HTMLParser
