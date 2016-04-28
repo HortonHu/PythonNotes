@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N1_Basic/N13_Process_Thread.py" afterPath="$PROJECT_DIR$/py27/N1_Basic/N13_Process_Thread.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N1_Basic/N14_RE.py" afterPath="$PROJECT_DIR$/py27/N1_Basic/N14_RE.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py" afterPath="$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N1_Basic/test.py" afterPath="$PROJECT_DIR$/py27/N1_Basic/test.py" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,31 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="N14_RE.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N14_RE.py">
+      <file leaf-file-name="N08_Modules.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="N01_IO_File.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N01_IO_File.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="789">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="N02_DataStructures.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N02_DataStructures.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+            <state relative-caret-position="439">
+              <caret line="189" column="0" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,7 +90,6 @@
         <option value="$PROJECT_DIR$/py27/N1_Basic/N06_AdvancedFeatures.py" />
         <option value="$PROJECT_DIR$/py27/N1_Basic/N05_Function.py" />
         <option value="$PROJECT_DIR$/py27/N1_Basic/N07_FunctionalPrograming.py" />
-        <option value="$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py" />
         <option value="$PROJECT_DIR$/py27/N1_Basic/N09_OOP.py" />
         <option value="$PROJECT_DIR$/py27/N1_Basic/N10_OOP_Advanced.py" />
         <option value="$PROJECT_DIR$/py27/N1_Basic/N11_Error_Debug_Test.py" />
@@ -118,6 +97,7 @@
         <option value="$PROJECT_DIR$/py27/N1_Basic/Test.py" />
         <option value="$PROJECT_DIR$/py27/N1_Basic/N13_Process_Thread.py" />
         <option value="$PROJECT_DIR$/py27/N1_Basic/N14_RE.py" />
+        <option value="$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py" />
       </list>
     </option>
   </component>
@@ -790,7 +770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1461763365584</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update">
+      <created>1461805640476</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1461805640476</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -850,13 +837,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/Lib/socket.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-825">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py27/N2_TCP_UDP/sina.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-183050">
@@ -1032,14 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-234">
           <caret line="1834" column="16" selection-start-line="1834" selection-start-column="16" selection-end-line="1834" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1288,18 +1260,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N02_DataStructures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N14_RE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1312,10 +1284,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N14_RE.py">
+    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="50">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/collections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="292" column="23" selection-start-line="292" selection-start-column="15" selection-end-line="292" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="189" column="0" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
           <folding />
         </state>
       </provider>

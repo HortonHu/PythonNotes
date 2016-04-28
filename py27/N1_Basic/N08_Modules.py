@@ -84,20 +84,106 @@ print '10 // 3 =', 10 // 3
 
 # 常用内建模块
 # collections 提供了许多有用的集合类
-# namedtuple是一个函数，它用来创建一个自定义的tuple对象，
+# namedtuple是一个函数，它用来创建一个自定义的tuple对象， namedtuple('名称', [属性list]):
 # 并且规定了tuple元素的个数，并可以用属性而不是索引来引用tuple的某个元素。
+# 用namedtuple可以很方便地定义一种数据类型，它具备tuple的不变性，又可以根据属性来引用，使用十分方便
 from collections import namedtuple
-Point = namedtuple('Point', ['x', 'y'])
-p = Point(1, 2)
-print p.x
+Point = namedtuple('Point', ['x', 'y'])         # 创建一个typename为point 属性值分别为 'x' 'y'的tuple对象
+p = Point(1, 2)                                 # 创建一个实例
+print p.x                                       # 通过属性访问
 
-#
+# 创建的Point对象是tuple的一种子类
+print isinstance(p, Point)
+print isinstance(p, tuple)
 
+# 用坐标和半径表示一个圆，也可以用namedtuple定义
+Circle = namedtuple('Circle', ['x', 'y', 'r'])
+
+# deque
+# 使用list存储数据时，按索引访问元素很快，但是插入和删除元素就很慢了，因为list是线性存储，数据量大的时候，插入和删除效率很低
+# deque是为了高效实现插入和删除操作的双向列表，适合用于队列和栈
+from collections import deque
+q = deque(['a', 'b', 'c'])
+q.append('x')
+q.appendleft('y')
+print q
+# deque除了实现list的append()和pop()外，还支持appendleft()和popleft()，这样就可以非常高效地往头部添加或删除元素
+
+# defaultdict
+# 使用dict时，如果引用的Key不存在，就会抛出KeyError。如果希望key不存在时，返回一个默认值，就可以用defaultdict
+# 除了在Key不存在时返回默认值，defaultdict的其他行为跟dict是完全一样的
+from collections import defaultdict
+dd = defaultdict(lambda: 'N/A')         # 默认值是调用函数返回的，而函数在创建defaultdict对象时传入
+dd['key1'] = 'abc'
+print dd['key1']        # key1存在
+print dd['key2']        # key2不存在，返回默认值
+
+# OrderedDict
+# 如果要保持Key的顺序，可以用OrderedDict
+# OrderedDict的Key会按照插入的顺序排列，不是Key本身排序
+from collections import OrderedDict
+d = dict([('a', 1), ('b', 2), ('c', 3)])
+print d                                             # dict的Key是无序的
+od = OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+print od                                            # OrderedDict的Key是有序的
+
+# OrderedDict可以实现一个FIFO（先进先出）的dict，当容量超出限制时，先删除最早添加的Key
+from collections import OrderedDict
+
+
+class LastUpdatedOrderedDict(OrderedDict):
+    def __init__(self, capacity):
+        super(LastUpdatedOrderedDict, self).__init__()
+        self._capacity = capacity
+
+    def __setitem__(self, key, value):
+        containsKey = 1 if key in self else 0
+        if len(self) - containsKey >= self._capacity:
+            last = self.popitem(last=False)
+            print 'remove:', last
+        if containsKey:
+            del self[key]
+            print 'set:', (key, value)
+        else:
+            print 'add:', (key, value)
+        OrderedDict.__setitem__(self, key, value)
+
+# Counter
+# Counter是一个简单的计数器
+# 统计字符出现的个数
+from collections import Counter
+c = Counter()
+for ch in 'programming':
+    c[ch] += 1
 
 # base64
 # Base64是一种用64个字符来表示任意二进制数据的方法
 
+
 # struct
+# Python没有专门处理字节的数据类型。但由于str既是字符串，又可以表示字节，
+# 所以，字节数组＝str。而在C语言中，我们可以很方便地用struct、union来处理字节，以及字节和int，float的转换
+# 在Python中，比方说要把一个32位无符号整数变成字节，也就是4个长度的str，你得配合位运算符这么写
+n = 10240099
+b1 = chr((n & 0xff000000) >> 24)
+b2 = chr((n & 0xff0000) >> 16)
+b3 = chr((n & 0xff00) >> 8)
+b4 = chr(n & 0xff)
+s = b1 + b2 + b3 + b4
+print s
+
+# Python提供了一个struct模块来解决str和其他二进制数据类型的转换
+# struct的pack函数把任意数据类型变成字符串
+import struct
+struct.pack('>I', 10240099)
+# pack的第一个参数是处理指令，'>I'的意思是：
+# >表示字节顺序是big-endian，也就是网络序，I表示4字节无符号整数。
+# 后面的参数个数要和处理指令一致。
+
+# unpack把str变成相应的数据类型
+struct.unpack('>IH', '\xf0\xf0\xf0\xf0\x80\x80')
+# 根据>IH的说明，后面的str依次变为I：4字节无符号整数和H：2字节无符号整数
+# 尽管Python不适合编写底层操作字节流的代码，但在对性能要求不高的地方，利用struct就方便多了
 
 
 # hashlib
