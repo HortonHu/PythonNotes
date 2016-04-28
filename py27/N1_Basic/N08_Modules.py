@@ -399,16 +399,92 @@ L.append(r'</root>')
 
 
 # HTMLParser
+# HTML本质上是XML的子集，但是HTML的语法没有XML那么严格，所以不能用标准的DOM或SAX来解析HTML。
+# Python提供了HTMLParser来非常方便地解析HTML，只需简单几行代码
+from HTMLParser import HTMLParser
+from htmlentitydefs import name2codepoint
+
+class MyHTMLParser(HTMLParser):
+
+    def handle_starttag(self, tag, attrs):
+        print('<%s>' % tag)
+
+    def handle_endtag(self, tag):
+        print('</%s>' % tag)
+
+    def handle_startendtag(self, tag, attrs):
+        print('<%s/>' % tag)
+
+    def handle_data(self, data):
+        print('data')
+
+    def handle_comment(self, data):
+        print('<!-- -->')
+
+    def handle_entityref(self, name):
+        print('&%s;' % name)
+
+    def handle_charref(self, name):
+        print('&#%s;' % name)
+
+parser = MyHTMLParser()
+parser.feed('<html><head></head><body><p>Some <a href=\"#\">html</a> tutorial...<br>END</p></body></html>')
+# feed()方法可以多次调用，也就是不一定一次把整个HTML字符串都塞进去，可以一部分一部分塞进去
+# 特殊字符有两种，一种是英文表示的&nbsp;，一种是数字表示的&#1234;，这两种字符都可以通过Parser解析出来
+
+# 练习
+# 找一个网页，例如https://www.python.org/events/python-events/，用浏览器查看源码并复制，
+# 尝试解析一下HTML，输出Python官网发布的会议时间、名称和地点。
 
 
 # 常用第三方模块
 # PIL（Python Imaging Library） 现在已经用Pillow替代PIL了 因为PIL已经不再维护
-from PIL import Image       # 不能用import image形式
-im = Image.open('C:\Users\dell\Documents\GitHub\PythonStudy\py27\N1_Basic\Pic.jpg')
+from PIL import Image           # 不能用import image形式
+im_local = 'C:\Users\dell\Documents\GitHub\PythonStudy\py27\N1_Basic\Pic.jpg'
+im = Image.open(im_local)
 print im.format, im.size, im.mode
-im.thumbnail((im.size[0]/2, im.size[1]/2))
+im.show()
+im.thumbnail((im.size[0]/2, im.size[1]/2))      # 缩放到50%:
 im.show()
 
+# 其他功能如切片、旋转、滤镜、输出文字、调色板等一应俱全
+# 模糊效果
+from PIL import Image
+from PIL import ImageFilter
+im = Image.open(im_local)
+im2 = im.filter(ImageFilter.BLUR)
+im2.show()
+
+
+# PIL的ImageDraw提供了一系列绘图方法，让我们可以直接绘图
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+import random
+
+# 随机字母:
+def rndChar():
+    return chr(random.randint(65, 90))
+
+# 随机颜色1
+def rndColor():
+    return (random.randint(64, 255), random.randint(64, 255), random.randint(64, 255))
+
+# 随机颜色2
+def rndColor2():
+    return (random.randint(32, 127), random.randint(32, 127), random.randint(32, 127))
+
+# 240 x 60:
+width = 60 * 4
+height = 60
+image = Image.new('RGB', (width, height), (255, 255, 255))
+font = ImageFont.truetype('C:\Windows\Fonts\Arial.ttf', 36)          # 创建Font对象
+draw = ImageDraw.Draw(image)                        # 创建Draw对象
+for x in range(width):                              # 填充每个像素
+    for y in range(height):
+        draw.point((x, y), fill=rndColor())
+for t in range(4):                                  # 输出文字
+    draw.text((60 * t + 10, 10), rndChar(), font=font, fill=rndColor2())
+image = image.filter(ImageFilter.BLUR)              # 模糊
+image.show(image)
 
 
 
