@@ -6,7 +6,7 @@
 # input()       返回 value
 name = raw_input('Please input your name：')
 print 'Hi', name
-age = input('Please input your age：')
+age = input('Ple    ase input your age：')
 print 'the type of age is ', type(age)
 
 # 在交互模式下不用print, \n 等表示为原型
