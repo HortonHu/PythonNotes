@@ -98,7 +98,7 @@ d.pop('Bob')    # 删除key 对应的value也会删除
 
 # Data type: set{'key'}
 # set和dict类似，也是一组key的集合，但不存储value, key不能重复
-#
+# 常用来清理重复元素
 # s = set([1, 2, 3]) 也可以这样定义
 s = {'1', '2', '3'}
 print 'set:', s
