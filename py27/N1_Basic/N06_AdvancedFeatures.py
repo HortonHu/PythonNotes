@@ -13,7 +13,7 @@ print L[::2]
 # 默认情况下，dict迭代的是key。如果要迭代value，可以用for value in d.itervalues()
 # 同时迭代key和value，可以用for k, v in d.iteritems()
 d = {'a': 1, 'b': 2, 'c': 3}
-for key in d:
+for key in d.keys():            # 最好用d.keys()这个下标数组 防止出错 或者用d.iterkeys()
     print key
 
 for value in d.itervalues():  # 迭代value
