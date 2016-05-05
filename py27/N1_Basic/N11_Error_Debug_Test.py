@@ -233,7 +233,7 @@ logging.warning('This is warning message')
 import logging
 from logging.handlers import RotatingFileHandler
 
-#定义一个RotatingFileHandler，最多备份5个日志文件，每个日志文件最大10M
+# 定义一个RotatingFileHandler，最多备份5个日志文件，每个日志文件最大10M
 Rthandler = RotatingFileHandler('myapp.log', maxBytes=10*1024*1024,backupCount=5)
 Rthandler.setLevel(logging.INFO)
 formatter = logging.Formatter('%(name)-12s: %(levelname)-8s %(message)s')
@@ -244,9 +244,9 @@ logging.getLogger('').addHandler(Rthandler)
 # logging.StreamHandler: 日志输出到流，可以是sys.stderr、sys.stdout或者文件
 # logging.FileHandler: 日志输出到文件
 # 日志回滚方式，实际使用时用RotatingFileHandler和TimedRotatingFileHandler
-logging.handlers.BaseRotatingHandler
-logging.handlers.RotatingFileHandler
-logging.handlers.TimedRotatingFileHandler
+# logging.handlers.BaseRotatingHandler
+# logging.handlers.RotatingFileHandler
+# logging.handlers.TimedRotatingFileHandler
 # logging.handlers.SocketHandler: 远程输出日志到TCP/IP sockets
 # logging.handlers.DatagramHandler:  远程输出日志到UDP sockets
 # logging.handlers.SMTPHandler:  远程输出日志到邮件地址
