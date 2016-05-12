@@ -115,9 +115,9 @@ os.path.splitext('/path/to/file.txt')               # ('/path/to/file', '.txt')
 
 # 假定当前目录下有一个test.txt文件：
 # 对文件重命名:
-os.rename('test.txt', 'test.py')
+os.rename('test.txt', 'horton.py')
 # 删掉文件:
-os.remove('test.py')
+os.remove('horton.py')
 # 复制文件的函数在os模块中不存在 因为复制文件并非由操作系统提供的系统调用
 # shutil模块提供了copyfile()的函数 可以看做是os模块的补充。
 
