@@ -35,11 +35,12 @@ def before_request():
 
 
 @app.teardown_request
-def teardown_request():
+def teardown_request(exception):
     db = getattr(g, 'db', None)
     if db is not None:
         db.close()
     g.db.close()
+
 
 @app.route('/')
 def show_entries():
