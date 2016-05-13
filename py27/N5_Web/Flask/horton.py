@@ -4,9 +4,11 @@
 from flask import Flask, url_for, request
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
-    return 'This is the index of the site.'
+    user_agent = request.headers.get('User-Agent')
+    return "<h1>This is the index.</h1><h2>Your Browser is %s</h2>" % user_agent
 
 
 @app.route('/hello')
@@ -24,20 +26,18 @@ def show_id(post_id):
     return 'Your ID is ' + post_id
 
 
-# @app.route('/login', methods=['GET', 'POST'])
-# def login():
+@app.route('/login', methods=['GET', 'POST'])
+def login():
 #     if request.methods == 'GET':
 #         do_the_login()
 #     else:
-
+    pass
 
 with app.test_request_context():
     print url_for('index')
     print url_for('login')
     print url_for('login', next='/')
     print url_for('show_name', username='Jia Jia')
-
-
 
 
 if __name__ == '__main__':
