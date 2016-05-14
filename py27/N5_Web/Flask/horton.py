@@ -28,9 +28,6 @@ def show_id(post_id):
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-#     if request.methods == 'GET':
-#         do_the_login()
-#     else:
     pass
 
 with app.test_request_context():
