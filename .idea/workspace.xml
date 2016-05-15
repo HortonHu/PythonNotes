@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N3_Email/N01_STMP.py" afterPath="$PROJECT_DIR$/py27/N3_Email/N01_STMP_Send.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N3_Email/N02_POP3.py" afterPath="$PROJECT_DIR$/py27/N3_Email/N02_POP3_Receive.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N3_Email/Knowledge.txt" afterPath="$PROJECT_DIR$/py27/N3_Email/Knowledge.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N4_DataBase/N01_SQLite.py" afterPath="$PROJECT_DIR$/py27/N4_DataBase/N01_SQLite.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N4_DataBase/N02_MySQL.py" afterPath="$PROJECT_DIR$/py27/N4_DataBase/N02_MySQL.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N1_Basic/test.py" afterPath="$PROJECT_DIR$/py27/N1_Basic/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N4_DataBase/N03_SQLAlchemy.py" afterPath="$PROJECT_DIR$/py27/N4_DataBase/N03_SQLAlchemy.py" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,12 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="N02_MySQL.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/py27/N4_DataBase/N02_MySQL.py">
+      <file leaf-file-name="N03_SQLAlchemy.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/py27/N4_DataBase/N03_SQLAlchemy.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
+              <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+              <folding>
+                <element signature="e#603#655#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/py27/N5_Web/N02_HTML.txt" />
         <option value="$PROJECT_DIR$/py27/N5_Web/N03_WSGI.txt" />
         <option value="$PROJECT_DIR$/py27/N5_Web/N04_Framework.txt" />
         <option value="$PROJECT_DIR$/py27/N5_Web/N05_Model.txt" />
@@ -108,6 +106,7 @@
         <option value="$PROJECT_DIR$/py27/N1_Basic/Test.py" />
         <option value="$PROJECT_DIR$/py27/N4_DataBase/N01_SQLite.py" />
         <option value="$PROJECT_DIR$/py27/N4_DataBase/N02_MySQL.py" />
+        <option value="$PROJECT_DIR$/py27/N4_DataBase/N03_SQLAlchemy.py" />
       </list>
     </option>
   </component>
@@ -579,13 +578,6 @@
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
     </task>
-    <task id="LOCAL-00028" summary="reademe update">
-      <created>1461402256690</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1461402256691</updated>
-    </task>
     <task id="LOCAL-00029" summary="reademe update">
       <created>1461468941918</created>
       <option name="number" value="00029" />
@@ -922,7 +914,14 @@
       <option name="project" value="LOCAL" />
       <updated>1463296137353</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="update">
+      <created>1463303183397</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1463303183397</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -987,13 +986,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/py27/N6_Crawler/tutorial/tutorial/spiders/Books.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py27/N6_Crawler/tutorial/tutorial/spiders/Resources.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1376,6 +1368,16 @@
         <state relative-caret-position="276">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N4_DataBase/N03_SQLAlchemy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+          <folding>
+            <element signature="e#603#655#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
