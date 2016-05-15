@@ -3,12 +3,12 @@
 
 import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, \
-    abort, render_template,flash
+    abort, render_template, flash
 from contextlib import closing
 
 DATABASE = r'C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\hor\tmp\hor.db'
 DEBUG = True
-SECRET_KEY = 'development ley'
+SECRET_KEY = 'development key'
 USERNAME = 'admin'
 PASSWORD = 'default'
 
