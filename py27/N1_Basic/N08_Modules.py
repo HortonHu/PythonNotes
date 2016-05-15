@@ -207,8 +207,7 @@ print s
 # struct的pack函数把任意数据类型变成字符串
 import struct
 struct.pack('>I', 10240099)
-# pack的第一个参数是处理指令，'>I'的意思是：
-# >表示字节顺序是big-endian，也就是网络序，I表示4字节无符号整数。
+# pack的第一个参数是处理指令，'>I'的意思是：>表示字节顺序是big-endian，也就是网络序，I表示4字节无符号整数。
 # 后面的参数个数要和处理指令一致。
 
 # unpack把str变成相应的数据类型
@@ -314,12 +313,10 @@ import itertools
 cs = itertools.cycle('ABC')         # 注意字符串也是序列的一种
 for c in cs:
     print c
-
 # repeat()负责把一个元素无限重复下去，不过如果提供第二个参数就可以限定重复次数
 ns = itertools.repeat('A', 10)      # 打印10次'A'
 for n in ns:
     print n
-
 # 无限序列只有在for迭代时才会无限地迭代下去，
 # 如果只是创建了一个迭代对象，它不会事先把无限个元素生成出来，事实上也不可能在内存中创建无限多个元素。
 # 无限序列虽然可以无限迭代下去，但是通常我们会通过takewhile()等函数根据条件判断来截取出一个有限的序列
@@ -331,15 +328,12 @@ for n in ns:        # 打印出1到10
 # itertools提供的几个迭代器操作函数更加有用：
 # chain()
 # chain()可以把一组迭代对象串联起来，形成一个更大的迭代器：
-for c in itertools.chain('ABC', 'XYZ'):
+for c in itertools.chain('ABC', 'XYZ'):         # 迭代效果：'A' 'B' 'C' 'X' 'Y' 'Z'
     print c
-# 迭代效果：'A' 'B' 'C' 'X' 'Y' 'Z'
-
 # groupby()
 # groupby()把迭代器中相邻的重复元素挑出来放在一起：
 for key, group in itertools.groupby('AAABBBCCAAA'):
-    print key, list(group) # 为什么这里要用list()函数呢？
-
+    print key, list(group)      # 用list()函数是为了显示出group内容 因为group是一个object
 # 实际上挑选规则是通过函数完成的，只要作用于函数的两个元素返回的值相等，这两个元素就被认为是在一组的，而函数返回值作为组的key。
 # 如果我们要忽略大小写分组，就可以让元素'A'和'a'都返回相同的key：
 for key, group in itertools.groupby('AaaBBbcCAAa', lambda c: c.upper()):
@@ -355,21 +349,18 @@ print r             # r已经计算出来了
 # 调用imap()时，并没有进行任何计算：
 r = itertools.imap(lambda x: x*x, [1, 2, 3])
 print r             # r只是一个迭代对象
-
 # 必须用for循环对r进行迭代，才会在每次循环过程中计算出下一个元素
 for x in r:
     print x
-
 # 说明imap()实现了“惰性计算”，也就是在需要获得结果的时候才计算。类似imap()这样能够实现惰性计算的函数就可以处理无限序列
 r = itertools.imap(lambda x: x*x, itertools.count(1))
 for n in itertools.takewhile(lambda x: x<100, r):
     print n
-
-# 如果把imap()换成map()去处理无限序列会有什么结果？
+# 如果把imap()换成map()去处理无限序列会一直计算下去
 r = map(lambda x: x*x, itertools.count(1))
 
 # ifilter()
-# 不用多说了，ifilter()就是filter()的惰性实现。
+# ifilter()就是filter()的惰性实现。
 
 
 # XML
@@ -385,6 +376,7 @@ r = map(lambda x: x*x, itertools.count(1))
 # 2.char_data事件，在读取python时；
 # 3.end_element事件，在读取</a>时。
 from xml.parsers.expat import ParserCreate
+
 
 class DefaultSaxHandler(object):
     def start_element(self, name, attrs):
