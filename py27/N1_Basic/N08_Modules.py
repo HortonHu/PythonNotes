@@ -28,8 +28,8 @@ print sys.path
 
 # 使用模块
 # sys.argv用list存储了命令行的所有参数 argv至少有一个元素，因为第一个参数永远是该.py文件的名称
-# 运行python hello.py获得的sys.argv就是['hello.py']；
-# 运行python hello.py Michael获得的sys.argv就是['hello.py', 'Michael]。
+# 运行python hello.py获得的sys.argv就是['server.py']；
+# 运行python server.py Michael获得的sys.argv就是['server.py', 'Michael]。
 
 # 别名
 # Python标准库一般会提供StringIO和cStringIO两个库，这两个库的接口和功能是一样的，但是cStringIO是C写的，速度更快

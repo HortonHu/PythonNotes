@@ -366,7 +366,7 @@ class TestDict(unittest.TestCase):
 # 当模块正常导入时，doctest不会被执行。只有在命令行运行时，才执行doctest。所以，不必担心doctest会在非测试环境下执行
 class Dict(dict):
     '''
-    Simple dict but also support access as x.y style.
+    Example dict but also support access as x.y style.
 
     >>> d1 = Dict()
     >>> d1['x'] = 100
