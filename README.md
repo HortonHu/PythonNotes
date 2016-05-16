@@ -5,6 +5,7 @@ Web sites：
 - http://www.liaoxuefeng.com/
 - http://crossincode.com/home/
 - http://doc.python.org/
+- http://www.w3school.com.cn/
 
 Books:
 - A Byte of Python(简明Python教程)
