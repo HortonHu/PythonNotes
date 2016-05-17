@@ -5,6 +5,8 @@
 <body>
   {% if message %}
   <p style="color:red">{{ message }}</p>
+  {% else %}
+  <p style="color:blue">Input your message</p>
   {% endif %}
   <form action="/signin" method="post">
     <legend>Please sign in:</legend>

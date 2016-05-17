@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-from flask import Flask, request, render_template, make_response, redirect, abort
+from flask import Flask, request, render_template, make_response, redirect, abort, url_for
 from flask.ext.script import Manager
+from flask.ext.bootstrap import Bootstrap
 
 app = Flask(__name__)                   # 初始化
-manager = Manager(app)
+# manager = Manager(app)
+bootstrap = Bootstrap(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -30,9 +32,8 @@ def signin():
 
 @app.route('/user/<username>')
 def show_name(username):
-    if username != 'hortonhu':
-        abort(404)
-    return '<h1>Your name is %s</h1>' % str(username)
+    real_loc = url_for('show_name', username=username, _external=True)
+    return render_template('user.html', name=username, real_loc=real_loc)
 
 
 @app.route('/<int:user_num>')
@@ -52,6 +53,15 @@ def do_redirect():          # 重定向
     return redirect('http://www.baidu.com')
 
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template('500.html'), 500
+
 if __name__ == '__main__':
-    # app.run()
-    manager.run()
+    app.run()
+    # manager.run()
