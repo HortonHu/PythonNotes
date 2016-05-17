@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, make_response, redirect, abort
+from flask.ext.script import Manager
 
 app = Flask(__name__)                   # 初始化
+manager = Manager(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -28,6 +30,8 @@ def signin():
 
 @app.route('/user/<username>')
 def show_name(username):
+    if username != 'hortonhu':
+        abort(404)
     return '<h1>Your name is %s</h1>' % str(username)
 
 
@@ -36,5 +40,18 @@ def show_user_num(user_num):
     return '<h1>Your Number is %s</h1>' % user_num
 
 
+@app.route('/makecookie')
+def make_cookies():         # 生产cookies
+    response = make_response('<h1>This document carries a cookie!</h1>')
+    response.set_cookie('answer', '42')
+    return response
+
+
+@app.route('/redirect')
+def do_redirect():          # 重定向
+    return redirect('http://www.baidu.com')
+
+
 if __name__ == '__main__':
-    app.run()
+    # app.run()
+    manager.run()
