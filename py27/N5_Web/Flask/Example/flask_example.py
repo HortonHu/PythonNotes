@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-from flask import Flask, request, render_template, make_response, redirect, abort, url_for
+from flask import Flask, request, render_template, make_response, redirect, abort, \
+    url_for, session, flash
 from flask.ext.script import Manager
 from flask.ext.bootstrap import Bootstrap
 from flask.ext.moment import Moment
@@ -32,12 +33,14 @@ def home():
 
 @app.route('/formtest', methods=['GET', 'POST'])
 def form_test():
-    name = None
     form = NameForm()
     if form.validate_on_submit():
-        name = form.name.data
-    form.name.data = ''
-    return render_template('form_test.html', form=form, name=name)
+        old_name = session.get('name')
+        if old_name is not None and old_name != form.name.data:
+            flash('Looks like you have changed your name!')
+        session['name'] = form.name.data
+        return redirect(url_for('form_test'))
+    return render_template('form_test.html', form=form, name=session.get('name'))
 
 
 @app.route('/signin', methods=['GET'])
