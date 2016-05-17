@@ -4,16 +4,20 @@
 from flask import Flask, request, render_template, make_response, redirect, abort, url_for
 from flask.ext.script import Manager
 from flask.ext.bootstrap import Bootstrap
+from flask.ext.moment import Moment
+from datetime import datetime
 
-app = Flask(__name__)                   # 初始化
-# manager = Manager(app)
+# 初始化
+app = Flask(__name__)
+manager = Manager(app)
 bootstrap = Bootstrap(app)
+moment = Moment(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
-def home():                             # 视图函数
+def home():
     user_agent = request.headers.get('User-Agent')
-    return render_template('home.html', user_agent=user_agent)
+    return render_template('home.html', user_agent=user_agent, current_time=datetime.utcnow())
 
 
 @app.route('/signin', methods=['GET'])

@@ -3,6 +3,15 @@
 <!--title块-->
 {% block title %}Flasky{% endblock %}
 
+<!--head块-->
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename = 'favicon.ico') }}"
+    type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename = 'favicon.ico') }}"
+    type="image/x-icon">
+{% endblock %}
+
 <!--navbar块-->
 {% block navbar %}
 <div class="navbar navbar-inverse" role="navigation">
@@ -31,4 +40,10 @@
 <div class="container">
 {% block page_content %}{% endblock %}
 </div>
+{% endblock %}
+
+<!--scripts块-->
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
 {% endblock %}
