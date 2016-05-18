@@ -6,12 +6,16 @@ from flask import Flask, request, render_template, make_response, redirect, abor
 from flask.ext.script import Manager
 from flask.ext.bootstrap import Bootstrap
 from flask.ext.moment import Moment
+from flask.ext.sqlalchemy import SQLAlchemy
 
 from flask.ext.wtf import Form
 from wtforms import StringField, SubmitField
 from wtforms.validators import Required
 
 from datetime import datetime
+import os
+
+basedir = os.path.abspath(os.path.dirname(__file__))
 
 # 初始化
 app = Flask(__name__)
@@ -23,6 +27,11 @@ moment = Moment(app)
 # SECRET_KEY 配置变量是通用密钥，可在 Flask 和多个第三方扩展中使用。
 # 密钥不应该直接写入代码，而要保存在环境变量中
 app.config['SECRET_KEY'] = 'SSSKey'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS '] = True
+
+db = SQLAlchemy(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -98,6 +107,27 @@ class NameForm(Form):
     name = StringField('What is your name?', validators=[Required()])
     submit = SubmitField('Submit')
 
+
+# 定义模板类
+class Role(db.Model):
+    __tablename__ = 'roles'
+    id = db.Column(db.Integer, primary_key=True)                            # 设置id为主键
+    name = db.Column(db.String(64), unique=True)                            # 不允许重复
+    users = db.relationship('User', backref='role', lazy='dynamic')         # 建立关系
+
+    def __repr__(self):
+        return '<Role %r>' % self.name
+
+
+class User(db.Model):
+    __tablename__ = 'users'
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(64), unique=True, index=True)
+    role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))      # 将roles_id定义为外键
+
+    def __repr__(self):
+        return '<User %r>' % self.username
+
 if __name__ == '__main__':
-    app.run()
-    # manager.run()
+    # app.run()
+    manager.run()

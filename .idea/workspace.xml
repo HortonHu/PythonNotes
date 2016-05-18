@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/base.html" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/base.html" />
     </list>
     <ignored path="PythonStudy.iws" />
@@ -24,32 +25,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="flask_example.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flask_example.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="42" column="81" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
+            <state relative-caret-position="247">
+              <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
               <folding>
                 <element signature="e#46#158#0" expanded="true" />
-                <element signature="e#1387#1422#0" expanded="false" />
-                <element signature="e#1483#1776#0" expanded="false" />
-                <element signature="e#1839#1979#0" expanded="false" />
-                <element signature="e#2045#2091#0" expanded="false" />
-                <element signature="e#2156#2284#0" expanded="false" />
-                <element signature="e#2340#2379#0" expanded="false" />
-                <element signature="e#2439#2478#0" expanded="false" />
-                <element signature="e#2538#2577#0" expanded="false" />
+                <element signature="e#1713#1748#0" expanded="false" />
+                <element signature="e#1809#2102#0" expanded="false" />
+                <element signature="e#2165#2305#0" expanded="false" />
+                <element signature="e#2371#2417#0" expanded="false" />
+                <element signature="e#2482#2610#0" expanded="false" />
+                <element signature="e#2666#2705#0" expanded="false" />
+                <element signature="e#2765#2804#0" expanded="false" />
+                <element signature="e#2864#2903#0" expanded="false" />
+                <element signature="e#3077#3417#0" expanded="false" />
+                <element signature="e#3446#3736#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -73,8 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/py27/N5_Web/horton/polls/static/polls/style.css" />
-        <option value="$PROJECT_DIR$/py27/N6_Spider/init.py" />
         <option value="$PROJECT_DIR$/py27/N6_Spider/__init__.py" />
         <option value="$PROJECT_DIR$/py27/N6_Spider/test.py" />
         <option value="$PROJECT_DIR$/py27/N6_Spider/test1.py" />
@@ -120,10 +111,12 @@
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/404.html" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/horton.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/user.html" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/home.html" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/form_test.html" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/base.html" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/home.html" />
+        <option value="C:/Python27/Lib/site-packages/flask_sqlalchemy/__init__.py" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/data.sqlite" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py" />
       </list>
     </option>
   </component>
@@ -677,13 +670,6 @@
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
     </task>
-    <task id="LOCAL-00039" summary="update">
-      <created>1461739900672</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1461739900672</updated>
-    </task>
     <task id="LOCAL-00040" summary="update">
       <created>1461752247563</created>
       <option name="number" value="00040" />
@@ -1020,7 +1006,14 @@
       <option name="project" value="LOCAL" />
       <updated>1463496866449</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="update">
+      <created>1463497420992</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1463497420992</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1105,34 +1098,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/py27/N3_Email/N01_STMP_Send.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3003">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N3_Email/N02_POP3_Receive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2750">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/sqlite3/dbapi2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1575">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/sqlite3/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py27/N4_DataBase/test.db">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1368,13 +1333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/flask/templating.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1387,13 +1345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="850" column="0" selection-start-line="850" selection-start-column="0" selection-end-line="850" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1439,14 +1390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/form_test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1471,29 +1414,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py">
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="42" column="81" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
-          <folding>
-            <element signature="e#46#158#0" expanded="true" />
-            <element signature="e#1387#1422#0" expanded="false" />
-            <element signature="e#1483#1776#0" expanded="false" />
-            <element signature="e#1839#1979#0" expanded="false" />
-            <element signature="e#2045#2091#0" expanded="false" />
-            <element signature="e#2156#2284#0" expanded="false" />
-            <element signature="e#2340#2379#0" expanded="false" />
-            <element signature="e#2439#2478#0" expanded="false" />
-            <element signature="e#2538#2577#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="-852">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sqlalchemy/sql/schema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="1190" column="0" selection-start-line="1190" selection-start-column="0" selection-end-line="1190" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/flask_sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="796" column="90" selection-start-line="796" selection-start-column="90" selection-end-line="796" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/data.sqlite">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/data.sqlite">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+          <folding>
+            <element signature="e#46#158#0" expanded="true" />
+            <element signature="e#1713#1748#0" expanded="false" />
+            <element signature="e#1809#2102#0" expanded="false" />
+            <element signature="e#2165#2305#0" expanded="false" />
+            <element signature="e#2371#2417#0" expanded="false" />
+            <element signature="e#2482#2610#0" expanded="false" />
+            <element signature="e#2666#2705#0" expanded="false" />
+            <element signature="e#2765#2804#0" expanded="false" />
+            <element signature="e#2864#2903#0" expanded="false" />
+            <element signature="e#3077#3417#0" expanded="false" />
+            <element signature="e#3446#3736#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
