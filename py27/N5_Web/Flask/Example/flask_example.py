@@ -17,6 +17,8 @@ from wtforms.validators import Required
 from datetime import datetime
 import os
 
+from threading import Thread
+
 
 # 初始化
 app = Flask(__name__)
@@ -35,15 +37,16 @@ app.config['SECRET_KEY'] = 'SSSKey'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS '] = True
+
 app.config['MAIL_SERVER'] = 'smtp.sina.com'
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USL_TLS'] = True
-# app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
-# app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
-app.config['MAIL_USERNAME'] = 'hortonhutest@sina.com'
+app.config['MAIL_PORT'] = 25
+# app.config['MAIL_USL_TLS'] = True
+app.config['MAIL_USERNAME'] = 'weiyijingtu@sina.com'
 app.config['MAIL_PASSWORD'] = raw_input('MAIL_PASSWORD')
+
 app.config['FLASK_MAIL_SUBJECT_PREFIX'] = '[Flasky]'
-app.config['FLASK_MAIL_SENDER'] = 'Flask admin <flasky@example.com>'
+app.config['FLASK_MAIL_SENDER'] = 'Flask admin <857018659@qq.com>'
+app.config['FLASK_ADMIN'] = 'Hortonhu'
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -163,14 +166,20 @@ manager.add_command('db', MigrateCommand)
 
 
 # 发送邮件
+def send_async_email(app, msg):
+    with app.app_context():
+        mail.send(msg)
+
+
 def send_email(to, subject, template, **kwargs):
     msg = Message(app.config['FLASKY_MAIL_SUBJECT_PREFIX'] + subject,
-                  sender=app.config['FLASKY_MAIL_SENDER'], recipients=[to])
+                    sender=app.config['FLASKY_MAIL_SENDER'], recipients=[to])
     msg.body = render_template(template + '.txt', **kwargs)
     msg.html = render_template(template + '.html', **kwargs)
-    mail.send(msg)
-
+    thr = Thread(target=send_async_email, args=[app, msg])
+    thr.start()
+    return thr
 
 if __name__ == '__main__':
-    # app.run()
-    manager.run()
+    app.run()
+    # manager.run()

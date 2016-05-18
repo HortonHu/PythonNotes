@@ -19,7 +19,7 @@ smtp_server = 'smtp.sina.com'
 to_addr = raw_input('Input To email address : ')
 
 import smtplib
-server = smtplib.SMTP(smtp_server, 465)  # SMTP协议默认端口是25 使用ssl后变为465
+server = smtplib.SMTP(smtp_server, 25)  # SMTP协议默认端口是25 使用ssl后变为465
 server.starttls()                       # 开启SSL
 server.set_debuglevel(1)                # 用set_debuglevel(1)就可以打印出和SMTP服务器交互的所有信息。
 server.login(from_addr, password)       # login()方法用来登录SMTP服务器

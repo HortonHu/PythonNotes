@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/data.sqlite" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/alembic.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/env.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/script.py.mako" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N3_Email/N01_STMP_Send.py" afterPath="$PROJECT_DIR$/py27/N3_Email/N01_STMP_Send.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/data.sqlite" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/data.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py" />
     </list>
     <ignored path="PythonStudy.iws" />
@@ -30,22 +26,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="N01_STMP_Send.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/py27/N3_Email/N01_STMP_Send.py">
+      <file leaf-file-name="flask_example.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/py27/N1_Basic/Test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="407">
+              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+              <folding>
+                <element signature="e#46#158#0" expanded="true" />
+                <element signature="e#1571#1712#0" expanded="false" />
+                <element signature="e#2605#2640#0" expanded="false" />
+                <element signature="e#2701#2994#0" expanded="false" />
+                <element signature="e#3057#3197#0" expanded="false" />
+                <element signature="e#3263#3309#0" expanded="false" />
+                <element signature="e#3374#3502#0" expanded="false" />
+                <element signature="e#3558#3597#0" expanded="false" />
+                <element signature="e#3657#3696#0" expanded="false" />
+                <element signature="e#3756#3795#0" expanded="false" />
+                <element signature="e#3832#3932#0" expanded="false" />
+                <element signature="e#3969#4309#0" expanded="false" />
+                <element signature="e#4338#4628#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,9 +117,9 @@
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/data.sqlite" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/form_test.html" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/templates/404.html" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py" />
-        <option value="$PROJECT_DIR$/py27/N1_Basic/Test.py" />
         <option value="$PROJECT_DIR$/py27/N3_Email/N01_STMP_Send.py" />
+        <option value="$PROJECT_DIR$/py27/N1_Basic/Test.py" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py" />
       </list>
     </option>
   </component>
@@ -245,7 +245,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="N1_Basic" />
+              <option name="myItemId" value="N5_Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py27" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="N5_Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py27" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="N5_Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Example" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,7 +348,7 @@
       <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N1_Basic" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Test">
+  <component name="RunManager" selected="Python.flask_exlample">
     <configuration default="false" name="horton" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -573,9 +621,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.flask_example" />
-        <item index="2" class="java.lang.String" itemvalue="Python.flask_exlample" />
+        <item index="0" class="java.lang.String" itemvalue="Python.flask_exlample" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.flask_example" />
         <item index="3" class="java.lang.String" itemvalue="Python.horton" />
         <item index="4" class="java.lang.String" itemvalue="Python.N02_MySQL" />
       </list>
@@ -594,13 +642,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
-    </task>
-    <task id="LOCAL-00043" summary="update">
-      <created>1461808534204</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1461808534204</updated>
     </task>
     <task id="LOCAL-00044" summary="update">
       <created>1461809910389</created>
@@ -938,7 +979,14 @@
       <option name="project" value="LOCAL" />
       <updated>1463549602668</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="update">
+      <created>1463572235741</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1463572235742</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -962,9 +1010,10 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229167" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32411674" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29953918" sideWeight="0.5145631" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34815952" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34869432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32668713" sideWeight="0.49107143" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31748468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31643626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24943988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29800308" sideWeight="0.4854369" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -975,7 +1024,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1093,6 +1141,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1339,25 +1388,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="343" column="13" selection-start-line="343" selection-start-column="13" selection-end-line="343" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="56" />
-          <folding>
-            <element signature="e#46#158#0" expanded="false" />
-            <element signature="e#2664#2699#0" expanded="false" />
-            <element signature="e#2760#3053#0" expanded="false" />
-            <element signature="e#3116#3256#0" expanded="false" />
-            <element signature="e#3322#3368#0" expanded="false" />
-            <element signature="e#3433#3561#0" expanded="false" />
-            <element signature="e#3617#3656#0" expanded="false" />
-            <element signature="e#3716#3755#0" expanded="false" />
-            <element signature="e#3815#3854#0" expanded="false" />
-            <element signature="e#4028#4368#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1393,17 +1424,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/py27/N1_Basic/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="775">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/py27/N3_Email/N01_STMP_Send.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="100">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding>
+            <element signature="e#46#158#0" expanded="true" />
+            <element signature="e#1571#1712#0" expanded="false" />
+            <element signature="e#2605#2640#0" expanded="false" />
+            <element signature="e#2701#2994#0" expanded="false" />
+            <element signature="e#3057#3197#0" expanded="false" />
+            <element signature="e#3263#3309#0" expanded="false" />
+            <element signature="e#3374#3502#0" expanded="false" />
+            <element signature="e#3558#3597#0" expanded="false" />
+            <element signature="e#3657#3696#0" expanded="false" />
+            <element signature="e#3756#3795#0" expanded="false" />
+            <element signature="e#3832#3932#0" expanded="false" />
+            <element signature="e#3969#4309#0" expanded="false" />
+            <element signature="e#4338#4628#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
