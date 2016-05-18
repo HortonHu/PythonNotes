@@ -3,10 +3,11 @@
 
 from flask import Flask, request, render_template, make_response, redirect, abort, \
     url_for, session, flash
-from flask.ext.script import Manager
+from flask.ext.script import Manager, Shell
 from flask.ext.bootstrap import Bootstrap
 from flask.ext.moment import Moment
 from flask.ext.sqlalchemy import SQLAlchemy
+from flask.ext.migrate import Migrate, MigrateCommand
 
 from flask.ext.wtf import Form
 from wtforms import StringField, SubmitField
@@ -138,6 +139,15 @@ class User(db.Model):
     def __repr__(self):
         return '<User %r>' % self.username
 
+
+def make_shell_context():
+    return dict(app=app, db=db, User=User, Role=Role)
+
+manager.add_command("shell", Shell(make_context=make_shell_context))
+
+migrate = Migrate(app, db)
+manager.add_command('db', MigrateCommand)
+
 if __name__ == '__main__':
-    app.run()
-    # manager.run()
+    # app.run()
+    manager.run()
