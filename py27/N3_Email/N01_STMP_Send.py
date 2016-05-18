@@ -11,24 +11,23 @@ msg = MIMEText('hello, send by Python...', 'plain', 'utf-8')
 
 # 通过SMTP发出去：
 # 输入Email地址和口令:
-from_addr = raw_input('From: ')
-password = raw_input('Password: ')
+from_addr = 'weiyijingtu@sina.com'
+password = raw_input('Input your password: ')
 # 输入SMTP服务器地址:
-smtp_server = raw_input('SMTP server: ')
+smtp_server = 'smtp.sina.com'
 # 输入收件人地址:
-to_addr = raw_input('To: ')
+to_addr = raw_input('Input To email address : ')
 
 import smtplib
-server = smtplib.SMTP(smtp_server, 25) # SMTP协议默认端口是25
-server.set_debuglevel(1)
-server.login(from_addr, password)
-server.sendmail(from_addr, [to_addr], msg.as_string())
+server = smtplib.SMTP(smtp_server, 465)  # SMTP协议默认端口是25 使用ssl后变为465
+server.starttls()                       # 开启SSL
+server.set_debuglevel(1)                # 用set_debuglevel(1)就可以打印出和SMTP服务器交互的所有信息。
+server.login(from_addr, password)       # login()方法用来登录SMTP服务器
+server.sendmail(from_addr, [to_addr], msg.as_string())      # sendmail()方法发邮件
 server.quit()
 
-# 用set_debuglevel(1)就可以打印出和SMTP服务器交互的所有信息。
-# SMTP协议就是简单的文本命令和响应。login()方法用来登录SMTP服务器，sendmail()方法就是发邮件，
+# SMTP协议就是简单的文本命令和响应
 # 由于可以一次发给多个人，所以传入一个list，邮件正文是一个str，as_string()把MIMEText对象变成str
-
 # 邮件主题、如何显示发件人、收件人等信息并不是通过SMTP协议发给MTA，而是包含在发给MTA的文本中的
 # 必须把From、To和Subject添加到MIMEText中，才是一封完整的邮件：
 # -*- coding: utf-8 -*-
