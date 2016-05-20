@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 from . import db
 
+
 # 定义模板类
 class Role(db.Model):
     __tablename__ = 'roles'
