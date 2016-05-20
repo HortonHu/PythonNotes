@@ -2,14 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_user_model.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/signin-ok.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/user.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/requirements.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/change_email.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/change_password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/change_email.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/change_email.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/confirm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/confirm.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/reset_password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/reset_password.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/reset_password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/unconfirmed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/data-dev.sqlite" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/data-test.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/__init__.py" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/views.py" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/models.py" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/notes.md" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/notes.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/base.html" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/index.html" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/__init__.py" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_basics.py" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_basics.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_user_model.py" afterPath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_user_model.py" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,53 +43,9 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="flask">
-      <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/HoHo" module="PythonStudy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
-        <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app" module="PythonStudy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/HoHo" module="PythonStudy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/forms.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/views.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/errors.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/__init__.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/flask_example.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-          </favorite_root>
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/static" module="PythonStudy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/email.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/models.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates" module="PythonStudy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/mail" module="PythonStudy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/404.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/base.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/form.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/user.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/form_test.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/signin-ok.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-          </favorite_root>
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/__init__.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        </favorite_root>
-        <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests" module="PythonStudy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/__init__.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_basics.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        </favorite_root>
-        <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/config.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/manage.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations" module="PythonStudy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/env.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/README" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/versions" module="PythonStudy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/alembic.ini" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-          <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/script.py.mako" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        </favorite_root>
-        <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/data.sqlite" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/requirements.txt" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      </favorite_root>
-    </favorites_list>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="notes.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notes.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/notes.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
@@ -84,18 +58,6 @@
           </provider>
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding>
-                <element signature="e#45#61#0" expanded="true" />
-              </folding>
-            </state>
           </provider>
         </entry>
       </file>
@@ -118,10 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/py27/N4_DataBase/N03_SQLAlchemy.py" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Knowledge/HTTP.txt" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Knowledge/Web_Knowledge.txt" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Knowledge/MVC" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Knowledge/HTTP.md" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Knowledge/HTML.md" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Knowledge/HTML_CSS_JavaScript.md" />
@@ -156,19 +114,23 @@
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/notes.txt" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/config.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/email.py" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/__init__.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/__init__.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/errors.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/forms.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_basics.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/manage.py" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/base.html" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/form_test.html" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/index.html" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/views.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/notes.md" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/models.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_user_model.py" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/__init__.py" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/__init__.py" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/models.py" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/login.html" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/views.py" />
+        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/forms.py" />
       </list>
     </option>
   </component>
@@ -371,105 +333,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py27" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="N5_Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Flask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py27" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="N5_Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Flask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py27" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="N5_Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Flask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -479,7 +343,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/flasky-7a/app/models.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/flasky-8h/tests" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -503,8 +367,9 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="486" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="SearchEverywhereHistoryKey" value="str2&#9;null&#9;null" />
-    <property name="two.files.diff.last.used.file" value="$USER_HOME$/Desktop/flasky-7a/app/models.py" />
+    <property name="two.files.diff.last.used.file" value="$USER_HOME$/Desktop/flasky-8h/app/models.py" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="two.files.diff.last.used.folder" value="$USER_HOME$/Desktop/flasky-8h/tests" />
   </component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
@@ -819,13 +684,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
-    </task>
-    <task id="LOCAL-00050" summary="update">
-      <created>1462149945446</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1462149945480</updated>
     </task>
     <task id="LOCAL-00051" summary="update">
       <created>1462190464478</created>
@@ -1163,7 +1021,14 @@
       <option name="project" value="LOCAL" />
       <updated>1463709351353</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="update">
+      <created>1463717212320</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1463717212320</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1184,14 +1049,14 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229167" sideWeight="0.8494624" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22767857" sideWeight="0.8310292" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32411674" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29953918" sideWeight="0.5145631" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34715822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32668713" sideWeight="0.49107143" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.79877114" sideWeight="0.4854369" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18229167" sideWeight="0.15053764" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18229167" sideWeight="0.16897081" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1203,6 +1068,26 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32411674" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29953918" sideWeight="0.5145631" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34715822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32668713" sideWeight="0.49107143" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31643626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.79877114" sideWeight="0.4854369" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229167" sideWeight="0.8310292" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18229167" sideWeight="0.16897081" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1228,34 +1113,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/script.py.mako">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1703">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/alembic.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2016.1/system/python_stubs/-762174762/nt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -1353,6 +1210,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1372,18 +1230,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_basics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1429,21 +1280,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/form_test.html" />
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/mail/new_user.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1462,6 +1299,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1544,20 +1382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/notes.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="50">
-            <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1595,19 +1419,97 @@
         <state relative-caret-position="497">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#45#60#0" expanded="true" />
+            <element signature="e#45#60#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+          <folding>
+            <element signature="e#24#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#45#61#0" expanded="true" />
+            <element signature="e#23#39#0" expanded="true" />
+            <marker date="1463722799840" expanded="true" signature="0:22" placeholder="..." />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+          <folding>
+            <element signature="e#46#114#0" expanded="true" />
+            <marker date="1463722220379" expanded="true" signature="1573:6059" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/notes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="50">
+            <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
