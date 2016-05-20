@@ -15,12 +15,9 @@
 │  ├─static/                    存放静态文件
 │  └─templates/                 存放模板
 │      │  404.html
+│      │  500.html
 │      │  base.html
-│      │  form.html
-│      │  form_test.html
-│      │  home.html
-│      │  signin-ok.html
-│      │  user.html
+│      │  index.html
 │      └─mail
 ├─migrations/                    数据库迁移脚本
 │  │  alembic.ini
