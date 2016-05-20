@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-from . import db
 from werkzeug.security import generate_password_hash, check_password_hash
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from flask import current_app
@@ -31,10 +30,12 @@ class User(UserMixin, db.Model):
     def password(self):
         raise AttributeError('password is not a readable attribute')
 
+    # 设置密码hash值
     @password.setter
     def password(self, password):
         self.password_hash = generate_password_hash(password)
 
+    # 确认密码
     def verify_password(self, password):
         return check_password_hash(self.password_hash, password)
 
