@@ -2,7 +2,7 @@
 ```
 │  config.py                      配置选项
 │  manage.py                      启动程序  
-│  requirements.txt
+│  requirements.txt               附件需求
 ├─app/                           保存程序的所有代码、模板和静态文件
 │  │  __init__.py                工厂函数
 │  │  email.py                   Email支持函数
