@@ -2,7 +2,7 @@
 ```
 │  config.py                      配置选项
 │  manage.py                      启动程序  
-│  requirements.txt               附件需求
+│  requirements.txt               扩展版本需求
 ├─app/                           保存程序的所有代码、模板和静态文件
 │  │  __init__.py                工厂函数
 │  │  email.py                   Email支持函数
@@ -14,19 +14,12 @@
 │  │      views.py               程序的路由
 │  ├─static/                    存放静态文件
 │  └─templates/                 存放模板
-│      │  404.html
-│      │  500.html
-│      │  base.html
-│      │  index.html
-│      └─mail
 ├─migrations/                    数据库迁移脚本
 │  │  alembic.ini
 │  │  env.py
 │  │  README
 │  │  script.py.mako
 │  └─versions
-└─tests/                        单元测试
-    │  __init__.py
-    └─test_basics.py
+└─tests/                         各种单元测试
 ```        
 
