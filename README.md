@@ -21,3 +21,4 @@ Books:
 - Python网络编程攻略（Python Network Programming Cookbook）
 - HTTP权威指南
 - Flask Web开发：基于Python的Web应用开发实战
+- Python网络数据采集(Web Scraping with Python-Collecting Data from the Modern Web)
