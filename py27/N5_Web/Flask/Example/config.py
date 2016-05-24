@@ -4,7 +4,7 @@ import ConfigParser
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 cf = ConfigParser.ConfigParser()
-cf.readfp(open('data.ini'))
+cf.readfp(open('mydata.ini'))
 
 
 # 定义Config基类
