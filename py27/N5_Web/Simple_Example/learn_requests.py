@@ -31,3 +31,11 @@ payload = {'key1': 'value1', 'key2': ['value2', 'value3']}
 r = requests.get('http://httpbin.org/get', params=payload)
 print(r.url)
 # 得到 http://httpbin.org/get?key1=value1&key2=value2&key2=value3
+
+# Response Content
+import requests
+r = requests.get('https://api.github.com/events')
+print r.text
+print r.encoding
+r.encoding = 'ISO-8859-1'
+print r.text
