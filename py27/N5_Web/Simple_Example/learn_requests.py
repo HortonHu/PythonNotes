@@ -39,3 +39,24 @@ print r.text
 print r.encoding
 r.encoding = 'ISO-8859-1'
 print r.text
+
+# Binary Response Content
+print r.content           # The gzip and deflate transfer-encodings are automatically decoded
+# create an image from binary data returned by a request
+from PIL import Image
+from StringIO import StringIO
+i = Image.open(StringIO(r.content))
+
+# JSON Response Content
+import requests
+r = requests.get('https://api.github.com/events')
+r.json()
+
+# Raw Response Content
+r = requests.get('https://api.github.com/events', stream=True)
+print r.raw
+r.raw.read(10)
+# with open(filename, 'wb') as fd:
+#     for chunk in r.iter_content(chunk_size):
+#         fd.write(chunk)
+
