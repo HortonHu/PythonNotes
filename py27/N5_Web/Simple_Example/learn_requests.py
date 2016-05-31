@@ -60,3 +60,21 @@ r.raw.read(10)
 #     for chunk in r.iter_content(chunk_size):
 #         fd.write(chunk)
 
+# Custom Headers
+url = 'https://api.github.com/some/endpoint'
+headers = {'user-agent': 'my-app/0.0.1'}
+r = requests.get(url, headers=headers)
+
+# More complicated POST requests
+payload = {'key1': 'value1', 'key2': 'value2'}
+r = requests.post("http://httpbin.org/post", data=payload)
+print(r.text)
+
+import json
+url = 'https://api.github.com/some/endpoint'
+payload = {'some': 'data'}
+r = requests.post(url, data=json.dumps(payload))
+
+url = 'https://api.github.com/some/endpoint'
+payload = {'some': 'data'}
+r = requests.post(url, json=payload)
