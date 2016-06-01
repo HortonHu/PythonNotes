@@ -78,3 +78,63 @@ r = requests.post(url, data=json.dumps(payload))
 url = 'https://api.github.com/some/endpoint'
 payload = {'some': 'data'}
 r = requests.post(url, json=payload)
+
+# POST a Multipart-Encoded File
+url = 'http://httpbin.org/post'
+files = {'file': open('report.xls', 'rb')}
+r = requests.post(url, files=files)
+print r.text
+
+# Response Status Codes
+r = requests.get('http://httpbin.org/get')
+print r.status_code
+print r.status_code == requests.codes.ok
+
+bad_r = requests.get('http://httpbin.org/status/404')
+print bad_r.status_code
+bad_r.raise_for_status()        # raise http_error
+
+# Response Headers
+print r.headers
+print r.headers['Content-Type']
+print r.headers.get('content-type')
+
+# Cookies
+url = 'http://example.com/some/cookie/setting/url'
+r = requests.get(url)
+# access cookies
+print r.cookies['example_cookie_name']
+# send cookies
+url = 'http://httpbin.org/cookies'
+cookies = dict(cookies_are='working')
+r = requests.get(url, cookies=cookies)
+print r.text
+
+# Redirection and History
+r = requests.get('http://github.com')
+print r.url
+print r.status_code
+print r.history
+# disable redirection
+r = requests.get('http://github.com', allow_redirects=False)
+print r.status_code
+print r.history
+# enable redirection
+r = requests.head('http://github.com', allow_redirects=True)
+print r.status_code
+print r.history
+
+# Timeouts
+requests.get('http://github.com', timeout=0.001)
+
+# Errors and Exceptions
+
+# Session Objects
+# persist certain parameters across requests
+s = requests.Session()
+s.get('http://httpbin.org/cookies/set/sessioncookie/123456789')
+r = s.get("http://httpbin.org/cookies")
+
+print(r.text)
+
+
