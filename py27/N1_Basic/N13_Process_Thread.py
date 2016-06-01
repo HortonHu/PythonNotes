@@ -30,7 +30,6 @@ else:
 from multiprocessing import Process
 import os
 
-
 # 子进程要执行的代码
 def run_proc(name):
     print 'Run child process %s (%s)...' % (name, os.getpid())
@@ -47,7 +46,6 @@ if __name__ == '__main__':
 # 如果要启动大量的子进程，可以用进程池的方式批量创建子进程：
 from multiprocessing import Pool
 import os, time, random
-
 
 def long_time_task(name):
     print 'Run task %s (%s)...' % (name, os.getpid())
@@ -96,7 +94,6 @@ if __name__ == '__main__':
     pr.start()                                  # 启动子进程pr，读取:
     pw.join()                                   # 等待pw结束:
     pr.terminate()                              # pr进程里是死循环，无法等待其结束，只能强行终止:
-
 # 在Unix/Linux下，multiprocessing模块封装了fork()调用，使我们不需要关注fork()的细节。
 # 由于Windows没有fork调用，因此，multiprocessing需要“模拟”出fork的效果，
 # 父进程所有Python对象都必须通过pickle序列化再传到子进程去
@@ -155,7 +152,7 @@ t2.start()
 t1.join()
 t2.join()
 print balance
-# 们要确保balance计算正确，就要给change_it()上一把锁，
+# 要确保balance计算正确，就要给change_it()上一把锁，
 # 当某个线程开始执行change_it()时，该线程因为获得了锁，因此其他线程不能同时执行change_it()，只能等待，
 # 直到锁被释放后，获得该锁以后才能改。由于锁只有一个，无论多少线程，同一时刻最多只有一个线程持有该锁，
 # 所以，不会造成修改的冲突。创建一个锁就是通过threading.Lock()来实现
