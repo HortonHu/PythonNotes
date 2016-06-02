@@ -95,6 +95,11 @@ print 'Thomas' in d
 print d.get('Thomas')
 print d.get('Thomas', -1)
 d.pop('Bob')    # 删除key 对应的value也会删除
+# 使用zip来生产dict  d = dict(zip(keys, values))
+keys = ['Safe', 'Bob', 'Thomas']
+values = ['Hammad', 'Builder', 'Engine']
+d = dict(zip(keys, values))
+print d
 
 # Data type: set{'key'}
 # set和dict类似，也是一组key的集合，但不存储value, key不能重复
