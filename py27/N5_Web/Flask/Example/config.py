@@ -10,7 +10,11 @@ cf.readfp(open('mydata.ini'))
 # 定义Config基类
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
-    SQLALCHEMY_COMMIT_ON_TEARDOWN = True
+
+    # Database
+    SQLALCHEMY_COMMIT_ON_TEARDOWN = True        # 请求结束后都会自动提交数据库中的变动
+
+    # Mail
     MAIL_SERVER = 'smtp.sina.com'
     MAIL_PORT = 25
     MAIL_USE_TLS = True
