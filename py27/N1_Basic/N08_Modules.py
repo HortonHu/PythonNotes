@@ -460,6 +460,20 @@ parser.feed('<html><head></head><body><p>Some <a href=\"#\">html</a> tutorial...
 # 尝试解析一下HTML，输出Python官网发布的会议时间、名称和地点。
 
 
+# glob
+# 查找匹配的文件
+# 在查找的条件中，需要用到Unix shell中的匹配规则：
+#   *    :   匹配所所有
+#   ?    :   匹配一个字符
+#   []   :   匹配指定范围内的字符 如：[0-9]匹配数字。
+#   *.*  :   匹配如：[hello.txt,cat.xls,xxx234s.doc]
+#   ?.*  :   匹配如：[1.txt,h.py]
+#   ?.gif:   匹配如：[x.gif,2.gif]
+import glob
+all_txt_filename = glob.glob('c:\\users\\dell\\????.txt')
+print all_txt_filename
+
+
 # 常用第三方模块
 # PIL（Python Imaging Library） 现在已经用Pillow替代PIL了 因为PIL已经不再维护
 from PIL import Image           # 不能用import image形式
