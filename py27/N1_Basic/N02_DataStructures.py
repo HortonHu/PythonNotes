@@ -55,6 +55,7 @@ print 'List:', classmates
 classmates[1] = 'Sarah'     # 直接替换指定位置元素
 print 'List:', classmates
 s = ['python', 'java', ['asp', 'php'], 'scheme']    # list可嵌套
+print list('abc')       # 得到一个list['a', 'b', 'c']
 
 # 用collections.deque构造双端队列来快速的从任意方向pop或append
 from collections import deque
