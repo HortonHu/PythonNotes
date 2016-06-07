@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py27/N7_Algorithms/simple/cp.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N7_Algorithms/simple/N01.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N7_Algorithms/simple/N02.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N7_Algorithms/simple/N03.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N7_Algorithms/simple/N04.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N1_Basic/test.py" afterPath="$PROJECT_DIR$/py27/N1_Basic/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N7_Algorithms/simple/cp.md" afterPath="$PROJECT_DIR$/py27/N7_Algorithms/simple/cp.md" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +32,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="117">
-                <caret line="134" column="25" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
+              <first_editor relative-caret-position="417">
+                <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -680,13 +676,6 @@
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
     </task>
-    <task id="LOCAL-00077" summary="update">
-      <created>1463303183397</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1463303183397</updated>
-    </task>
     <task id="LOCAL-00078" summary="update">
       <created>1463304500978</created>
       <option name="number" value="00078" />
@@ -1023,7 +1012,14 @@
       <option name="project" value="LOCAL" />
       <updated>1465215687652</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="update">
+      <created>1465264847287</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1465264847288</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1429,8 +1425,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="117">
-            <caret line="134" column="25" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
+          <first_editor relative-caret-position="417">
+            <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
