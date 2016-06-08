@@ -157,10 +157,14 @@ except ZeroDivisionError:
     raise ValueError('input error!')
 
 
+# try except finally中出现了return的执行顺序
+
+
+
 # 调试 Debug
 # 方法一：print
 # 方法二：断言    凡是用print来辅助查看的地方，都可以用断言（assert）来替代：
-# 如果断言false，assert语句本身就会抛出AssertionError：
+# 如果断言false，ass ert语句本身就会抛出AssertionError：
 # 启动Python解释器时可以用-O参数来关闭assert：
 def foo(s):
     n = int(s)
