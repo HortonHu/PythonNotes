@@ -158,7 +158,11 @@ except ZeroDivisionError:
 
 
 # try except finally中出现了return的执行顺序
-
+# 无论是在try还是在except中，遇到return时，只要设定了finally语句，就会中断当前的return语句，跳转到finally中执行，
+# 如果finally中遇到return语句，就直接返回，不再跳转回try/excpet中被中断的return语句
+# http://www.cnblogs.com/ybwang/archive/2015/08/18/4738621.html
+# http://www.2cto.com/kf/201405/304975.html
+# http://www.jb51.net/article/65487.htm
 
 
 # 调试 Debug
