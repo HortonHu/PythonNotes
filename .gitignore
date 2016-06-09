@@ -33,7 +33,7 @@ $RECYCLE.BIN/
 
 # Files that might appear on external disk
 .Spotlight-V100
-/py27/.idea/workspace.xml
+/.idea/workspace.xml
 .Trashes
 
 # Directories potentially created on remote AFP share
