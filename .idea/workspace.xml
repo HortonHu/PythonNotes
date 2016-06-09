@@ -1,10 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
+    <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="update">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N1_Basic/Data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N1_Basic/Data_result.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N1_Basic/mylog.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N2_TCP_UDP/sina.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N4_DataBase/test.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/migrations/versions/190163627111_account_confirmation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/migrations/versions/38c4e85512a9_initial_migration.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/migrations/versions/456a945560f6_login_support.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N5_Web/Flask/horton/horton.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/spiders/Books.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/spiders/Resources.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N1_Basic/data.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N1_Basic/data_result.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N1_Basic/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Horton/horton.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/Data_scores.txt" afterPath="$PROJECT_DIR$/N1_Basic/Data_scores.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N01_IO_File.py" afterPath="$PROJECT_DIR$/N1_Basic/N01_IO_File.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N02_DataStructures.py" afterPath="$PROJECT_DIR$/N1_Basic/N02_DataStructures.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N03_If_Loop.py" afterPath="$PROJECT_DIR$/N1_Basic/N03_If_Loop.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N04_Coding.py" afterPath="$PROJECT_DIR$/N1_Basic/N04_Coding.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N05_Function.py" afterPath="$PROJECT_DIR$/N1_Basic/N05_Function.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N06_AdvancedFeatures.py" afterPath="$PROJECT_DIR$/N1_Basic/N06_AdvancedFeatures.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N07_FunctionalPrograming.py" afterPath="$PROJECT_DIR$/N1_Basic/N07_FunctionalPrograming.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py" afterPath="$PROJECT_DIR$/N1_Basic/N08_Modules.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N09_OOP.py" afterPath="$PROJECT_DIR$/N1_Basic/N09_OOP.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N10_OOP_Advanced.py" afterPath="$PROJECT_DIR$/N1_Basic/N10_OOP_Advanced.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N11_Error_Debug_Test.py" afterPath="$PROJECT_DIR$/N1_Basic/N11_Error_Debug_Test.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N12_IO_Advanced.py" afterPath="$PROJECT_DIR$/N1_Basic/N12_IO_Advanced.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N13_Process_Thread.py" afterPath="$PROJECT_DIR$/N1_Basic/N13_Process_Thread.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N14_RE.py" afterPath="$PROJECT_DIR$/N1_Basic/N14_RE.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/N15_GUI.py" afterPath="$PROJECT_DIR$/N1_Basic/N15_GUI.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/Pic.jpg" afterPath="$PROJECT_DIR$/N1_Basic/Pic.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/Test_fibo.py" afterPath="$PROJECT_DIR$/N1_Basic/Test_fibo.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N1_Basic/Test_sayhi.py" afterPath="$PROJECT_DIR$/N1_Basic/Test_sayhi.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N2_TCP_UDP/N01_Basic.py" afterPath="$PROJECT_DIR$/N2_TCP_UDP/N01_Basic.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N2_TCP_UDP/N02_TCP.py" afterPath="$PROJECT_DIR$/N2_TCP_UDP/N02_TCP.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N2_TCP_UDP/N03_UDP.py" afterPath="$PROJECT_DIR$/N2_TCP_UDP/N03_UDP.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N3_Email/Knowledge.txt" afterPath="$PROJECT_DIR$/N3_Email/Knowledge.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N3_Email/N01_STMP_Send.py" afterPath="$PROJECT_DIR$/N3_Email/N01_STMP_Send.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N3_Email/N02_POP3_Receive.py" afterPath="$PROJECT_DIR$/N3_Email/N02_POP3_Receive.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N4_DataBase/N01_SQLite.py" afterPath="$PROJECT_DIR$/N4_DataBase/N01_SQLite.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N4_DataBase/N02_MySQL.py" afterPath="$PROJECT_DIR$/N4_DataBase/N02_MySQL.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N4_DataBase/N03_SQLAlchemy.py" afterPath="$PROJECT_DIR$/N4_DataBase/N03_SQLAlchemy.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/db.sqlite3" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/db.sqlite3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/horton/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/horton/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/horton/settings.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/horton/settings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/horton/urls.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/horton/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/horton/wsgi.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/horton/wsgi.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/manage.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/manage.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/admin.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/admin.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/apps.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/apps.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/images/background.jpg" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/images/background.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/migrations/0001_initial.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/migrations/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/migrations/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/models.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/static/polls/style.css" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/static/polls/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/templates/polls/detail.html" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/templates/polls/detail.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/templates/polls/index.html" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/templates/polls/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/templates/polls/results.html" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/templates/polls/results.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/tests.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/urls.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/polls/views.py" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/polls/views.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/horton/templates/admin/base_site.html" afterPath="$PROJECT_DIR$/N5_Web/Django/horton/templates/admin/base_site.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/manage.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/manage.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/mysite/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/mysite/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/mysite/settings.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/mysite/settings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/mysite/urls.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/mysite/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/mysite/views.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/mysite/views.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/mysite/wsgi.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/mysite/wsgi.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/west/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/west/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/west/admin.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/west/admin.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/west/apps.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/west/apps.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/west/migrations/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/west/migrations/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/west/models.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/west/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/west/tests.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/west/tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/west/urls.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/west/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Django/mysite/west/views.py" afterPath="$PROJECT_DIR$/N5_Web/Django/mysite/west/views.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/auth/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/forms.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/auth/forms.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/auth/views.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/auth/views.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/email.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/email.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/main/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/errors.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/main/errors.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/forms.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/main/forms.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/views.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/main/views.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/models.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/static/favicon.ico" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/static/favicon.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/404.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/404.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/500.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/500.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/change_email.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/change_email.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/change_password.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/change_password.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/change_email.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/email/change_email.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/change_email.txt" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/email/change_email.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/confirm.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/email/confirm.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/confirm.txt" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/email/confirm.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/reset_password.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/email/reset_password.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/email/reset_password.txt" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/email/reset_password.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/login.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/login.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/register.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/register.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/reset_password.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/reset_password.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/auth/unconfirmed.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/auth/unconfirmed.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/base.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/base.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/index.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/mail/new_user.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/mail/new_user.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/templates/mail/new_user.txt" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/app/templates/mail/new_user.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/config.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/config.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/manage.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/manage.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/README" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/migrations/README" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/alembic.ini" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/migrations/alembic.ini" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/env.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/migrations/env.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/script.py.mako" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/migrations/script.py.mako" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/notes.md" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/notes.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/__init__.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/tests/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_basics.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/tests/test_basics.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test_user_model.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/Example/tests/test_user_model.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/data.sqlite" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/data.sqlite" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/flask_example.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/flask_example.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/migrations/README" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/migrations/README" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/migrations/alembic.ini" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/migrations/alembic.ini" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/migrations/env.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/migrations/env.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/migrations/script.py.mako" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/migrations/script.py.mako" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/templates/404.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/templates/404.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/templates/base.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/templates/base.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/templates/form.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/templates/form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/templates/form_test.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/templates/form_test.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/templates/home.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/templates/home.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/templates/signin-ok.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/templates/signin-ok.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/HoHo/templates/user.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/HoHo/templates/user.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/hor/hor.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/hor/hor.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/hor/hor_tests.py" afterPath="$PROJECT_DIR$/N5_Web/Flask/hor/hor_tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/hor/schema.sql" afterPath="$PROJECT_DIR$/N5_Web/Flask/hor/schema.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/hor/static/style.css" afterPath="$PROJECT_DIR$/N5_Web/Flask/hor/static/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/hor/templates/layout.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/hor/templates/layout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/hor/templates/login.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/hor/templates/login.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/hor/templates/show_entries.html" afterPath="$PROJECT_DIR$/N5_Web/Flask/hor/templates/show_entries.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Flask/hor/tmp/hor.db" afterPath="$PROJECT_DIR$/N5_Web/Flask/hor/tmp/hor.db" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Knowledge/Framework.md" afterPath="$PROJECT_DIR$/N5_Web/Knowledge/Framework.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Knowledge/HTML_CSS_JavaScript.md" afterPath="$PROJECT_DIR$/N5_Web/Knowledge/HTML_CSS_JavaScript.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Knowledge/HTTP.md" afterPath="$PROJECT_DIR$/N5_Web/Knowledge/HTTP.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Knowledge/MVC.md" afterPath="$PROJECT_DIR$/N5_Web/Knowledge/MVC.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Knowledge/WSGI.md" afterPath="$PROJECT_DIR$/N5_Web/Knowledge/WSGI.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Simple_Example/hello.py" afterPath="$PROJECT_DIR$/N5_Web/Simple_Example/hello.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Simple_Example/learn_requests.py" afterPath="$PROJECT_DIR$/N5_Web/Simple_Example/learn_requests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N5_Web/Simple_Example/server.py" afterPath="$PROJECT_DIR$/N5_Web/Simple_Example/server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N6_Crawler/tutorial/scrapy.cfg" afterPath="$PROJECT_DIR$/N6_Crawler/tutorial/scrapy.cfg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N6_Crawler/tutorial/tutorial/__init__.py" afterPath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N6_Crawler/tutorial/tutorial/items.py" afterPath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/items.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N6_Crawler/tutorial/tutorial/pipelines.py" afterPath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/pipelines.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N6_Crawler/tutorial/tutorial/settings.py" afterPath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/settings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N6_Crawler/tutorial/tutorial/spiders/__init__.py" afterPath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/spiders/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N6_Crawler/tutorial/tutorial/spiders/dmoz_spider.py" afterPath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/spiders/dmoz_spider.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N6_Crawler/tutorial/tutorial/spiders/example.py" afterPath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/spiders/example.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N7_Algorithms/N01_search.py" afterPath="$PROJECT_DIR$/N7_Algorithms/N01_search.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py27/N7_Algorithms/simple/cp.md" afterPath="$PROJECT_DIR$/N7_Algorithms/simple/cp.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N1_Basic/N11_Error_Debug_Test.py" afterPath="$PROJECT_DIR$/py27/N1_Basic/N11_Error_Debug_Test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py27/N7_Algorithms/simple/cp.md" afterPath="$PROJECT_DIR$/py27/N7_Algorithms/simple/cp.md" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,44 +180,7 @@
     <favorites_list name="PythonStudy" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cp.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/simple/cp.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="166">
-                <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/py27/N1_Basic/Test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="N11_Error_Debug_Test.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N11_Error_Debug_Test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="164" column="28" selection-start-line="164" selection-start-column="28" selection-end-line="164" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -127,10 +246,10 @@
         <option value="$PROJECT_DIR$/py27/N7_Algorithms/simple/N03.py" />
         <option value="$PROJECT_DIR$/py27/N7_Algorithms/simple/N04.py" />
         <option value="$PROJECT_DIR$/py27/N1_Basic/N02_DataStructures.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/py27/N7_Algorithms/simple/cp.md" />
         <option value="$PROJECT_DIR$/py27/N1_Basic/Test.py" />
         <option value="$PROJECT_DIR$/py27/N1_Basic/N11_Error_Debug_Test.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -306,64 +425,6 @@
               <option name="myItemId" value="py27" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="N7_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py27" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="N7_Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py27" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py27" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="N1_Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -404,19 +465,19 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N6_Crawler\Web_Scraping_with_Python" />
-      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\Example\app\static" />
-      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\Horton" />
-      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\HoHo" />
-      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\Example\app\templates" />
       <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\Example\app\templates\mail" />
       <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\HoHo" />
       <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\Example\templates" />
       <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\horton\polls\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy" />
+      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N6_Crawler\Web_Scraping_with_Python" />
+      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\Example\app\static" />
+      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\Horton" />
+      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\HoHo" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Test">
@@ -713,13 +774,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
-    </task>
-    <task id="LOCAL-00080" summary="update">
-      <created>1463385105437</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1463385105437</updated>
     </task>
     <task id="LOCAL-00081" summary="update">
       <created>1463390387916</created>
@@ -1057,7 +1111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1465383526040</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="update">
+      <created>1465400029998</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1465400029998</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1076,14 +1137,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16815476" sideWeight="0.82087225" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16815476" sideWeight="0.82087225" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32348368" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29953918" sideWeight="0.5145631" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31336406" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32668713" sideWeight="0.49107143" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29800308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30261138" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43146417" sideWeight="0.4854369" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22835821" sideWeight="0.17912772" order="2" side_tool="true" content_ui="tabs" />
@@ -1169,21 +1230,21 @@
     <entry file="file://$PROJECT_DIR$/py27/N6_Crawler/Web_Scraping_with_Python/chapter1/3-exceptionHandling.py" />
     <entry file="file://$PROJECT_DIR$/py27/N6_Crawler/Web_Scraping_with_Python/chapter1/1-basicExample.py" />
     <entry file="file://$PROJECT_DIR$/py27/N6_Crawler/Web_Scraping_with_Python/README.md" />
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/email.py">
+    <entry file="file://$PROJECT_DIR$/N5_Web/Flask/Example/app/email.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/forms.py">
+    <entry file="file://$PROJECT_DIR$/N5_Web/Flask/Example/app/main/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/views.py">
+    <entry file="file://$PROJECT_DIR$/N5_Web/Flask/Example/app/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -1198,7 +1259,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/data.ini" />
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Django/mysite/west/migrations/__init__.py">
+    <entry file="file://$PROJECT_DIR$/N5_Web/Django/mysite/west/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1212,14 +1273,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Simple_Example/learn_requests.py">
+    <entry file="file://$PROJECT_DIR$/N5_Web/Simple_Example/learn_requests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="134" column="61" selection-start-line="134" selection-start-column="61" selection-end-line="134" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/models.py">
+    <entry file="file://$PROJECT_DIR$/N5_Web/Flask/Example/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -1228,35 +1289,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/data-dev.sqlite" />
     <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/test.sqlite" />
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/migrations/env.py">
+    <entry file="file://$PROJECT_DIR$/N5_Web/Flask/Example/migrations/env.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-925">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/config.py">
+    <entry file="file://$PROJECT_DIR$/N5_Web/Flask/Example/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/manage.py">
+    <entry file="file://$PROJECT_DIR$/N5_Web/Flask/Example/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/mydata.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/notes.md">
+    <entry file="file://$PROJECT_DIR$/N5_Web/Flask/Example/notes.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="25">
@@ -1289,28 +1343,28 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N01_IO_File.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N01_IO_File.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2125">
           <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N05_Function.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N05_Function.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1587">
           <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N13_Process_Thread.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N13_Process_Thread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10572">
           <caret line="547" column="0" selection-start-line="547" selection-start-column="0" selection-end-line="547" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N14_RE.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N14_RE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
           <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
@@ -1324,7 +1378,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/N01_search.py">
+    <entry file="file://$PROJECT_DIR$/N7_Algorithms/N01_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -1332,14 +1386,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/simple/N04.py" />
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N04_Coding.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N04_Coding.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N02_DataStructures.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N02_DataStructures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
@@ -1349,7 +1403,7 @@
     <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/simple/N01.py" />
     <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/simple/N02.py" />
     <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/simple/N03.py" />
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N03_If_Loop.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N03_If_Loop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
@@ -1357,15 +1411,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N06_AdvancedFeatures.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N06_AdvancedFeatures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
           <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
@@ -1373,7 +1419,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N12_IO_Advanced.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N12_IO_Advanced.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3050">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
@@ -1381,7 +1427,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N10_OOP_Advanced.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N10_OOP_Advanced.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8903">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1389,7 +1435,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N09_OOP.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N09_OOP.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4200">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
@@ -1397,7 +1443,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N08_Modules.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N08_Modules.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4150">
           <caret line="114" column="29" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="31" />
@@ -1405,7 +1451,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N07_FunctionalPrograming.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N07_FunctionalPrograming.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5175">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
@@ -1421,7 +1467,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/simple/cp.md">
+    <entry file="file://$PROJECT_DIR$/N7_Algorithms/simple/cp.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="166">
@@ -1435,7 +1481,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/Test.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/Test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
@@ -1443,10 +1489,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py27/N1_Basic/N11_Error_Debug_Test.py">
+    <entry file="file://$PROJECT_DIR$/N1_Basic/N11_Error_Debug_Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="164" column="28" selection-start-line="164" selection-start-column="28" selection-end-line="164" selection-end-column="28" />
+        <state relative-caret-position="325">
+          <caret line="167" column="10" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/N5_Web/Flask/Example/mydata.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>

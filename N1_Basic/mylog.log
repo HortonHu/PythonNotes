@@ -1,0 +1,3 @@
+Wed, 04 May 2016 20:02:05 Test.py[line:20] DEBUG This is debug message
+Wed, 04 May 2016 20:02:05 Test.py[line:21] INFO This is info message
+Wed, 04 May 2016 20:02:05 Test.py[line:22] WARNING This is warning message
