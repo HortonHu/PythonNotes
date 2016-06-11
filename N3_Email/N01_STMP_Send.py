@@ -55,6 +55,7 @@ msg['To'] = _format_addr(u'管理员 <%s>' % to_addr)
 msg['Subject'] = Header(u'来自SMTP的问候……', 'utf-8').encode()
 
 server = smtplib.SMTP(smtp_server, 25)
+server.starttls()       # 很多邮箱都要求SSL登陆 用25端口+TLS的方式实现SSL
 server.set_debuglevel(1)
 server.login(from_addr, password)
 server.sendmail(from_addr, [to_addr], msg.as_string())
