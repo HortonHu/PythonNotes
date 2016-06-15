@@ -33,7 +33,7 @@ $RECYCLE.BIN/
 
 # Files that might appear on external disk
 .Spotlight-V100
-/.idea/workspace.xml
+/.idea
 .Trashes
 
 # Directories potentially created on remote AFP share
@@ -45,4 +45,4 @@ Temporary Items
 
 
 /N5_Web/Flask/Example/mydata.ini
-/N1_Basic/Test.py
+/test.py
