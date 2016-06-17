@@ -24,3 +24,5 @@ Books:
 - Python网络数据采集(Web Scraping with Python-Collecting Data from the Modern Web)
 - Python算法设计(Python Algorithms: Mastering Basic Algorithms in the Python Language)
 - Python自然语言处理
+
+- Linux命令行大全
