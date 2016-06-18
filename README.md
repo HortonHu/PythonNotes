@@ -1,14 +1,15 @@
-﻿# PythonStudy
-This project is a record of mine Python study.
+﻿# Python学习记录
 
-Web sites：
-- http://www.liaoxuefeng.com/
-- http://crossincode.com/home/
-- http://doc.python.org/
-- http://www.w3school.com.cn/
+### 学习资料来源
+网站：
+- [Python官方文档（英2.7）](http://docs.python.org/2.7/)
+- [Python官方文档（中2.7）](http://www.pythondoc.com/pythontutorial27/index.html)
+- [廖雪峰的官方网站](http://www.liaoxuefeng.com/)
+- [Crossin的编程教室](http://crossincode.com/home/)
+- [Python 基础教程](http://www.runoob.com/python/python-tutorial.html)
 
-Books:
-- A Byte of Python(简明Python教程)
+书籍:
+- 简明Python教程(A Byte of Python)
 - Python核心编程
 - Head First Python
 - Dive Into Python
@@ -24,5 +25,7 @@ Books:
 - Python网络数据采集(Web Scraping with Python-Collecting Data from the Modern Web)
 - Python算法设计(Python Algorithms: Mastering Basic Algorithms in the Python Language)
 - Python自然语言处理
-
 - Linux命令行大全
+
+练习：
+- [挑战Python](http://www.pythontip.com/coding/code_oj)
