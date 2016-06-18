@@ -2,41 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="change structure">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/Pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/01-IO/Data.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/01-IO/Data_result.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/01-IO/Data_scores.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/01-IO/IO-Advanced.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/03-Control-Flow/Control-Flow.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/04-Coding/Coding.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/05-Function/AdvancedFeatures.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/05-Function/Function.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/05-Function/Functional-Programing.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/Modules.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/Test_fibo.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/07-OOP/OOP-Advanced.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/07-OOP/OOP.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/08-Error-Debug-Test/Error-Debug-Test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/08-Error-Debug-Test/Test_sayhi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/09-Process-Thread/Process-Thread.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/10-RE/RE.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/11-GUI/GUI.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/01-IO/IO.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/02-DataStructures/DataStructures.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/db/N01_SQLite.py" afterPath="$PROJECT_DIR$/Basic/12-Database/SQLite.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/db/N02_MySQL.py" afterPath="$PROJECT_DIR$/Basic/12-Database/MySQL.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/db/N03_SQLAlchemy.py" afterPath="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/db/test.db" afterPath="$PROJECT_DIR$/Basic/12-Database/test.db" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/email/Knowledge.txt" afterPath="$PROJECT_DIR$/Basic/13-Email/Knowledge.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/email/N01_STMP_Send.py" afterPath="$PROJECT_DIR$/Basic/13-Email/STMP-Send.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/email/N02_POP3_Receive.py" afterPath="$PROJECT_DIR$/Basic/13-Email/POP3-Receive.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/tcp_udp/N01_Basic.py" afterPath="$PROJECT_DIR$/Basic/14-TCP-UDP/Basic.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/tcp_udp/N02_TCP.py" afterPath="$PROJECT_DIR$/Basic/14-TCP-UDP/TCP.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/tcp_udp/N03_UDP.py" afterPath="$PROJECT_DIR$/Basic/14-TCP-UDP/UDP.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/tcp_udp/sina.html" afterPath="$PROJECT_DIR$/Basic/14-TCP-UDP/sina.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/02-DataStructures/Data-Structures.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,6 +34,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
@@ -198,6 +166,244 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="14-TCP-UDP">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="13-Email">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="12-Database">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="11-GUI">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="10-RE">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="09-Process-Thread">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="08-Error-Debug-Test">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="07-OOP">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="06-Modules">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="05-Function">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="04-Coding">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="03-Control-Flow">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="02-DataStructures">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="01-IO">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -554,13 +760,6 @@
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
     </task>
-    <task id="LOCAL-00088" summary="update">
-      <created>1463497420992</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1463497420992</updated>
-    </task>
     <task id="LOCAL-00089" summary="update">
       <created>1463542467319</created>
       <option name="number" value="00089" />
@@ -897,7 +1096,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466218242023</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="change structure">
+      <created>1466234750469</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1466234750469</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -963,7 +1169,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../myflasky/Example/manage.py" />
     <entry file="file://$PROJECT_DIR$/../myflasky/Example/notes.md" />
     <entry file="file://C:/Python27/Lib/glob.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1104,7 +1309,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/mylog.log">
+    <entry file="file://$PROJECT_DIR$/Basic/mylog.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -1131,14 +1336,6 @@
     <entry file="file://$PROJECT_DIR$/Basic/03-Control-Flow/Control-Flow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-875">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/02-DataStructures/DataStructures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1250,6 +1447,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/02_DataStructures/DataStructures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3678">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/02-DataStructures/Data-Structures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3153">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
