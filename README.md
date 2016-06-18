@@ -1,6 +1,6 @@
 ﻿# Python学习记录
 
-### 学习资料来源
+### 资料来源
 网站：
 - [Python官方文档（英2.7）](http://docs.python.org/2.7/)
 - [Python官方文档（中2.7）](http://www.pythondoc.com/pythontutorial27/index.html)

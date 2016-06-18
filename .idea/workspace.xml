@@ -1,95 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/west/migrations/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/Data.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/Data_result.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/Data_scores.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N01_IO_File.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N02_DataStructures.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N03_If_Loop.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N04_Coding.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N05_Function.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N06_AdvancedFeatures.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N07_FunctionalPrograming.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N08_Modules.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N09_OOP.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N10_OOP_Advanced.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N11_Error_Debug_Test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N12_IO_Advanced.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N13_Process_Thread.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N14_RE.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/N15_GUI.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/Pic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/Test_fibo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/Test_sayhi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/N1_Basic/mylog.log" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N2_TCP_UDP/N01_Basic.py" afterPath="$PROJECT_DIR$/basic/tcp_udp/N01_Basic.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N2_TCP_UDP/N02_TCP.py" afterPath="$PROJECT_DIR$/basic/tcp_udp/N02_TCP.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N2_TCP_UDP/N03_UDP.py" afterPath="$PROJECT_DIR$/basic/tcp_udp/N03_UDP.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N2_TCP_UDP/sina.html" afterPath="$PROJECT_DIR$/basic/tcp_udp/sina.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N3_Email/Knowledge.txt" afterPath="$PROJECT_DIR$/basic/email/Knowledge.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N3_Email/N01_STMP_Send.py" afterPath="$PROJECT_DIR$/basic/email/N01_STMP_Send.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N3_Email/N02_POP3_Receive.py" afterPath="$PROJECT_DIR$/basic/email/N02_POP3_Receive.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N4_DataBase/N01_SQLite.py" afterPath="$PROJECT_DIR$/basic/db/N01_SQLite.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N4_DataBase/N02_MySQL.py" afterPath="$PROJECT_DIR$/basic/db/N02_MySQL.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N4_DataBase/N03_SQLAlchemy.py" afterPath="$PROJECT_DIR$/basic/db/N03_SQLAlchemy.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N4_DataBase/test.db" afterPath="$PROJECT_DIR$/basic/db/test.db" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/__init__.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/db.sqlite3" afterPath="$PROJECT_DIR$/web/framework/Django/horton/db.sqlite3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/horton/__init__.py" afterPath="$PROJECT_DIR$/web/crawler/tutorial/tutorial/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/horton/settings.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/horton/settings.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/horton/urls.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/horton/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/horton/wsgi.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/horton/wsgi.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/manage.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/manage.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/__init__.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/horton/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/admin.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/admin.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/apps.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/apps.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/images/background.jpg" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/images/background.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/migrations/0001_initial.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/migrations/__init__.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/models.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/models.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/static/polls/style.css" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/static/polls/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/templates/polls/detail.html" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/templates/polls/detail.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/templates/polls/index.html" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/templates/polls/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/templates/polls/results.html" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/templates/polls/results.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/tests.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/tests.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/urls.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/polls/views.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/views.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/horton/templates/admin/base_site.html" afterPath="$PROJECT_DIR$/web/framework/Django/horton/templates/admin/base_site.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/manage.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/manage.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/mysite/__init__.py" afterPath="$PROJECT_DIR$/web/framework/Django/horton/polls/migrations/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/mysite/settings.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/mysite/settings.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/mysite/urls.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/mysite/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/mysite/views.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/mysite/views.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/mysite/wsgi.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/mysite/wsgi.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/west/__init__.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/mysite/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/west/admin.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/west/admin.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/west/apps.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/west/apps.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/west/migrations/__init__.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/west/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/west/models.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/west/models.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/west/tests.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/west/tests.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/west/urls.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/west/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Django/mysite/west/views.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/west/views.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Knowledge/Framework.md" afterPath="$PROJECT_DIR$/web/Knowledge/Framework.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Knowledge/HTML_CSS_JavaScript.md" afterPath="$PROJECT_DIR$/web/Knowledge/HTML_CSS_JavaScript.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Knowledge/HTTP.md" afterPath="$PROJECT_DIR$/web/Knowledge/HTTP.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Knowledge/MVC.md" afterPath="$PROJECT_DIR$/web/Knowledge/MVC.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Knowledge/WSGI.md" afterPath="$PROJECT_DIR$/web/Knowledge/WSGI.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Simple_Example/hello.py" afterPath="$PROJECT_DIR$/web/Simple_Example/hello.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Simple_Example/learn_requests.py" afterPath="$PROJECT_DIR$/web/Simple_Example/learn_requests.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N5_Web/Simple_Example/server.py" afterPath="$PROJECT_DIR$/web/Simple_Example/server.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N6_Crawler/tutorial/scrapy.cfg" afterPath="$PROJECT_DIR$/web/crawler/tutorial/scrapy.cfg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/__init__.py" afterPath="$PROJECT_DIR$/web/framework/Django/mysite/west/migrations/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/items.py" afterPath="$PROJECT_DIR$/web/crawler/tutorial/tutorial/items.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/pipelines.py" afterPath="$PROJECT_DIR$/web/crawler/tutorial/tutorial/pipelines.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/settings.py" afterPath="$PROJECT_DIR$/web/crawler/tutorial/tutorial/settings.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/spiders/Books.html" afterPath="$PROJECT_DIR$/web/crawler/tutorial/tutorial/spiders/Books.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/spiders/Resources.html" afterPath="$PROJECT_DIR$/web/crawler/tutorial/tutorial/spiders/Resources.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/spiders/__init__.py" afterPath="$PROJECT_DIR$/web/crawler/tutorial/tutorial/spiders/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/spiders/dmoz_spider.py" afterPath="$PROJECT_DIR$/web/crawler/tutorial/tutorial/spiders/dmoz_spider.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/N6_Crawler/tutorial/tutorial/spiders/example.py" afterPath="$PROJECT_DIR$/web/crawler/tutorial/tutorial/spiders/example.py" />
+    <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="change structure">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/Pic.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/01-IO/Data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/01-IO/Data_result.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/01-IO/Data_scores.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/01-IO/IO-Advanced.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/03-Control-Flow/Control-Flow.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/04-Coding/Coding.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/05-Function/AdvancedFeatures.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/05-Function/Function.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/05-Function/Functional-Programing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/Modules.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/Test_fibo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/07-OOP/OOP-Advanced.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/07-OOP/OOP.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/08-Error-Debug-Test/Error-Debug-Test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/08-Error-Debug-Test/Test_sayhi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/09-Process-Thread/Process-Thread.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/10-RE/RE.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/11-GUI/GUI.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/01-IO/IO.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/02-DataStructures/DataStructures.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/db/N01_SQLite.py" afterPath="$PROJECT_DIR$/Basic/12-Database/SQLite.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/db/N02_MySQL.py" afterPath="$PROJECT_DIR$/Basic/12-Database/MySQL.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/db/N03_SQLAlchemy.py" afterPath="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/db/test.db" afterPath="$PROJECT_DIR$/Basic/12-Database/test.db" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/email/Knowledge.txt" afterPath="$PROJECT_DIR$/Basic/13-Email/Knowledge.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/email/N01_STMP_Send.py" afterPath="$PROJECT_DIR$/Basic/13-Email/STMP-Send.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/email/N02_POP3_Receive.py" afterPath="$PROJECT_DIR$/Basic/13-Email/POP3-Receive.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/tcp_udp/N01_Basic.py" afterPath="$PROJECT_DIR$/Basic/14-TCP-UDP/Basic.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/tcp_udp/N02_TCP.py" afterPath="$PROJECT_DIR$/Basic/14-TCP-UDP/TCP.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/tcp_udp/N03_UDP.py" afterPath="$PROJECT_DIR$/Basic/14-TCP-UDP/UDP.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/tcp_udp/sina.html" afterPath="$PROJECT_DIR$/Basic/14-TCP-UDP/sina.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
@@ -131,14 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/flask_example.py" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/email.py" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/models.py" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/__init__.py" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/tests/test.py" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/requirements.txt" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/notes.txt" />
-        <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/email.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/__init__.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/errors.py" />
         <option value="$PROJECT_DIR$/py27/N5_Web/Flask/Example/app/main/forms.py" />
@@ -179,8 +115,16 @@
         <option value="$PROJECT_DIR$/py27/N1_Basic/N11_Error_Debug_Test.py" />
         <option value="$PROJECT_DIR$/N3_Email/N01_STMP_Send.py" />
         <option value="$PROJECT_DIR$/N1_Basic/Test.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/basic/N03_control_flow.py" />
+        <option value="$PROJECT_DIR$/basic/N02_DataStructures.py" />
+        <option value="$PROJECT_DIR$/basic/N06_AdvancedFeatures.py" />
+        <option value="$PROJECT_DIR$/basic/N01_IO_File.py" />
+        <option value="$PROJECT_DIR$/basic/01_IO_File/N01_IO_File.py" />
+        <option value="$PROJECT_DIR$/basic/01_IO/IO_File.py" />
+        <option value="$PROJECT_DIR$/basic/N12_IO_Advanced.py" />
+        <option value="$PROJECT_DIR$/Basic/05-Function/Function.py" />
+        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -244,6 +188,20 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonStudy">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Basic">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="ProjectPane">
@@ -276,7 +234,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="486" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="SearchEverywhereHistoryKey" value="str2&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="fib&#9;null&#9;null&#10;str2&#9;null&#9;null" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Desktop/flasky/flasky-9a/migrations/env.py" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="two.files.diff.last.used.folder" value="$USER_HOME$/Desktop/flasky/flasky-8h/migrations" />
@@ -287,11 +245,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\basic" />
-      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\web\framework" />
-      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\N5_Web" />
-      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy" />
-      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N6_Crawler\Web_Scraping_with_Python" />
+      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\Basic\05-Function" />
+      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\Basic\01-IO" />
+      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\Basic\10-Error-Debug-Test" />
+      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\Basic\08-Modules" />
+      <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\Basic\11-IO-Advanced" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\Flask\Example\app\templates" />
@@ -301,7 +259,7 @@
       <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\py27\N5_Web\horton\polls\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Test (1)">
+  <component name="RunManager" selected="Python.test (1)">
     <configuration default="false" name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -336,23 +294,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="2-beautifulSoup" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/py27/N6_Crawler/Web_Scraping_with_Python/chapter1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonStudy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/py27/N6_Crawler/Web_Scraping_with_Python/chapter1/2-beautifulSoup.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="learn_requests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -383,6 +324,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonStudy" />
       <option name="SCRIPT_NAME" value="C:\Users\dell\Documents\GitHub\PythonStudy\test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonStudy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -568,17 +526,17 @@
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in hor_tests" />
       <item index="2" class="java.lang.String" itemvalue="Python.Test" />
       <item index="3" class="java.lang.String" itemvalue="Python.config" />
-      <item index="4" class="java.lang.String" itemvalue="Python.2-beautifulSoup" />
-      <item index="5" class="java.lang.String" itemvalue="Python.learn_requests" />
-      <item index="6" class="java.lang.String" itemvalue="Python.Test (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.learn_requests" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Test (1)" />
+      <item index="6" class="java.lang.String" itemvalue="Python.test (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Test (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.learn_requests" />
-        <item index="3" class="java.lang.String" itemvalue="Python.config" />
-        <item index="4" class="java.lang.String" itemvalue="Python.2-beautifulSoup" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Test (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.learn_requests" />
+        <item index="4" class="java.lang.String" itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -595,13 +553,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
-    </task>
-    <task id="LOCAL-00087" summary="update">
-      <created>1463496866449</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1463496866449</updated>
     </task>
     <task id="LOCAL-00088" summary="update">
       <created>1463497420992</created>
@@ -939,7 +890,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466086389863</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="change structure">
+      <created>1466218242022</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1466218242023</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -963,21 +921,21 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21279761" sideWeight="0.82087225" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32348368" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29953918" sideWeight="0.5145631" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220859" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31336406" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32668713" sideWeight="0.49107143" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31950846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43146417" sideWeight="0.4854369" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22835821" sideWeight="0.17912772" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9907975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220859" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -995,18 +953,16 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <MESSAGE value="reademe update" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="change structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="change structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/py27/N5_Web/Flask/Example/test.sqlite" />
-    <entry file="file://$PROJECT_DIR$/../myflasky/Example/migrations/env.py" />
-    <entry file="file://$PROJECT_DIR$/../myflasky/Example/config.py" />
     <entry file="file://$PROJECT_DIR$/../myflasky/Example/manage.py" />
     <entry file="file://$PROJECT_DIR$/../myflasky/Example/notes.md" />
     <entry file="file://C:/Python27/Lib/glob.py">
@@ -1016,21 +972,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N01_IO_File.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N13_Process_Thread.py">
+    <entry file="file://$PROJECT_DIR$/Basic/09-Process-Thread/Process-Thread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10572">
           <caret line="547" column="0" selection-start-line="547" selection-start-column="0" selection-end-line="547" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N14_RE.py">
+    <entry file="file://$PROJECT_DIR$/Basic/10-RE/RE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
           <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
@@ -1046,45 +995,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/N7_Algorithms/N01_search.py" />
     <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/simple/N04.py" />
-    <entry file="file://$PROJECT_DIR$/basic/N04_Coding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N02_DataStructures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/simple/N01.py" />
     <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/simple/N02.py" />
     <entry file="file://$PROJECT_DIR$/py27/N7_Algorithms/simple/N03.py" />
-    <entry file="file://$PROJECT_DIR$/basic/N03_If_Loop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N06_AdvancedFeatures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N12_IO_Advanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3050">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N07_FunctionalPrograming.py">
+    <entry file="file://$PROJECT_DIR$/Basic/05-Function/Functional-Programing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5175">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
@@ -1099,13 +1013,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/N7_Algorithms/simple/cp.md" />
-    <entry file="file://$PROJECT_DIR$/basic/N11_Error_Debug_Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="167" column="10" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../myflasky/Example/mydata.ini" />
     <entry file="file://$PROJECT_DIR$/py27/.idea/.name" />
     <entry file="file://$PROJECT_DIR$/py27/.idea/encodings.xml" />
@@ -1128,34 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N05_Function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N08_Modules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N10_OOP_Advanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2050">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/N09_OOP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3068">
-          <caret line="241" column="30" selection-start-line="241" selection-start-column="30" selection-end-line="241" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/smtplib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13175">
@@ -1163,7 +1042,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/email/N01_STMP_Send.py">
+    <entry file="file://$PROJECT_DIR$/Basic/13-Email/STMP-Send.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="61" column="13" selection-start-line="34" selection-start-column="0" selection-end-line="61" selection-end-column="13" />
@@ -1184,14 +1063,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/db/N01_SQLite.py">
+    <entry file="file://$PROJECT_DIR$/Basic/12-Database/SQLite.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/knowledge/WSGI.md">
+    <entry file="file://$PROJECT_DIR$/WEB/knowledge/WSGI.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="225">
@@ -1204,15 +1083,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/Pic.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/Basic/12-Database/test.db">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1220,16 +1096,147 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/Pic.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/Basic/14-TCP-UDP/sina.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/mylog.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/04-Coding/Coding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/03-Control-Flow/Control-Flow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-875">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/02-DataStructures/DataStructures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/01-IO/IO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/01-IO/Data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/Test_fibo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/07-OOP/OOP-Advanced.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="201" column="9" selection-start-line="201" selection-start-column="6" selection-end-line="201" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/07-OOP/OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/05-Function/Function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/Modules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/08-Error-Debug-Test/Test_sayhi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/08-Error-Debug-Test/Error-Debug-Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7000">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/01-IO/IO-Advanced.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6528">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/05-Function/AdvancedFeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="275">
-            <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <first_editor relative-caret-position="300">
+            <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1239,26 +1246,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/db/test.db">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/Test_fibo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/tcp_udp/sina.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="50">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
