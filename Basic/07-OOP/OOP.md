@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-
-
 # 面向对象编程 Object Oriented Programming，简称OOP
 # OOP把对象作为程序的基本单元，一个对象包含了数据和操作数据的函数。
 # 面向过程的程序,为了表示一个学生的成绩可以用一个dict表示：

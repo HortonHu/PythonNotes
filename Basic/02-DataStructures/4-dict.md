@@ -26,3 +26,39 @@ dict是用空间来换取时间的一种方法。
     values = ['Hammad', 'Builder', 'Engine']
     d = dict(zip(keys, values))
     print d
+
+迭代 Iteration
+------------
+默认情况下，dict迭代的是key。如果要迭代value，可以用for value in d.itervalues()
+同时迭代key和value，可以用for k, v in d.iteritems()
+
+    d = {'a': 1, 'b': 2, 'c': 3}
+    for key in d.keys():            # 最好用d.keys()这个下标数组 防止出错 或者用d.iterkeys()
+        print key
+    # 迭代value
+    for value in d.itervalues():  
+        print value
+    # 同时迭代key和value
+    for k, v in d.iteritems():  
+        print k, 'is the key of', v
+
+通过collections模块的Iterable类型判断是否可迭代
+
+    from collections import Iterable
+    
+    print isinstance('abc', Iterable)
+    print isinstance([1, 2, 3], Iterable)
+    print isinstance(123, Iterable)
+
+enumerate函数可以把一个list变成索引-元素对
+同时迭代index和元素本身
+
+    for i, value in enumerate(['A', 'B', 'C']):
+        print i, value
+
+用zip压缩的方式来迭代
+    
+    questions = ['name', 'quest', 'favorite color']
+    answers = ['lancelot', 'the holy grail', 'blue']
+    for q, a in zip(questions, answers):
+        print 'What is your {0}?  It is {1}.'.format(q, a)

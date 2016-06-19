@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-
 # 错误处理
 # 高级语言通常都内置了一套try...except...finally...的错误处理机制，Python也不例外。
 # 当我们认为某些代码可能会出错时，就可以用try来运行这段代码，

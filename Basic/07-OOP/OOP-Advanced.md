@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-
-
 # 动态绑定允许我们在程序运行的过程中动态给class加上功能，这在静态语言中很难实现。
 # 给一个实例绑定的方法，对另一个实例是不起作用的：
 class Student(object):
