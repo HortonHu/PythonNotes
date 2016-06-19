@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/01-IO/calc.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/01-IO/pickling.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/12-Database/db.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/12-Database/mysqldb.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Basic/12-Database/test.db" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Basic/12-Database/MySQL.md" afterPath="$PROJECT_DIR$/Basic/12-Database/mysqlconnector.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.md" afterPath="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Basic/12-Database/SQLite.md" afterPath="$PROJECT_DIR$/Basic/12-Database/SQLite.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/01-IO/IO.md" afterPath="$PROJECT_DIR$/Basic/01-IO/IO.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" afterPath="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +27,8 @@
       <file leaf-file-name="SQLAlchemy.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+            <state relative-caret-position="275">
+              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding>
                 <element signature="e#509#561#0" expanded="true" />
               </folding>
@@ -575,13 +566,6 @@
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
     </task>
-    <task id="LOCAL-00092" summary="update">
-      <created>1463572235741</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1463572235742</updated>
-    </task>
     <task id="LOCAL-00093" summary="update">
       <created>1463579401195</created>
       <option name="number" value="00093" />
@@ -918,7 +902,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466303396194</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="sql update">
+      <created>1466345240474</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1466345240488</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -976,7 +967,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="change structure" />
     <MESSAGE value="change structure py 2 md" />
-    <option name="LAST_COMMIT_MESSAGE" value="change structure py 2 md" />
+    <MESSAGE value="sql update" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1425,8 +1417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+        <state relative-caret-position="275">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding>
             <element signature="e#509#561#0" expanded="true" />
           </folding>

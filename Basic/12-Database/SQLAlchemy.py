@@ -74,6 +74,7 @@ print 'name:', user.name
 # 关闭Session:
 session.close()
 
+
 # ORM就是把数据库表的行与相应的对象建立关联，互相转换
 # 由于关系数据库的多个表还可以用外键实现一对多、多对多等关联，相应地，ORM框架也可以提供两个对象之间的一对多、多对多等功能。
 # 如果一个User拥有多个Book，就可以定义一对多关系如下：
@@ -84,6 +85,7 @@ class User(Base):
     name = Column(String(20))
     # 一对多:
     books = relationship('Book')
+
 
 class Book(Base):
     __tablename__ = 'book'
