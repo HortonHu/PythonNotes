@@ -46,3 +46,5 @@ Temporary Items
 
 /test.py
 *.log
+*.db
+*.sqlite

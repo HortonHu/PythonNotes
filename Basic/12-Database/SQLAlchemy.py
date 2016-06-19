@@ -1,6 +1,7 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+# ORM技术：Object-Relational Mapping
+# ORM就是把关系数据库的表结构映射到对象上
 # 数据库表是一个二维表，包含多行多列。把一个表的内容用Python的数据结构表示出来的话，
 # 可以用一个list表示多行，list的每一个元素是tuple，表示一行记录，比如，包含id和name的user表：
 # [
@@ -10,21 +11,14 @@
 # ]
 # Python的DB-API返回的数据结构就是像上面这样表示的。
 # 用tuple表示一行很难看出表的结构。如果把一个tuple用class实例来表示，就可以更容易地看出表的结构来：
-class User(object):
-    def __init__(self, id, name):
-        self.id = id
-        self.name = name
+# class User(object):
+#     def __init__(self, id, name):
+#         self.id = id
+#         self.name = name
 
-[
-    User('1', 'Michael'),
-    User('2', 'Bob'),
-    User('3', 'Adam')
-]
-# 这就是传说中的ORM技术：Object-Relational Mapping，把关系数据库的表结构映射到对象上
 
-# 在Python中，最有名的ORM框架是SQLAlchemy
 # SQLAlchemy
-# 导入:
+# 在Python中，最有名的ORM框架是SQLAlchemy
 from sqlalchemy import Column, String, create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
@@ -67,7 +61,6 @@ session.add(new_user)
 session.commit()
 # 关闭session:
 session.close()
-
 # 关键是获取session，然后把对象添加到session，最后提交并关闭。Session对象可视为当前数据库连接
 
 # 如何从数据库表中查询数据呢？有了ORM，查询出来的可以不再是tuple，而是User对象。SQLAlchemy提供的查询接口如下：
