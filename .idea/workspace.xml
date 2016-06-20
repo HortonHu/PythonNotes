@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Basic/12-Database/db.md" afterPath="$PROJECT_DIR$/Basic/12-Database/SQL.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/10-RE/RE.md" afterPath="$PROJECT_DIR$/Basic/10-RE/RE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" afterPath="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/12-Database/mysqlconnector.py" afterPath="$PROJECT_DIR$/Basic/12-Database/mysqlconnector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/12-Database/mysqldb.py" afterPath="$PROJECT_DIR$/Basic/12-Database/mysqldb.py" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,15 +24,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SQLAlchemy.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-              <folding>
-                <element signature="e#24#88#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="RE.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Basic/10-RE/RE.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="225">
+                <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
+          </provider>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -108,9 +108,9 @@
         <option value="$PROJECT_DIR$/Basic/12-Database/db.md" />
         <option value="$PROJECT_DIR$/Basic/12-Database/mysqlconnector.py" />
         <option value="$PROJECT_DIR$/Basic/12-Database/mysqldb.py" />
-        <option value="$PROJECT_DIR$/Basic/10-RE/RE.md" />
         <option value="$PROJECT_DIR$/Basic/12-Database/SQL.md" />
         <option value="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" />
+        <option value="$PROJECT_DIR$/Basic/10-RE/RE.md" />
       </list>
     </option>
   </component>
@@ -201,6 +201,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="10-RE" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -552,13 +570,6 @@
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
     </task>
-    <task id="LOCAL-00094" summary="update">
-      <created>1463625787112</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1463625787112</updated>
-    </task>
     <task id="LOCAL-00095" summary="update">
       <created>1463636142304</created>
       <option name="number" value="00095" />
@@ -895,7 +906,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466345839201</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="sql update">
+      <created>1466429599668</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1466429599668</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -953,9 +971,9 @@
     <MESSAGE value="update" />
     <MESSAGE value="change structure" />
     <MESSAGE value="change structure py 2 md" />
-    <MESSAGE value="sql update" />
     <MESSAGE value="just test" />
-    <option name="LAST_COMMIT_MESSAGE" value="just test" />
+    <MESSAGE value="sql update" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1349,26 +1367,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/10-RE/RE.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="200">
-            <caret line="8" column="3" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/sqlalchemy/orm/query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1449,8 +1447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="225">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           <folding>
             <element signature="e#24#88#0" expanded="true" />
           </folding>
@@ -1463,6 +1461,26 @@
             <folding>
               <element signature="e#24#88#0" expanded="true" />
             </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/10-RE/RE.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="225">
+            <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
