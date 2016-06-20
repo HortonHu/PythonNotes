@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Basic/12-Database/db.md" afterPath="$PROJECT_DIR$/Basic/12-Database/SQL.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/10-RE/RE.md" afterPath="$PROJECT_DIR$/Basic/10-RE/RE.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" afterPath="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/12-Database/mysqlconnector.py" afterPath="$PROJECT_DIR$/Basic/12-Database/mysqlconnector.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/12-Database/mysqldb.py" afterPath="$PROJECT_DIR$/Basic/12-Database/mysqldb.py" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +31,10 @@
       <file leaf-file-name="SQLAlchemy.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <state relative-caret-position="100">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding>
-                <element signature="e#509#561#0" expanded="true" />
+                <element signature="e#24#88#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/basic/01_IO_File/N01_IO_File.py" />
         <option value="$PROJECT_DIR$/basic/01_IO/IO_File.py" />
         <option value="$PROJECT_DIR$/basic/N12_IO_Advanced.py" />
         <option value="$PROJECT_DIR$/Basic/05-Function/Function.py" />
@@ -92,7 +95,6 @@
         <option value="$PROJECT_DIR$/Basic/07-OOP/OOP.md" />
         <option value="$PROJECT_DIR$/Basic/07-OOP/OOP-Advanced.md" />
         <option value="$PROJECT_DIR$/Basic/08-Error-Debug-Test/Error-Debug-Test.py" />
-        <option value="$PROJECT_DIR$/Basic/10-RE/RE.md" />
         <option value="$PROJECT_DIR$/Basic/11-GUI/GUI.py" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/Test_fibo.py" />
         <option value="$PROJECT_DIR$/Basic/01-IO/calc.md" />
@@ -100,12 +102,14 @@
         <option value="$PROJECT_DIR$/Basic/01-IO/io.md" />
         <option value="$PROJECT_DIR$/Basic/01-IO/pickling.md" />
         <option value="$PROJECT_DIR$/Basic/12-Database/MySQL.py" />
-        <option value="$PROJECT_DIR$/Basic/12-Database/mysqlconnector.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/Basic/12-Database/SQLite.py" />
-        <option value="$PROJECT_DIR$/Basic/12-Database/mysqldb.py" />
         <option value="$PROJECT_DIR$/Basic/12-Database/db.md" />
+        <option value="$PROJECT_DIR$/Basic/12-Database/mysqlconnector.py" />
+        <option value="$PROJECT_DIR$/Basic/12-Database/mysqldb.py" />
+        <option value="$PROJECT_DIR$/Basic/10-RE/RE.md" />
+        <option value="$PROJECT_DIR$/Basic/12-Database/SQL.md" />
         <option value="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" />
       </list>
     </option>
@@ -200,24 +204,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="12-Database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -271,24 +257,7 @@
       <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\Basic\10-Error-Debug-Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mysqldb">
-    <configuration default="false" name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/py27/N1_Basic" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonStudy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/py27/N1_Basic/Test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.SQLAlchemy">
     <configuration default="false" name="Test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -353,6 +322,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonStudy" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/12-Database/SQLite.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SQLAlchemy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Basic/12-Database" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonStudy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -536,19 +522,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.test" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in hor_tests" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Test (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Python.mysqldb" />
-      <item index="6" class="java.lang.String" itemvalue="Python.SQLite" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Test (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mysqldb" />
+      <item index="5" class="java.lang.String" itemvalue="Python.SQLite" />
+      <item index="6" class="java.lang.String" itemvalue="Python.SQLAlchemy" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.mysqldb" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SQLite" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Test (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.SQLAlchemy" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mysqldb" />
+        <item index="2" class="java.lang.String" itemvalue="Python.SQLite" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -565,13 +551,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
-    </task>
-    <task id="LOCAL-00093" summary="update">
-      <created>1463579401195</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1463579401195</updated>
     </task>
     <task id="LOCAL-00094" summary="update">
       <created>1463625787112</created>
@@ -909,7 +888,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466345240488</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="just test">
+      <created>1466345839201</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1466345839201</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -968,7 +954,8 @@
     <MESSAGE value="change structure" />
     <MESSAGE value="change structure py 2 md" />
     <MESSAGE value="sql update" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql update" />
+    <MESSAGE value="just test" />
+    <option name="LAST_COMMIT_MESSAGE" value="just test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -977,38 +964,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Basic/08-Error-Debug-Test/Test_sayhi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/02_DataStructures/DataStructures.py" />
-    <entry file="file://$PROJECT_DIR$/Basic/01-IO/IO.py" />
-    <entry file="file://$PROJECT_DIR$/Basic/01-IO/test.md" />
-    <entry file="file://$PROJECT_DIR$/Basic/01-IO/IO-Advanced.py" />
-    <entry file="file://$PROJECT_DIR$/Basic/01-IO/Data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/02-DataStructures/Data-Structures.py" />
-    <entry file="file://$PROJECT_DIR$/Basic/02-DataStructures/5-set.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="50">
-            <caret line="2" column="31" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Basic/02-DataStructures/3-tuple.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -1211,13 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/10-RE/RE.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Basic/11-GUI/GUI.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1365,14 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/12-Database/mysqldb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Basic/12-Database/SQLite.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -1381,24 +1321,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/12-Database/db.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="200">
-            <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/Basic/12-Database/mysqldb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Basic/12-Database/mysqlconnector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="225">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1415,12 +1349,110 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/10-RE/RE.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="200">
+            <caret line="8" column="3" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sqlalchemy/orm/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="2375" column="8" selection-start-line="2375" selection-start-column="8" selection-end-line="2375" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sqlalchemy/orm/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28302">
+          <caret line="1560" column="22" selection-start-line="1560" selection-start-column="22" selection-end-line="1560" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/12-Database/SQL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="500">
+            <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sqlalchemy/engine/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sqlalchemy/sql/schema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="1416" column="70" selection-start-line="1416" selection-start-column="58" selection-end-line="1416" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sqlalchemy/ext/declarative/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="120" column="26" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sqlalchemy/orm/relationships.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="1934" column="66" selection-start-line="1934" selection-start-column="53" selection-end-line="1934" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sqlalchemy/orm/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Basic/12-Database/SQLAlchemy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="100">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
-            <element signature="e#509#561#0" expanded="true" />
+            <element signature="e#24#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1429,7 +1461,7 @@
           <first_editor relative-caret-position="-684">
             <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
             <folding>
-              <element signature="e#509#561#0" expanded="true" />
+              <element signature="e#24#88#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
