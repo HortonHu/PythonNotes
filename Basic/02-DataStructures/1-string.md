@@ -5,7 +5,7 @@ Data type: string 'abc'
     print 'I\'m OK'			# 加\有避免转义的作用
     print '\\\n\\'
     print '\\\t\\'
-    print r'\\\t\\'      	# 使用r 来避免转义
+    print r'\\\t\\'      	# 使用r 来避免转义 raw strings
     print 'doesn\'t'  		# 使用\'来避免转义
     print '''line1
     line2'''							# 多行字符串

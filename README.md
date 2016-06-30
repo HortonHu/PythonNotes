@@ -17,7 +17,6 @@
 - 笨办法学 Python
 - python科学计算
 - Python技术手册
-- Python宝典
 - Python网络编程基础
 - Python网络编程攻略（Python Network Programming Cookbook）
 - HTTP权威指南
