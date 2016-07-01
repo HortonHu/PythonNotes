@@ -11,7 +11,7 @@ __init__.py可以是空文件，也可以有Python代码，本身就是一个模
     from Test_fibo import fib, fib2
     fib(500)
 
-除了下划线开头的均导入
+除了'_'开头的均导入
 
     from Test_fibo import *
     fib(500)
@@ -84,3 +84,12 @@ Python 2.x中，对于除法有两种情况，如果是整数相除，结果仍�
     print '10 / 3 =', 10 / 3
     print '10.0 / 3 =', 10.0 / 3
     print '10 // 3 =', 10 // 3
+
+编译python文件
+运行时候会尝试编译为pyc文件，如果已经存在pyc文件并且和py文件符合，就不会再编译py文件
+使用-o选项可以生成pyo文件，去掉了所有assert语句，pyc文件被忽略，py被编译成pyo
+使用-oo选项会去掉所有__doc__ string，生成pyo文件
+不伦是pyc还是pyo都不会让程序运行加快，只是省去了编译的时间
+
+
+dir()

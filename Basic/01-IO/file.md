@@ -113,6 +113,7 @@ Python还提供了一个codecs模块帮我们在读文件时自动转换编码�
 
     with open('/Users/michael/test.txt', 'w') as f:
         f.write('Hello, world!')
+    f.close()
 在Python中，文件读写是通过open()函数打开的文件对象完成的。使用with语句操作文件IO是个好习惯。
 
 

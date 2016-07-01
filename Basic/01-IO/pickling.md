@@ -38,7 +38,7 @@ print d
 Pickle的问题和所有其他编程语言特有的序列化问题一样，就是它只能用于Python，并且可能不同版本的Python彼此都不兼容，
 因此，只能用Pickle保存那些不重要的数据，不能成功地反序列化也没关系。
 
-2. JSON  （JavaScript Object Notation）
+2. JSON（JavaScript Object Notation）
 在不同的编程语言之间传递对象，就必须把对象序列化为标准格式，比如XML，但更好的方法是序列化为JSON，
 因为JSON表示出来就是一个字符串，可以被所有语言读取，也可以方便地存储到磁盘或者通过网络传输。
 JSON不仅是标准格式，并且比XML更快，而且可以直接在Web页面中读取，非常方便。
