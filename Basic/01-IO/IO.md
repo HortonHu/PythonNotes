@@ -1,4 +1,11 @@
 ## IO
+- print 打印时候讲去掉字符串的引号，末尾加上','可以避免换行
+```
+print '123'
+for i in range(10):
+    print i,
+```
+
 - raw_input()   返回 string  
 - input()       返回 value  
 ```
@@ -27,6 +34,7 @@
     print "%s's score is %d" % ('Mike', 87)
     print 'growth rate: %d %%' % 7
 ```
+
 2. 新式：  
 从2.6以后开始引入format()进行格式化 操作更方便  
 大括号和其中的字符会被替换成传入 str.format() 的参数。大括号中的数值指明使用传入 str.format() 方法的对象中的对应的一个  
@@ -43,11 +51,11 @@
 ```
     print 'The story of {0}, {1}, and {other}.'.format('Bill', 'Manfred', other='Georg')
 ```
-'!s' (应用 str() )和 '!r' (应用 repr())可以在格式化之前转换值:
+'%s' (应用 str() )和 '%r' (应用 repr())可以在格式化之前转换值:
 ```
     import math
     print 'The value of PI is approximately {}.'.format(math.pi)
-    print 'The value of PI is approximately {!r}.'.format(math.pi)
+    print 'The value of PI is approximately {%r}.'.format(math.pi)
 ```
 字段名后允许可选的 ':' 和格式指令。这允许对值的格式化加以更深入的控制。
 ```
