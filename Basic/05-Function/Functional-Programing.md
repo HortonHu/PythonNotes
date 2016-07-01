@@ -69,7 +69,7 @@ If sequence is a str, unicode or tuple, the result will be of the same type; oth
 通常规定，对于两个元素x和y，如果认为x < y，则返回-1，如果认为x == y，则返回0，如果认为x > y，则返回1
 
     print sorted([36, 5, 12, 9, 21])                    # 正序排序
-    print sorted([36, 5, 12, 9, 21], None, None, True)  # 反序排序
+    print sorted([36, 5, 12, 9, 21], reverse=True)      # 反序排序
 
 
 也可以接收一个比较函数来实现自定义的排序

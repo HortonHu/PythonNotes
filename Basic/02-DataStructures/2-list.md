@@ -19,16 +19,6 @@ Data type: List ['a', 'b', 'c'] or [1, 2, 3] or [1, 2, 'a', 'b']
     s = ['python', 'java', ['asp', 'php'], 'scheme']    # list可嵌套
     print list('abc')       # 得到一个list['a', 'b', 'c']
 
-用collections.deque构造双端队列来快速的从任意方向pop或append
-
-    from collections import deque
-    queue = deque(["Eric", "John", "Michael"])
-    queue.append("Terry")           # Terry arrives
-    queue.append("Graham")          # Graham arrives
-    queue.popleft()                 # The first to arrive now leaves
-    queue.popleft()                 # The second to arrive now leaves
-    print queue
-    
 切片 Slice
 
     s = 'hello world!'
@@ -39,6 +29,7 @@ Data type: List ['a', 'b', 'c'] or [1, 2, 3] or [1, 2, 'a', 'b']
     
 列表生成式 List Comprehensions
 替代简单的循环
+组成结构[表达式 0个或者更多的for和if]
 
     print [x * x for x in range(1, 11)]
     print [x * x for x in range(1, 11) if x % 2 == 0]   # 筛选出仅偶数的平方
@@ -50,4 +41,22 @@ Data type: List ['a', 'b', 'c'] or [1, 2, 3] or [1, 2, 'a', 'b']
     L = ['Hello', 'World', 'IBM', 'Apple']
     print [s.lower() for s in L]  # 改为小写
     L = ['Hello', 'World', 18, 'Apple', None]
-    print [s.lower() if isinstance(s, str) else s for s in L]      # 引入判断 变成条件表达式    
+    print [s.lower() if isinstance(s, str) else s for s in L]      # 引入判断 变成条件表达式
+    vec = [[1,2,3], [4,5,6], [7,8,9]]
+    print [num for elem in vec for num in elem]
+
+
+嵌套列表生成式
+
+    matrix = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+    ]
+
+    print [[row[i] for row in matrix] for i in range(4)]
+    # 也可以用zip()
+    print zip(*matrix)
+
+del语句
+和remove方法的区别是del可以删除片段或者整个list

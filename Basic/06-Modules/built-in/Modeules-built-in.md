@@ -1,5 +1,7 @@
-常用内建模块
+# 常用内建模块
+
 collections 提供了额外的数据类型
+--------------
 1.namedtuple(): 生成可以使用名字来访问元素内容的tuple子类
 2.deque: 双端队列，可以快速的从另外一侧追加和推出对象
 3.Counter: 计数器，主要用来计数
@@ -9,23 +11,25 @@ collections 提供了额外的数据类型
 namedtuple是一个函数，它用来创建一个自定义的tuple对象， namedtuple('名称', [属性list]):
 并且规定了tuple元素的个数，并可以用属性而不是索引来引用tuple的某个元素。
 用namedtuple可以很方便地定义一种数据类型，它具备tuple的不变性，又可以根据属性来引用，使用十分方便
-from collections import namedtuple
-Point = namedtuple('Point', ['x', 'y'])         # 创建一个typename为point 属性值分别为 'x' 'y'的tuple对象
-p = Point(1, 2)                                 # 创建一个实例
-print p.x                                       # 可以通过属性访问
-print isinstance(p, Point)                      # 创建的Point对象是tuple的一种子类
-print isinstance(p, tuple)
-Circle = namedtuple('Circle', ['x', 'y', 'r'])  # 用坐标和半径表示一个圆，也可以用namedtuple定义
+
+    from collections import namedtuple
+    Point = namedtuple('Point', ['x', 'y'])         # 创建一个typename为point 属性值分别为 'x' 'y'的tuple对象
+    p = Point(1, 2)                                 # 创建一个实例
+    print p.x                                       # 可以通过属性访问
+    print isinstance(p, Point)                      # 创建的Point对象是tuple的一种子类
+    print isinstance(p, tuple)
+    Circle = namedtuple('Circle', ['x', 'y', 'r'])  # 用坐标和半径表示一个圆，也可以用namedtuple定义
 
 deque 双端队列
 使用list存储数据时，按索引访问元素很快，但是插入和删除元素就很慢了，因为list是线性存储，数据量大的时候，插入和删除效率很低
 deque是为了高效实现插入和删除操作的双向列表，适合用于队列和栈
 deque除了实现list的append()和pop()外，还支持appendleft()和popleft()，这样就可以非常高效地往头部添加或删除元素
-from collections import deque
-q = deque(['a', 'b', 'c'])
-q.append('x')
-q.appendleft('y')
-print q
+
+    from collections import deque
+    q = deque(['a', 'b', 'c'])
+    q.append('x')
+    q.appendleft('y')
+    print q
 
 Counter 简单的计数器
 from collections import Counter
@@ -79,6 +83,7 @@ print dd['key2']        # key2不存在，返回默认值
 
 
 base64
+----
 Base64是一种用64个字符来表示任意二进制数据的方法
 Base64是一种任意二进制到文本字符串的编码方法，常用于在URL、Cookie、网页中传输少量二进制数据。
 Base64的原理很简单，首先，准备一个包含64个字符的数组： ['A', 'B', 'C', ... 'a', 'b', 'c', ... '0', '1', ... '+', '/']

@@ -31,7 +31,7 @@ for x in y
             pass
     print words
 
-循环后可以跟一个else 当循环中没有break时候执行
+循环后可以跟一个else 当循环中没有break发生的时候执行
 如果是else 同样是在没有break的情况下执行（即没有遇到false情况）
 在for中：
 
@@ -53,3 +53,8 @@ for x in y
         n -= 2
     print sum
 
+不伦是if还是while，被判断的部分可以包含任何操作，不仅仅是比较
+例如 in/not in/is/is not/
+优先级：布尔操作or and not < 比较符号 < 运算符号
+在布尔符号中 or < and < not 因此有`A and not B or C` 相当于 `(A and (not B)) or C`
+and和or被称为短路操作，因为他们从左往右运算，在得出结果的时候就停止

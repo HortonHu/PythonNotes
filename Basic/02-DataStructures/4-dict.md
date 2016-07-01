@@ -27,6 +27,8 @@ dict是用空间来换取时间的一种方法。
     d = dict(zip(keys, values))
     print d
 
+    dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
+
 迭代 Iteration
 ------------
 默认情况下，dict迭代的是key。如果要迭代value，可以用for value in d.itervalues()
@@ -62,3 +64,7 @@ enumerate函数可以把一个list变成索引-元素对
     answers = ['lancelot', 'the holy grail', 'blue']
     for q, a in zip(questions, answers):
         print 'What is your {0}?  It is {1}.'.format(q, a)
+
+字典生成式
+
+    {x: x**2 for x in (2, 4, 6)}
