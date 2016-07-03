@@ -48,3 +48,4 @@ Temporary Items
 *.log
 *.db
 *.sqlite
+/.idea/
