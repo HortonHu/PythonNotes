@@ -172,22 +172,6 @@ Python中是不支持静态变量的，但是我们可以通过函数的默认�
         return fact_iter(num - 1, num * product)        # num - 1和num * product在函数调用前就会被计算，不影响函数调用。
     print fact(5)
 
-**any**   
-any(iterable) -> bool
-相当于与 传入可迭代对象 全bool()返回False则False 否则True
-
-    print any('123')    # True
-    print any([0, 1])   # True
-    print any([0, ''])  # False
-
-
-**all**   
-all(iterable) -> bool
-相当于和 传入可迭代对象 全bool()返回True则True 否则False
-
-    print all('123')    # True
-    print all([0, 1])   # False
-    print all([1, 2])   # True
 
 可以把函数名赋给一个变量，相当于给这个函数起了一个“别名”：
 
