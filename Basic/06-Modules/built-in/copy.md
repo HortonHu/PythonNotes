@@ -1,4 +1,5 @@
 # copy模块
+参考http://www.jb51.net/article/15714.htm
 Python中的对象之间赋值时是按引用传递的，如果需要拷贝对象，需要使用标准库中的copy模块。
 1. copy.copy 浅拷贝 只拷贝父对象，不会拷贝对象的内部的子对象。
 2. copy.deepcopy 深拷贝 拷贝对象及其子对象
