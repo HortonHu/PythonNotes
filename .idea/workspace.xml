@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
+    <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="PSL notes update">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Library/02.Built-in_Functions/02.Built-in_Functions.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Library/03.Non-essential_Built-in_Functions/03.Non-essential_Built-in_Functions.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/02.Built-in_Functions/2.Built-in_Functions.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/02.Built-in_Functions/2.Built-in_Functions.md" afterPath="$PROJECT_DIR$/Library/02.Built-in_Functions/2.Built-in_Functions.md" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,7 +20,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PythonStudy$SQLite.coverage" NAME="SQLite Coverage Results" MODIFIED="1467536481718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic/12-Database" />
-    <SUITE FILE_PATH="coverage/PythonNotes$test.coverage" NAME="test Coverage Results" MODIFIED="1468049168695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonNotes$test.coverage" NAME="test Coverage Results" MODIFIED="1468054781379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonNotes$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1467715604987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonNotes$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1467959023644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/PythonStudy$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1467549037246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -43,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="41" />
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -231,25 +233,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="05-Function" />
+              <option name="myItemId" value="Library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -589,13 +573,6 @@
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
     </task>
-    <task id="LOCAL-00107" summary="update">
-      <created>1464057283549</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1464057283549</updated>
-    </task>
     <task id="LOCAL-00108" summary="update">
       <created>1464173623915</created>
       <option name="number" value="00108" />
@@ -932,7 +909,14 @@
       <option name="project" value="LOCAL" />
       <updated>1468037920609</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="PSL notes update">
+      <created>1468050355973</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1468050355973</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -996,7 +980,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="add module copy" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="PSL notes update" />
+    <option name="LAST_COMMIT_MESSAGE" value="PSL notes update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1388,7 +1373,7 @@
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="41" />
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding />
         </state>
       </provider>
