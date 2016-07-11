@@ -1,10 +1,14 @@
-# 动态绑定允许我们在程序运行的过程中动态给class加上功能，这在静态语言中很难实现。
+# -*- coding:utf-8 -*-
+
+
+# 动态绑定
+# 允许我们在程序运行的过程中动态给class加上功能，这在静态语言中很难实现。
 # 给一个实例绑定的方法，对另一个实例是不起作用的：
 class Student(object):
         pass
 
 s = Student()
-s.name = 'horton'
+s.name = 'horton'       # 绑定属性name
 print s.name
 
 
@@ -12,7 +16,7 @@ def set_score(self, score):
     self.score = score
 
 from types import MethodType
-s.set_score = MethodType(set_score, s, Student)
+s.set_score = MethodType(set_score, s, Student)     # 绑定方法set_score
 s.set_score(100)
 print s.score
 
@@ -90,7 +94,7 @@ class Student(object):
         self._score = value
 
 s = Student()
-s.score = 60        # 方法编程属性
+s.score = 60        # 方法作为属性调用
 s.score
 s.score = 999       # error
 
@@ -98,7 +102,6 @@ s.score = 999       # error
 # 还可以定义只读属性，只定义getter方法，不定义setter方法就是一个只读属性：
 # birth是可读写属性，而age就是一个只读属性，因为age可以根据birth和当前时间计算出来。
 class Student(object):
-
     @property
     def birth(self):
         return self._birth
@@ -194,7 +197,8 @@ print Student('Horton')
 
 # __iter__
 # 如果一个类想被用于for  in循环，就必须实现一个__iter__()方法，该方法返回一个迭代对象
-# 然后，Python的for循环就会不断调用该迭代对象的next()方法拿到循环的下一个值，直到遇到StopIteration错误时退出循环。
+# 然后，Python的for循环就会不断调用该迭代对象的next()方法拿到循环的下一个值，
+# 直到遇到StopIteration错误时退出循环。
 class Fib(object):
     def __init__(self):
         self.a, self.b = 0, 1       # 初始化两个计数器a，b
@@ -213,7 +217,7 @@ for n in Fib():
 
 
 # __getitem__
-# 像list那样按照下标取出元素，需要实现__getitem__()方法：
+# 像list那样按照index取出元素，需要实现__getitem__()方法：
 class Fib(object):
     def __getitem__(self, n):
         a, b = 1, 1
@@ -282,9 +286,8 @@ class Student(object):
         raise AttributeError('\'Student\' object has no attribute \'%s\'' % attr)
 # 把一个类的所有属性和方法调用全部动态化处理了，不需要任何特殊手段
 
+
 # 链式调用
-
-
 #  __call__
 # 定义一个__call__()方法，就可以直接对实例进行调用
 class Student(object):
@@ -307,7 +310,7 @@ print callable(None)
 print callable('string')
 
 
-# 元类 type()
+# type()
 # 动态语言和静态语言最大的不同，就是函数和类的定义，不是编译时定义的，而是运行时动态创建的。
 # A是一个class 它的type就是type a是一个实例 它的type是class A
 class A(object):
@@ -347,7 +350,7 @@ print type(h)
 # metaclass是创建类，所以必须从`type`类型派生：
 class ListMetaclass(type):
     def __new__(cls, name, bases, attrs):
-        attrs['add'] = lambda self, value: self.append(value)
+        attrs['add'] = lambda self, value: self.append(value)   # 给MyList增加一个add方法
         return type.__new__(cls, name, bases, attrs)
 
 class MyList(list):
@@ -367,5 +370,3 @@ print L
 # 普通的list没有add()方法：
 l = list()
 print l.add(1)
-
-

@@ -1,14 +1,10 @@
+# -*- coding:utf-8 -*-
+
+
 # 面向对象编程 Object Oriented Programming，简称OOP
 # OOP把对象作为程序的基本单元，一个对象包含了数据和操作数据的函数。
-# 面向过程的程序,为了表示一个学生的成绩可以用一个dict表示：
-def print_score(std):
-    print '%s: %s' % (std['name'], std['score'])
-std1 = {'name': 'Michael', 'score': 98}
-std2 = {'name': 'Bob', 'score': 81}
-
-
-# 面向对象的程序设计思想
-# Student这种数据类型应该被视为一个对象，这个对象拥有name和score这两个属性（Property）
+# 面向过程的程序,为了表示一个学生的成绩可以用一个dict表示
+# 面向对象的程序设计思想 Student这种数据类型应该被视为一个对象，这个对象拥有name和score这两个属性（Property）
 class Student(object):
     def __init__(self, name, score):    # 如果没有加self则会报错TypeError: Student() takes no arguments (1 given)
         self.name = name
@@ -17,15 +13,12 @@ class Student(object):
     def print_score(self):
         print '%s: %s' % (self.name, self.score)
 
-bart = Student('Bart Simpson', 59)
-lisa = Student('Lisa Simpson', 87)
-bart.print_score()
-lisa.print_score()
 
 # 面向对象的设计思想是从自然界中来的，因为在自然界中，类（Class）和实例（Instance）的概念是很自然的。
 # Class是一种抽象概念，比如我们定义的Class——Student，是指学生这个概念，而实例（Instance）则是一个个具体的Student
 # 比如，Bart Simpson和Lisa Simpson是两个具体的Student：面向对象的设计思想是抽象出Class，根据Class创建Instance。
 # 面向对象的抽象程度又比函数要高，因为一个Class既包含数据，又包含操作数据的方法。
+
 # 数据封装、继承和多态是面向对象的三大特点
 
 
@@ -134,8 +127,8 @@ cat = Cat()
 dog.run()
 cat.run()
 
-# 在继承关系中，如果一个实例的数据类型是某个子类，那它的数据类型也可以被看做是父类。但是，反过来就不行：
-# c是Dog类型 也是Animal类型
+# 在继承关系中，如果一个实例的数据类型是某个子类，那它的数据类型也可以被看做是父类。
+# 但是，反过来就不行：c是Dog类型 也是Animal类型
 c = Dog()
 print isinstance(c, Dog)
 print isinstance(c, Animal)
@@ -145,9 +138,9 @@ def run_twice(animal):
     animal.run()
     animal.run()
 
-run_twice(Animal())     # 输出Animal is running   
-run_twice(Dog())        # 输出Dog is running   
-run_twice(Cat())        # 输出Cat is running   
+run_twice(Animal())     # 输出Animal is running
+run_twice(Dog())        # 输出Dog is running
+run_twice(Cat())        # 输出Cat is running
 
 
 # 如果我们再定义一个Tortoise类型，也从Animal派生：
@@ -159,6 +152,7 @@ run_twice(Tortoise())
 # 新增一个Animal的子类，不必对run_twice()做任何修改，
 # 实际上，任何依赖Animal作为参数的函数或者方法都可以不加修改地正常运行，原因就在于多态。
 # 多态真正的威力：调用方只管调用，不管细节
+
 # “开闭”原则：
 # 对扩展开放：允许新增Animal子类；
 # 对修改封闭：不需要修改依赖Animal类型的run_twice()等函数。
@@ -185,7 +179,7 @@ class People(object):
 class Man(People, Animal):      # 继承了People和Animal
      pass
 mine = Man()
-mine.run()          # 按照顺序继承 会输出People is running   
+mine.run()          # 按照顺序继承 会输出People is running
 
 
 # run_twice函数并不依赖Animal类，只要是拥有run方法的类的实例都可以作为其参数。 如下例子
@@ -247,11 +241,6 @@ isinstance(d, Dog)
 isinstance(d, Animal)
 isinstance(a, Dog)
 
-isinstance('a', (str, unicode))
-isinstance(u'a', (str, unicode))
-# 由于str和unicode都是从basestring继承下来的，所以，还可以把上面的代码简化为：
-isinstance(u'a', basestring)
-
 
 # dir() :获得一个对象的所有属性和方法 返回一个包含字符串的list
 print dir('ABC')
@@ -296,5 +285,3 @@ def readImage(fp):
     if hasattr(fp, 'read'):
         return readData(fp)
     return None
-
-
