@@ -14,6 +14,7 @@
 - Head First Python
 - Dive Into Python
 - Python源码剖析
+- Python进阶（Intermediate Python）
 - 笨办法学 Python
 - python科学计算
 - Python技术手册
