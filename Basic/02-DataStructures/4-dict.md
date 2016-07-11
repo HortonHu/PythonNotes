@@ -1,5 +1,7 @@
-Data type: dict 	{key: value}
------------------------------
+例子：
+
+ 	{key: value}
+
 dict具有极快的查找速度
 list比较，dict有以下几个特点：
 1.查找和插入的速度极快，不会随着key的增加而增加
@@ -20,18 +22,18 @@ dict是用空间来换取时间的一种方法。
     print d.get('Thomas')
     print d.get('Thomas', -1)
     d.pop('Bob')    # 删除key 对应的value也会删除
-使用zip来生产dict  d = dict(zip(keys, values))
+
+使用zip来生产dict  `d = dict(zip(keys, values))`
 
     keys = ['Safe', 'Bob', 'Thomas']
     values = ['Hammad', 'Builder', 'Engine']
     d = dict(zip(keys, values))
     print d
 
-    dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
 
 迭代 Iteration
-------------
-默认情况下，dict迭代的是key。如果要迭代value，可以用for value in d.itervalues()
+默认情况下，dict迭代的是key。
+如果要迭代value，可以用for value in d.itervalues()
 同时迭代key和value，可以用for k, v in d.iteritems()
 
     d = {'a': 1, 'b': 2, 'c': 3}

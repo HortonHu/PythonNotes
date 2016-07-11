@@ -1,35 +1,27 @@
-Data type: List ['a', 'b', 'c'] or [1, 2, 3] or [1, 2, 'a', 'b']
-----------------------------------------------------------------
-不用的item的type可以不同
-遍历list的时候如果想要修改，可以用list[:]复制一个相同的list来遍历  
+例子：
     
     classmates = ['Michael', 'Bob', 'Tracy']
-    print 'List:', classmates
     print 'length of List:', len(classmates)
     classmates.append('Adam')   	# 末尾插入
-    print 'List:', classmates
     classmates.insert(1, 'Jack')    # 指定位置插入
-    print 'List:', classmates
-    classmates.pop()    # 删除末尾元素
-    print 'List:', classmates
-    classmates.pop(1)   # 删除指定元素
-    print 'List:', classmates
-    classmates[1] = 'Sarah'     # 直接替换指定位置元素
-    print 'List:', classmates
+    classmates.pop()                # 删除末尾元素
+    classmates.pop(1)               # 删除指定元素
+    classmates[1] = 'Sarah'         # 直接替换指定位置元素
     s = ['python', 'java', ['asp', 'php'], 'scheme']    # list可嵌套
-    print list('abc')       # 得到一个list['a', 'b', 'c']
+    print list('abc')               # 得到一个list['a', 'b', 'c']
+
+- list中item的type没有限制
+- 遍历list的时候如果想要修改，可以用`list[:]`复制一个相同的list来遍历
 
 切片 Slice
 
     s = 'hello world!'
     print s[0:3]
-    print s[1:3]
     print s[-2:]
     print s[::2]
     
 列表生成式 List Comprehensions
-替代简单的循环
-组成结构[表达式 0个或者更多的for和if]
+组成结构`[表达式 0个或者更多的for和if]`
 
     print [x * x for x in range(1, 11)]
     print [x * x for x in range(1, 11) if x % 2 == 0]   # 筛选出仅偶数的平方
