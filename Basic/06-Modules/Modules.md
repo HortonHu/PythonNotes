@@ -3,9 +3,8 @@
 每个包必须有__init__.py 否则当做普通目录
 __init__.py可以是空文件，也可以有Python代码，本身就是一个模块
 
-    import Test_fibo
-    Test_fibo.fib(1000)
 
+模块的导入
 从模块中直接导入
 
     from Test_fibo import fib, fib2
@@ -90,6 +89,3 @@ Python 2.x中，对于除法有两种情况，如果是整数相除，结果仍�
 使用-o选项可以生成pyo文件，去掉了所有assert语句，pyc文件被忽略，py被编译成pyo
 使用-oo选项会去掉所有__doc__ string，生成pyo文件
 不伦是pyc还是pyo都不会让程序运行加快，只是省去了编译的时间
-
-
-dir()
