@@ -7,8 +7,8 @@
 from HTMLParser import HTMLParser
 from htmlentitydefs import name2codepoint
 
-class MyHTMLParser(HTMLParser):
 
+class MyHTMLParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         print('<%s>' % tag)
 

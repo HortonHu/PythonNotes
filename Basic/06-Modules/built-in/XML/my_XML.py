@@ -40,7 +40,9 @@ parser.EndElementHandler = handler.end_element
 parser.CharacterDataHandler = handler.char_data
 parser.Parse(xml)
 # 当设置returns_unicode为True时，返回的所有element名称和char_data都是unicode，处理国际化更方便
-# 需要注意的是读取一大段字符串时，CharacterDataHandler可能被多次调用，所以需要自己保存起来，在EndElementHandler里面再合并
+# 需要注意的是读取一大段字符串时，CharacterDataHandler可能被多次调用，
+# 所以需要自己保存起来，在EndElementHandler里面再合并
+
 
 # 生成XML
 # 最简单也是最有效的生成XML的方法是拼接字符串
