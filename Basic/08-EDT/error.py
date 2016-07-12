@@ -32,6 +32,12 @@ finally:
     print 'finally...'
 print 'END'
 
+# 捕获所有异常
+try:
+    file = open('test.txt', 'rb')
+except Exception:
+    # 打印一些异常日志，如果你想要的话
+    raise
 
 # Python的错误其实也是class，所有的错误类型都继承自BaseException，
 # 所以在使用except时需要注意的是，它不但捕获该类型的错误，还把其子类都包含
@@ -60,6 +66,19 @@ def main():
     finally:
         print 'finally...'
 
+# 在没有触发异常的时候执行一些代码，通过一个else从句来实现
+# 只是想让一些代码在没有触发异常的情况下执行，同时这段代码中的任意异常不会被try捕获
+try:
+    print('I am sure no exception is going to occur!')
+except Exception:
+    print('exception')
+else:
+    # 这里的代码只会在try语句里没有触发异常时运行,
+    # 但是这里的异常将 *不会* 被捕获
+    print('This would only run if no exception occurs. And an error here '
+          'would NOT be caught.')
+finally:
+    print('This would be printed in every case.')
 
 # 获得更详细的错误信息
 import traceback

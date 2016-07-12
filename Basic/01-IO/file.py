@@ -3,7 +3,10 @@
 
 # 打开文件：
 # open(filename, mode)或者file(filename, mode),推荐使用open
-# mode: r:读 w:覆盖写 a:添加 读取二进制文件，比如图片、视频等等，用'rb'模式打开文件即可
+# mode:
+# r:读 w:覆盖写 a:添加
+# 对于二进制文件，比如图片、视频等等，加上'b'即可
+# 对于同时读写的 加上'+'
 
 # 读取文件：
 # f.read(size)      读取size大小内容到一个string,缺省size则读取全部。位置指针已经到文件尾
