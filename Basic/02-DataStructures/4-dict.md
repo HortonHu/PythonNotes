@@ -67,6 +67,16 @@ enumerate函数可以把一个list变成索引-元素对
     for q, a in zip(questions, answers):
         print 'What is your {0}?  It is {1}.'.format(q, a)
 
-字典生成式
+字典生成式（dict comprehensions）
+字典推导和列表推导的使用方法是类似的
 
     {x: x**2 for x in (2, 4, 6)}
+
+    # 把同一个字母但不同大小写的值合并起来
+    mcase = {'a': 10, 'b': 34, 'A': 7, 'Z': 3}
+    mcase_frequency = {
+        k.lower(): mcase.get(k.lower(), 0) + mcase.get(k.upper(), 0)
+        for k in mcase.keys()
+    }
+
+对换一个字典的键和值`{v: k for k, v in some_dict.items()}`
