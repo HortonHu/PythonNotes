@@ -1,43 +1,46 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-# SMTP发送邮件
-# SMTP是发送邮件的协议，Python内置对SMTP的支持，可以发送纯文本邮件、HTML邮件以及带附件的邮件。
-# Python对SMTP支持有smtplib和email两个模块，email负责构造邮件，smtplib负责发送邮件。
-from email.mime.text import MIMEText
-msg = MIMEText('hello, send by Python...', 'plain', 'utf-8')
-# 构造MIMEText对象时，第一个参数就是邮件正文，
-# 第二个参数是MIME的subtype，传入'plain'，最终的MIME就是'text/plain'，最后一定要用utf-8编码保证多语言兼容性。
 
-# 通过SMTP发出去：
-# 输入Email地址和口令:
+# SMTP
+# SMTP是发送邮件的协议，Python内置对SMTP的支持，可以发送纯文本邮件、HTML邮件以及带附件的邮件。
+# Python对SMTP支持有smtplib和email两个模块
+# email负责构造邮件
+# smtplib负责发送邮件。
+
+
+# 构造邮件
+from email.mime.text import MIMEText
+# 构造MIMEText对象时，
+# 第一个参数就是邮件正文，
+# 第二个参数是MIME的subtype，传入'plain'，最终的MIME就是'text/plain'，最后一定要用utf-8编码保证多语言兼容性。
+msg = MIMEText('hello, send by Python...', 'plain', 'utf-8')
 from_addr = 'weiyijingtu@sina.com'
 password = raw_input('Input your password: ')
-# 输入SMTP服务器地址:
-smtp_server = 'smtp.sina.com'
-# 输入收件人地址:
 to_addr = raw_input('Input To email address : ')
+smtp_server = 'smtp.sina.com'               # 输入SMTP服务器地址:
 
+# 发送邮件
 import smtplib
-server = smtplib.SMTP(smtp_server, 25)  # SMTP协议默认端口是25 使用ssl后变为465
+server = smtplib.SMTP(smtp_server, 25)  # SMTP协议默认端口是25 该端口可开启SSL
 server.starttls()                       # 开启SSL
 server.set_debuglevel(1)                # 用set_debuglevel(1)就可以打印出和SMTP服务器交互的所有信息。
 server.login(from_addr, password)       # login()方法用来登录SMTP服务器
 server.sendmail(from_addr, [to_addr], msg.as_string())      # sendmail()方法发邮件
 server.quit()
-
 # SMTP协议就是简单的文本命令和响应
 # 由于可以一次发给多个人，所以传入一个list，邮件正文是一个str，as_string()把MIMEText对象变成str
 # 邮件主题、如何显示发件人、收件人等信息并不是通过SMTP协议发给MTA，而是包含在发给MTA的文本中的
-# 必须把From、To和Subject添加到MIMEText中，才是一封完整的邮件：
-# -*- coding: utf-8 -*-
 
+
+# 必须把From、To和Subject添加到MIMEText中，才是一封完整的邮件：
 from email import encoders
 from email.header import Header
 from email.mime.text import MIMEText
 from email.utils import parseaddr, formataddr
 import smtplib
 
+
+# 格式化一个邮件地址。
 def _format_addr(s):
     name, addr = parseaddr(s)
     return formataddr(( \
@@ -60,15 +63,13 @@ server.set_debuglevel(1)
 server.login(from_addr, password)
 server.sendmail(from_addr, [to_addr], msg.as_string())
 server.quit()
-# 编写了一个函数_format_addr()来格式化一个邮件地址。
 # 注意不能简单地传入name <addr@example.com>，因为如果包含中文，需要通过Header对象进行编码。
 # msg['To']接收的是字符串而不是list，如果有多个邮件地址，用,分隔即可
 
 
 # 发送HTML邮件
 # 在构造MIMEText对象时，把HTML字符串传进去，再把第二个参数由plain变为html就可以了：
-msg = MIMEText('<html><body><h1>Hello</h1>' +
-    '<p>send by <a href="http://www.python.org">Python</a>...</p>' +
+msg = MIMEText('<html><body><h1>Hello</h1>' + '<p>send by <a href="http://www.python.org">Python</a>...</p>' +
     '</body></html>', 'html', 'utf-8')
 
 
@@ -122,7 +123,7 @@ msg.attach(MIMEText('<html><body><h1>Hello</h1>' +
 
 msg.attach(MIMEText('hello', 'plain', 'utf-8'))
 msg.attach(MIMEText('<html><body><h1>Hello</h1></body></html>', 'html', 'utf-8'))
-# 正常发送msg对象...
+# 正常发送msg对象
 
 
 # 加密SMTP
@@ -137,6 +138,7 @@ server.starttls()
 # 剩下的代码和前面的一模一样:
 server.set_debuglevel(1)
 # 只需要在创建SMTP对象后，立刻调用starttls()方法，就创建了安全连接。后面的代码和前面的发送邮件代码完全一样
+# 现在很多邮箱通过25端口打开tls建立安全连接
 
 
 

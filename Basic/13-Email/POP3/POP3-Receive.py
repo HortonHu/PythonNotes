@@ -1,9 +1,12 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-# POP3收取邮件
+
+# POP3
 # 收取邮件就是编写一个MUA作为客户端，从MDA把邮件获取到用户的电脑或者手机上。
 # 收取邮件最常用的协议是POP协议，目前版本号是3，俗称POP3。
+
+
+# poplib
 # Python内置一个poplib模块，实现了POP3协议，可以直接用来收邮件。
 # 注意到POP3协议收取的不是一个已经可以阅读的邮件本身，而是邮件的原始文本，
 # 这和SMTP协议很像，SMTP发送的也是经过编码后的一大段文本。
@@ -25,18 +28,18 @@ pop3_server = raw_input('POP3 server: ')
 # 连接到POP3服务器:
 server = poplib.POP3(pop3_server)
 # 可以打开或关闭调试信息:
-# server.set_debuglevel(1)
+server.set_debuglevel(1)
 # 可选:打印POP3服务器的欢迎文字:
-print(server.getwelcome())
+print server.getwelcome()
 # 身份认证:
 server.user(email)
 server.pass_(password)
 # stat()返回邮件数量和占用空间:
-print('Messages: %s. Size: %s' % server.stat())
+print 'Messages: %s. Size: %s' % server.stat()
 # list()返回所有邮件的编号:
 resp, mails, octets = server.list()
 # 可以查看返回的列表类似['1 82923', '2 2184', ...]
-print(mails)
+print mails
 # 获取最新一封邮件, 注意索引号从1开始:
 index = len(mails)
 resp, lines, octets = server.retr(index)
@@ -62,16 +65,16 @@ from email.utils import parseaddr
 # 只需要一行代码就可以把邮件内容解析为Message对象：
 msg = Parser().parsestr(msg_content)
 
+
 # 但是这个Message对象本身可能是一个MIMEMultipart对象，即包含嵌套的其他MIMEBase对象，嵌套可能还不止一层。
-# 所以我们要递归地打印出Message对象的层次结构：
-# indent用于缩进显示:
+# 所以我们要递归地打印出Message对象的层次结构：indent用于缩进显示:
 def print_info(msg, indent=0):
     if indent == 0:
         # 邮件的From, To, Subject存在于根对象上:
         for header in ['From', 'To', 'Subject']:
             value = msg.get(header, '')
             if value:
-                if header=='Subject':
+                if header == 'Subject':
                     # 需要解码Subject字符串:
                     value = decode_str(value)
                 else:
@@ -80,7 +83,7 @@ def print_info(msg, indent=0):
                     name = decode_str(hdr)
                     value = u'%s <%s>' % (name, addr)
             print('%s%s: %s' % ('  ' * indent, header, value))
-    if (msg.is_multipart()):
+    if msg.is_multipart():
         # 如果邮件对象是一个MIMEMultipart,
         # get_payload()返回list，包含所有的子对象:
         parts = msg.get_payload()
@@ -105,12 +108,14 @@ def print_info(msg, indent=0):
             # 不是文本,作为附件处理:
             print('%sAttachment: %s' % ('  ' * indent, content_type))
 
+
 # 邮件的Subject或者Email中包含的名字都是经过编码后的str，要正常显示，就必须decode：
 def decode_str(s):
     value, charset = decode_header(s)[0]
     if charset:
         value = value.decode(charset)
     return value
+
 
 # decode_header()返回一个list，因为像Cc、Bcc这样的字段可能包含多个邮件地址，所以解析出来的会有多个元素
 # 文本邮件的内容也是str，还需要检测编码，否则，非UTF-8编码的邮件都无法正常显示：
