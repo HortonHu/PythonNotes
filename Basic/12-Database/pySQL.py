@@ -1,9 +1,5 @@
 # -*- coding:utf-8 -*-
 
-# SQL语法
-
-
-# 数据库
 # SQLite
 # SQLite是一种嵌入式数据库，它的数据库就是一个文件。
 # Python就内置了SQLite3，所以，在Python中使用SQLite，不需要安装任何东西，直接使用
