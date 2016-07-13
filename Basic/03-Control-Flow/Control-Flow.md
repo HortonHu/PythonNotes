@@ -13,5 +13,5 @@ if...else可以组成三元运算符`condition_is_true if condition else conditi
 - 循环后可以跟一个else 当循环中没有break发生的时候执行
 
 不伦是if还是while，被判断的部分可以包含任何操作，不仅仅是比较 例如in/not in/is/is not/
-**优先级**：布尔操作or and not < 比较符号 < 运算符号
+**优先级**：布尔操作or and not < 比较符号 < 位操作 < 运算符号
 在布尔符号中 or < and < not 因此有`A and not B or C` 相当于 `(A and (not B)) or C`

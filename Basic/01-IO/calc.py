@@ -7,6 +7,19 @@ print 5.0 / 4       # int / float   -> float 精确除法
 print 5 // 4        # int / int     -> int
 print 5.1 // 4      # int / float   -> float 浮点数的整除
 
+# << 左移     >> 右移
+print 2 << 2, 11 >> 1
+
+# 按位与   &
+# 按位或   |
+# 按位异或  ^
+# 按位翻转  ~   x的按位翻转是-(x+1)
+print 5 & 3
+print 5 | 3
+print 5 ^ 3
+print ~5
+
+
 # = 先算出右侧值 再赋给左边 并且右侧部分计算过程从左往右
 a = 1
 b = 2
