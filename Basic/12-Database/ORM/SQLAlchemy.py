@@ -9,31 +9,34 @@ Base = declarative_base()
 
 
 # 定义User对象
-class User(Base):
-    __tablename__ = 'user'          
-
-    # 表的结构
-    id = Column(String(20), primary_key=True)
-    name = Column(String(20))
-# 如果有多个表，就继续定义其他class，例如School：
-# 由于关系数据库的多个表还可以用外键实现一对多、多对多等关联，相应地，ORM框架也可以提供两个对象之间的一对多、多对多等功能。
-# 如果一个User拥有多个Book，就可以定义一对多关系如下：
 # class User(Base):
 #     __tablename__ = 'user'
-# 
+#
+#     # 表的结构
 #     id = Column(String(20), primary_key=True)
 #     name = Column(String(20))
-#     # 一对多
-#     books = relationship('Book')
-# 
-# 
-# class Book(Base):
-#     __tablename__ = 'book'
-# 
-#     id = Column(String(20), primary_key=True)
-#     name = Column(String(20))
-#     # “多”的一方的book表是通过外键关联到user表的
-#     user_id = Column(String(20), ForeignKey('User.id'))
+
+
+# 如果有多个表，就继续定义其他class，例如School：
+# 由于关系数据库的多个表还可以用外键实现一对多、多对多等关联，
+# 相应地，ORM框架也可以提供两个对象之间的一对多、多对多等功能。
+# 如果一个User拥有多个Book，就可以定义一对多关系如下：
+class User(Base):
+    __tablename__ = 'user'
+
+    id = Column(String(20), primary_key=True)
+    name = Column(String(20))
+    # 一对多
+    books = relationship('Book')
+
+
+class Book(Base):
+    __tablename__ = 'book'
+
+    id = Column(String(20), primary_key=True)
+    name = Column(String(20))
+    # “多”的一方的book表是通过外键关联到user表的
+    user_id = Column(String(20), ForeignKey('User.id'))
 # 当我们查询一个User对象时，该对象的books属性将返回一个包含若干个Book对象的list。
 
 
