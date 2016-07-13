@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
 
@@ -73,6 +72,8 @@ while True:
 
 # 每个连接都必须创建新线程（或进程）来处理，否则，单线程在处理连接的过程中，无法接受其他客户端的连接：
 import time
+
+
 def tcplink(sock, addr):
     print 'Accept new connection from %s:%s...' % addr
     sock.send('Welcome!')

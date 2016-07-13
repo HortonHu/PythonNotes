@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
 # TCP是建立可靠连接，并且通信双方都可以以流的形式发送数据。
