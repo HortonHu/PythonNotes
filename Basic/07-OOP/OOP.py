@@ -10,27 +10,6 @@
 # class后面紧接着是类名，即Student，类名通常是大写开头的单词，紧接着是(object)，表示该类是从哪个类继承下来的
 # 如果没有合适的继承类，就使用object类，这是所有类最终都会继承的类。
 # 定义好了类，就可以根据类创建出实例，创建实例是通过类名+()实现的：
-class Student(object):
-    what = 42                       # 类变量 如果定义了类变量，最好使用immutable对象
-
-    def __init__(self, name, score):
-        self.name = name
-        self.score = score
-
-    def print_score(self):
-        print '%s: %s' % (self.name, self.score)
-
-    def get_grade(self):
-        if self.score >= 90:
-            return 'A'
-        elif self.score >= 60:
-            return 'B'
-        else:
-            return 'C'
-
-bart = Student('Bart Simpson', 59)
-print bart
-print Student
 
 # OOP三大特点
 # 封装
@@ -40,10 +19,11 @@ print Student
 
 # 封装（encapsulation）
 # 数据和逻辑被“封装”起来了，调用很容易，但却不用知道内部实现的细节。
-# 访问限制
-# 如果要让内部属性不被外部访问，可以把属性的名称前加上两个下划线__
+# 访问限制：如果要让内部属性不被外部访问，可以把属性的名称前加上两个下划线__
 # 在Python中，实例的变量名如果以__开头，就变成了一个私有变量（private），只有内部可以访问，外部不能访问
 class Student(object):
+    ans_to_everything = 42  # 类变量 如果定义了类变量，最好使用immutable对象
+
     def __init__(self, name, score):
         self.__name = name
         self.__score = score
@@ -85,7 +65,10 @@ print bart.get_score()
 # 继承和多态
 # 在OOP程序设计中，当我们定义一个class的时候，可以从某个现有的class继承，
 # 新的class称为子类（Subclass），而被继承的class称为基类、父类或超类（Base class、Super class）。
-# 对于Dog来说，Animal就是它的父类，对于Animal来说，Dog就是它的子类。Cat和Dog类似。
+# Animal是Dog、Cat的父类，Dog、Cat是Animal的子类
+# 继承可以直接使用父类功能，子类只需要新增自己特有的方法，也可以把父类不适合的方法覆盖重写
+# 旧的方式定义Python类允许不从object类继承，但这种编程方式已经严重不推荐使用。
+# 任何时候，如果没有合适的类可以继承，就继承自object类
 class Animal(object):
     def run(self):
         print 'Animal is running   '
@@ -105,12 +88,9 @@ dog = Dog()
 cat = Cat()
 dog.run()
 cat.run()
-
 # 在继承关系中，子类的实例也可以看做是父类的实例，反之不行
-# 但是，反过来就不行：c是Dog类型 也是Animal类型
-c = Dog()
-print isinstance(c, Dog)
-print isinstance(c, Animal)
+print isinstance(dog, Dog)
+print isinstance(dog, Animal)
 
 
 def run_twice(animal):
@@ -120,126 +100,10 @@ def run_twice(animal):
 run_twice(Animal())     # 输出Animal is running
 run_twice(Dog())        # 输出Dog is running
 run_twice(Cat())        # 输出Cat is running
-
-
-# 如果我们再定义一个Tortoise类型，也从Animal派生：
-class Tortoise(Animal):
-    def run(self):
-        print 'Tortoise is running slowly   '
-
-run_twice(Tortoise())
-# 新增一个Animal的子类，不必对run_twice()做任何修改，
+# 只要一个类里面定义了run方法，就可以被run_twice调用
 # 实际上，任何依赖Animal作为参数的函数或者方法都可以不加修改地正常运行，原因就在于多态。
 # 多态真正的威力：调用方只管调用，不管细节
 
 # “开闭”原则：
 # 对扩展开放：允许新增Animal子类；
 # 对修改封闭：不需要修改依赖Animal类型的run_twice()等函数。
-
-# 继承可以直接使用父类功能，子类只需要新增自己特有的方法，也可以把父类不适合的方法覆盖重写
-
-# 旧的方式定义Python类允许不从object类继承，但这种编程方式已经严重不推荐使用。
-# 任何时候，如果没有合适的类可以继承，就继承自object类
-
-
-# run_twice函数并不依赖Animal类，只要是拥有run方法的类的实例都可以作为其参数。 如下例子
-# http://blog.csdn.net/shangzhihaohao/article/details/7065675
-class Animal(object):
-    def run(self):
-        print 'Animal is running   '
-
-
-class Dog(Animal):
-    def run(self):
-        print 'Dog is running   '
-
-    def eat(self):
-        print 'Eating meat'
-
-
-class Cat(Animal):
-    def run(self):
-        print 'Cat is running..'
-
-    def eat(self):
-        print 'Eating pis..'
-
-
-class Bee(object):
-    def run(self):
-        print 'Actually is flying..'
-
-    def sleep(self):
-        print 'take a nap..'
-
-
-def run_twice(animal):
-    animal.run()
-    animal.run()
-
-run_twice(Animal())
-run_twice(Dog())
-run_twice(Bee())
-
-print isinstance(Bee(), Animal)
-print isinstance(Cat(), Animal)
-
-
-# type() 获取对象信息
-import types
-print type('abc') == types.StringType
-print type(u'abc') == types.UnicodeType
-print type([])==types.ListType
-print type(str)==types.TypeType
-print type(int)==type(str)==types.TypeType      # 所有类型本身的类型就是TypeType
-
-# isinstance(object, class-or-type-or-tuple) 用于继承关系判断 一个对象是否是某种类型
-# object -> Animal -> Dog
-a = Animal()
-d = Dog()
-isinstance(d, Dog)
-isinstance(d, Animal)
-isinstance(a, Dog)
-
-
-# 类似__xxx__的属性和方法在Python中都是有特殊用途的，比如__len__方法返回长度。
-# 在Python中，如果你调用len()函数试图获取一个对象的长度，
-# 实际上，在len()函数内部，它自动去调用该对象的__len__()方法 所以，下面的代码是等价的：
-print len('ABC')
-print 'ABC'.__len__()
-
-
-# 自省
-# 配合getattr()、setattr()以及hasattr()，我们可以直接操作一个对象的状态
-class MyObject(object):
-        def __init__(self):
-            self.x = 9
-
-        def power(self):
-            return self.x * self.x
-
-obj = MyObject()
-hasattr(obj, 'x')           # 有属性'x'吗？
-obj.x
-hasattr(obj, 'y')           # 有属性'y'吗？
-setattr(obj, 'y', 19)       # 设置一个属性'y'为19
-hasattr(obj, 'y')           # 有属性'y'吗？
-getattr(obj, 'y')           # 获取属性'y'
-hasattr(obj, 'power')       # 有方法'power'吗？
-getattr(obj, 'power')       # 获取方法'power'
-fn = getattr(obj, 'power')  # 获取方法'power'并赋值到变量fn
-fn
-fn()
-obj.y                   # 获取属性'y'
-# 可以传入一个default参数，如果属性不存在，就返回默认值
-getattr(obj, 'z', 404)  # 获取属性'z'，如果不存在，返回默认值404
-
-
-# 只有在不知道对象信息的时候，我们才会去获取对象信息。
-# 如果可以直接写： sum = obj.x + obj.y 就不要写 sum = getattr(obj, 'x') + getattr(obj, 'y')
-# 假设我们希望从文件流fp中读取图像，我们首先要判断该fp对象是否存在read方法，
-# 如果存在，则该对象是一个流，如果不存在，则无法读取。hasattr()就派上了用场。
-def readImage(fp):
-    if hasattr(fp, 'read'):
-        return readData(fp)
-    return None
