@@ -10,6 +10,12 @@
 - [廖雪峰的官方网站](http://www.liaoxuefeng.com/)
 - [Crossin的编程教室](http://crossincode.com/home/)
 - [Python 基础教程](http://www.runoob.com/python/python-tutorial.html)
+- [one-python](https://github.com/geekan/one-python)
+- [Awesome Python](https://github.com/vinta/awesome-python)
+- [Awesome Python Books](https://github.com/Junnplus/awesome-python-books)
+- [Python 资源大全中文版](https://github.com/jobbole/awesome-python-cn)
+- [中文 Python 笔记](https://github.com/lijin-THU/notes-python)
+- [pycrumbs](https://github.com/kirang89/pycrumbs)
 
 ### 书籍:
 1、入门
@@ -23,7 +29,7 @@
 - Python编程（Programing Python）
 - Python核心编程
 - Python源码剖析
-- Python进阶（Intermediate Python）
+- [Python进阶（Intermediate Python）](https://github.com/eastlakeside/interpy-zh)
 - python科学计算
 - Python技术手册
 - Python高手之路
@@ -54,3 +60,7 @@
 
 ### 练习
 - [挑战Python](http://www.pythontip.com/coding/code_oj)
+- [Python 练习册，每天一个小程序](https://github.com/Yixiaohan/show-me-the-code)
+
+### 面试
+- [关于Python的面试题](https://github.com/taizilongxu/interview_python)
