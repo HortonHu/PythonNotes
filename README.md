@@ -59,8 +59,9 @@
 - Python.Unix和Linux系统管理指南
 
 ### 练习
-- [挑战Python](http://www.pythontip.com/coding/code_oj)
+- [Python Tip](http://www.pythontip.com/coding/code_oj)
 - [Python 练习册，每天一个小程序](https://github.com/Yixiaohan/show-me-the-code)
+- [Python Challenge](http://www.pythonchallenge.com/)
 
 ### 面试
 - [关于Python的面试题](https://github.com/taizilongxu/interview_python)
