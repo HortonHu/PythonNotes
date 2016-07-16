@@ -5,7 +5,7 @@ for i in range(10):
     print i,            # 末尾加上','可以避免换行
 
 # raw_input()   返回 string
-# input()       返回 value
+# input()       返回 和输入类型相同的结果
 name = raw_input('Please input your name：')
 print 'Hi', name
 age = input('Please input your age：')
