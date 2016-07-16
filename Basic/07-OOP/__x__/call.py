@@ -21,3 +21,21 @@ print callable(max)
 print callable([1, 2, 3])
 print callable(None)
 print callable('string')
+
+
+# 用于类装饰器 类装饰器依赖于类的__call__方法
+class Foo(object):
+    def __init__(self, func):
+        self._func = func
+
+    def __call__(self):
+        print ('class decorator runing')
+        self._func()
+        print ('class decorator ending')
+
+
+@Foo
+def bar():
+    print ('bar')
+
+bar()
