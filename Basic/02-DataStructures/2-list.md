@@ -52,3 +52,8 @@
 
 del语句
 和remove方法的区别是del可以删除片段或者整个list
+
+
+range和xrange
+在py2中range返回的是一个list，xrange返回生成器
+在py3中range返回一个range obj
