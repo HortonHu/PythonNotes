@@ -2,18 +2,21 @@
 
 
 # Python的方法分类
-# Python其实有3种方法,即静态方法(staticmethod),类方法(classmethod)和实例方法,如下
+# Python其实有3种方法,即
+# 静态方法(staticmethod)    使用@staticmethod装饰器
+# 类方法(classmethod)       使用@classmethod装饰器
+# 实例方法
 class A(object):
     def foo(self,x):
-        print "executing foo(%s,%s)"%(self,x)
+        print "executing foo(%s,%s)"%(self, x)
 
     @classmethod
-    def class_foo(cls,x):
-        print "executing class_foo(%s,%s)"%(cls,x)
+    def class_foo(cls, x):
+        print "executing class_foo(%s,%s)" % (cls, x)
 
     @staticmethod
     def static_foo(x):
-        print "executing static_foo(%s)"%x
+        print "executing static_foo(%s)" % x
 
 a = A()
 # 对于实例方法,我们知道在类里每次定义方法的时候都需要绑定这个实例,就是foo(self, x)
