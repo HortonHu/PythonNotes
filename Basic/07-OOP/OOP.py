@@ -22,11 +22,15 @@
 # 访问限制：如果要让内部属性不被外部访问，可以把属性的名称前加上两个下划线__
 # 在Python中，实例的变量名如果以__开头，就变成了一个私有变量（private），只有内部可以访问，外部不能访问
 class Student(object):
-    ans_to_everything = 42  # 类变量 如果定义了类变量，最好使用immutable对象
+    student_num = 0  # 类变量 如果定义了类变量，最好使用immutable对象 类变量在实例中共享
 
     def __init__(self, name, score):
         self.__name = name
         self.__score = score
+        Student.student_num += 1
+
+    def __del__(self):
+        Student.student_num -= 1
 
     def print_score(self):
         print '%s: %s' % (self.__name, self.__score)
