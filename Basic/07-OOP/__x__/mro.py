@@ -3,8 +3,9 @@
 
 # __mro__
 # 返回一个类的MRO的tuple
+# class.mro()有相同的作用，只是返回了一个不包含object的list
+# 或者用inspect包里的inspect.getmro()
 # 只有新式类才可以调用 采用C3算法 merge操作就是C3算法的核心。
-
 
 # 如果继承至一个基类A:
 # class B(A)

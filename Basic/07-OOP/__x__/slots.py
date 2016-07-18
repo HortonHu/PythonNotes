@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
 
-# __slots__
+# __slots__ 槽
 # 为了限制class的属性
 # Python允许在定义class的时候，定义一个特殊的__slots__变量，来限制该class能添加的属性：
 class Student(object):

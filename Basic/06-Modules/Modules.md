@@ -14,6 +14,12 @@ __init__.py可以是空文件，也可以有Python代码，本身就是一个模
 
     from Test_fibo import *
     fib(500)
+模块在导入时应该遵循以下规范
+1.import 的次序：先 import Python 内置模块，再 import 第三方模块，最后 import 自己开发的项目中的其它模块；
+    这几种模块中用空行分隔开来。
+2.一条 import 语句 import 一个模块。
+3.不要使用 from module import *，除非是 import 常量定义模块或其它你确保不会出现命名空间冲突的模块
+
 
 模块搜索路径
 Python解释器会搜索当前目录、所有已安装的内置模块和第三方模块，搜索路径存放在sys模块的path变量中
