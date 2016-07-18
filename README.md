@@ -8,7 +8,6 @@
 - [Python官方文档（英2.7）](http://docs.python.org/2.7/)
 - [Python官方文档（中2.7）](http://www.pythondoc.com/pythontutorial27/index.html)
 - [廖雪峰的官方网站](http://www.liaoxuefeng.com/)
-- [Crossin的编程教室](http://crossincode.com/home/)
 - [Python 基础教程](http://www.runoob.com/python/python-tutorial.html)
 - [one-python](https://github.com/geekan/one-python)
 - [Awesome Python](https://github.com/vinta/awesome-python)
