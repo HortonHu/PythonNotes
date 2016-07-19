@@ -34,6 +34,7 @@
 - Python高手之路
 - Python高级编程
 - 编写高质量代码 改善Python程序的91个建议
+- [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/)
 - [Python进阶（Intermediate Python）](https://github.com/eastlakeside/interpy-zh)
 - [python3-cookbook](http://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
 - [Think Python 2e](http://www.codingpy.com/books/thinkpython2/index.html)
