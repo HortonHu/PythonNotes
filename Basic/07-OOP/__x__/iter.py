@@ -2,8 +2,7 @@
 
 
 # __iter__
-# 如果一个类想被用于for  in循环，就必须实现一个__iter__()方法，该方法返回一个迭代对象
-# 然后，Python的for循环就会不断调用该迭代对象的next()方法拿到循环的下一个值，
+# 使对象可迭代，同时该对象应该有next方法
 # 直到遇到StopIteration错误时退出循环。
 class Fib(object):
     def __init__(self):
