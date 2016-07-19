@@ -8,13 +8,14 @@
 - [Python官方文档（英2.7）](http://docs.python.org/2.7/)
 - [Python官方文档（中2.7）](http://www.pythondoc.com/pythontutorial27/index.html)
 - [廖雪峰的官方网站](http://www.liaoxuefeng.com/)
-- [Python 基础教程](http://www.runoob.com/python/python-tutorial.html)
 - [one-python](https://github.com/geekan/one-python)
 - [Awesome Python](https://github.com/vinta/awesome-python)
 - [Awesome Python Books](https://github.com/Junnplus/awesome-python-books)
 - [Python 资源大全中文版](https://github.com/jobbole/awesome-python-cn)
 - [中文 Python 笔记](https://github.com/lijin-THU/notes-python)
 - [pycrumbs](https://github.com/kirang89/pycrumbs)
+- [Full Stack Python](http://www.fullstackpython.com/table-of-contents.html)
+- [Stack overflow高票Python问答](http://stackoverflow.com/questions/tagged/python?sort=votes)
 
 ### 书籍:
 1、入门
@@ -28,12 +29,14 @@
 - Python编程（Programing Python）
 - Python核心编程
 - Python源码剖析
-- [Python进阶（Intermediate Python）](https://github.com/eastlakeside/interpy-zh)
 - python科学计算
 - Python技术手册
 - Python高手之路
 - Python高级编程
 - 编写高质量代码 改善Python程序的91个建议
+- [Python进阶（Intermediate Python）](https://github.com/eastlakeside/interpy-zh)
+- [python3-cookbook](http://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
+- [Think Python 2e](http://www.codingpy.com/books/thinkpython2/index.html)
 
 3、WEB
 - Python网络编程基础
@@ -45,6 +48,7 @@
 - Python灰帽子-黑客与逆向工程师的Python编程之道
 
 4、算法
+- [Problem Solving with Algorithms and Data Structures](http://interactivepython.org/runestone/static/pythonds/index.html)
 - Python算法设计(Python Algorithms: Mastering Basic Algorithms in the Python Language)
 - Data Structures and Algorithms in Python
 - Data Structures and Algorithms Using Python

@@ -34,3 +34,6 @@ c = B()
 c.name = 1
 c.age = 2
 c.score = 3
+
+
+# http://tech.oyster.com/save-ram-with-python-slots/

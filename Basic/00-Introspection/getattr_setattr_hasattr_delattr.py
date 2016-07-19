@@ -1,15 +1,6 @@
 # -*- coding:utf-8 -*-
 
 
-# type() 获取对象信息
-import types
-print type('abc') == types.StringType
-print type(u'abc') == types.UnicodeType
-print type([])==types.ListType
-print type(str)==types.TypeType
-print type(int)==type(str)==types.TypeType      # 所有类型本身的类型就是TypeType
-
-
 # 配合getattr()、setattr()以及hasattr()，我们可以直接操作一个对象的状态
 class MyObject(object):
         def __init__(self):
