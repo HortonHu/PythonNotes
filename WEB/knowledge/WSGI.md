@@ -1,11 +1,10 @@
-# WSGI
 一个Web应用的本质就是：
 1. 浏览器发送一个HTTP请求；
 2. 服务器收到请求，生成一个HTML文档；
 3. 服务器把HTML文档作为HTTP响应的Body发送给浏览器；
 4. 浏览器收到HTTP响应，从HTTP Body取出HTML文档并显示。
 
-最简单的Web应用就是先把HTML用文件保存好，用一个现成的HTTP服务器软件，接收用户请求，从文件中读取HTML，返回。
+最简单的Web应用就是先把HTML用文件保存好，用一个现成的HTTP服务器软件，接收用户请求，从文件中读取HTML，返回。  
 Apache、Nginx、Lighttpd等这些常见的静态服务器就是干这件事情的。
 
 ## WSGI接口(Web Server Gateway Interface)
