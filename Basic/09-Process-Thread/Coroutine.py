@@ -91,7 +91,7 @@ for i in fib():
 def grep(pattern):
     print("Searching for", pattern)
     while True:
-        line = (yield)
+        line = (yield)          # 此处yield后面没有参数 不产生数据 只消费传入的数据
         if pattern in line:
             print(line)
 
