@@ -79,7 +79,7 @@ def run_thread(n):
 
 # 多核CPU
 # GIL锁
-import threading, multi_processing
+import threading
 
 def loop():
     x = 0

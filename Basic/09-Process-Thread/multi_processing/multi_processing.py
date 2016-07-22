@@ -19,7 +19,7 @@ else:
 # multiprocessing模块是跨平台版本的多进程模块。
 # multiprocessing模块提供了一个Process类来代表一个进程对象，下面的例子演示了启动一个子进程并等待其结束：
 # 创建子进程时，只需要传入一个执行函数和函数的参数，创建一个Process实例，用start()方法启动
-from multi_processing import Process
+from multiprocessing import Process
 import os
 
 
@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
 # Pool
 # 如果要启动大量的子进程，可以用进程池的方式批量创建子进程：
-from multi_processing import Pool
+from multiprocessing import Pool
 import os, time, random
 
 def long_time_task(name):
@@ -63,7 +63,7 @@ if __name__ == '__main__':
 # 进程间通信
 # Python的multiprocessing模块包装了底层的机制，提供了Queue、Pipes等多种方式来交换数据。
 # 以Queue为例，在父进程中创建两个子进程，一个往Queue里写数据，一个从Queue里读数据：
-from multi_processing import Process, Queue
+from multiprocessing import Process, Queue
 import os, time, random
 
 # 写数据进程执行的代码:
