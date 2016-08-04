@@ -1,5 +1,5 @@
 from django.contrib import admin
-from west.models import Character, Contact, Tag
+from .models import Character, Contact, Tag
 
 
 class TagInLine(admin.TabularInline):
