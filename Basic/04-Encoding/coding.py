@@ -17,9 +17,10 @@ print unichr(65)
 # Unicode   汉字u'中'  即u'\u4e2d'
 # UTF-8     汉字'中    即'\xe4\xb8\xad' 用3个16进制数表示
 # Unicode编码为UTF-8 : encode('utf-8')
-print u'中'.encode('utf-8')      # '\xe4\xb8\xad'
+u'中'                    # u'\u4e2d'
+u'中'.encode('utf-8')    # '\xe4\xb8\xad'
 # UTF-8解编码为Unicode : decode('utf-8')
-print '\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')
+'\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')  # u'\u4e2d\u6587'
 # 例如在写入文件的时候，unicode就要编码为utf-8不然就会报错
 with open('a.txt', 'w') as f:
     f.write(u'测试'.encode('utf-8'))
