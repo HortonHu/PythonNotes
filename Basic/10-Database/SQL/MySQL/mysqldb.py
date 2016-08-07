@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+# MySQL
+# 由于MySQL服务器以独立的进程运行，并通过网络对外服务，所以，需要支持Python的MySQL驱动来连接到MySQL服务器。
+# 目前有两个MySQL驱动
+# mysql-connector-python：是MySQL官方的纯Python驱动；
+# MySQL-python：是封装了MySQL C驱动的Python驱动。
+
 import MySQLdb
 try:
     # 连接mysql 创建connection

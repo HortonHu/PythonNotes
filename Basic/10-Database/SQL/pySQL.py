@@ -1,15 +1,5 @@
 # -*- coding:utf-8 -*-
 
-# SQLite
-# SQLite是一种嵌入式数据库，它的数据库就是一个文件。
-# Python就内置了SQLite3，所以，在Python中使用SQLite，不需要安装任何东西，直接使用
-
-# MySQL
-# 由于MySQL服务器以独立的进程运行，并通过网络对外服务，所以，需要支持Python的MySQL驱动来连接到MySQL服务器。
-# 目前有两个MySQL驱动
-# mysql-connector-python：是MySQL官方的纯Python驱动；
-# MySQL-python：是封装了MySQL C驱动的Python驱动。
-
 
 # Python中的SQL
 # Python定义了一套操作数据库的API接口，任何数据库要连接到Python，只需要提供符合Python标准的数据库驱动即可。
@@ -21,4 +11,11 @@
 # 如果SQL语句带有参数，那么需要把参数按照位置传递给execute()方法，有几个?占位符就必须对应几个参数，如
 # cursor.execute('select * from user where name=? and pwd=?', ('abc', '123456'))
 # 注意sqlite中占位符是? mysql中占位符是%
+
+
+
+
+
+
+
 

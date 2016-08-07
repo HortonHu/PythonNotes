@@ -2,6 +2,10 @@
 # -*- coding:utf-8 -*-
 
 # SQLite
+# SQLite是一种嵌入式数据库，它的数据库就是一个文件。
+# Python就内置了SQLite3，所以，在Python中使用SQLite，不需要安装任何东西，直接使用
+
+# SQLite
 import sqlite3
 conn = sqlite3.connect('test.db')      # 连接到SQLite数据库文件test.db   如果文件不存在，会自动在当前目录创建:
 cursor = conn.cursor()                 # 创建一个Cursor游标 通过Cursor执行SQL语句
