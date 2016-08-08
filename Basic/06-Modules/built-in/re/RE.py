@@ -49,6 +49,8 @@
 import re
 re.match(r'^\d{3}\-\d{3,8}$', '010-12345')
 re.match(r'^\d{3}\-\d{3,8}$', '010 12345')
+# match（）函数只检测RE是不是在string的开始位置匹配， search()会扫描整个string查找匹配
+# match（）只有在0位置匹配成功的话才有返回，如果不是开始位置匹配成功的话，match()就返回none
 # match()方法判断是否匹配，如果匹配成功，返回一个Match对象 否则返回None。
 # 常见的判断方法就是：
 test_str = '用户输入的字符串'

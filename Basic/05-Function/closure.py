@@ -42,3 +42,12 @@ print f1(), f2(), f3()
 # 或者修改为以下形式
 # 生成一个list 每个元素都是一个待执行的函数
 f1, f2, f3 = [(lambda i=j: i ** 2) for j in range(1, 4)]
+
+
+# 练习：
+# 请实现函数 new_counter ，使得调用结果如下：
+# c1 = new_counter(10)
+# c2 = new_counter(20)
+# print c1(), c2(), c1(), c2()
+# outputs ：
+# 11 21 12 22

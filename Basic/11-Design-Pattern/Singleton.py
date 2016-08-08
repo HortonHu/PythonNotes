@@ -41,3 +41,18 @@ def singleton(cls, *args, **kw):
 @singleton
 class MyClass:
   pass
+
+
+# 4 import方法
+# 作为python的模块是天然的单例模式
+# mysingleton.py
+class My_Singleton(object):
+    def foo(self):
+        pass
+
+my_singleton = My_Singleton()
+
+# to use
+from mysingleton import my_singleton
+
+my_singleton.foo()
