@@ -4,7 +4,6 @@
 # metaclass 元类
 # 先定义metaclass，就可以创建类，最后创建实例
 # metaclass允许你创建类或者修改类。换句话说，你可以把类看成是metaclass创建出来的“实例”。
-# metaclass是Python面向对象里最难理解，也是最难使用的魔术代码。正常情况下不会用到
 
 
 # metaclass是创建类，所以必须从`type`类型派生：
@@ -12,6 +11,7 @@ class ListMetaclass(type):
     def __new__(cls, name, bases, attrs):
         attrs['add'] = lambda self, value: self.append(value)   # 给MyList增加一个add方法
         return type.__new__(cls, name, bases, attrs)
+
 
 class MyList(list):
     __metaclass__ = ListMetaclass # 指示使用ListMetaclass来定制类

@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 
 # 迭代器
+# https://wiki.python.org/moin/Iterator
 # 迭代器有两个基本的方法
 # next方法：返回迭代器的下一个元素
 # __iter__方法：返回迭代器对象本身
