@@ -35,39 +35,3 @@ def application(environ, start_response):
 所以，要赶紧找一个最简单的WSGI服务器，把我们的Web应用程序跑起来。
 好消息是Python内置了一个WSGI服务器，这个模块叫`wsgiref`，它是用纯Python编写的WSGI服务器的参考实现。
 所谓“参考实现”是指该实现完全符合WSGI标准，但是不考虑任何运行效率，仅供开发和测试使用。
-
-## 运行WSGI服务
-编写`hello.py`，实现Web应用程序的WSGI处理函数：
-```
-# hello.py
-
-def application(environ, start_response):
-    start_response('200 OK', [('Content-Type', 'text/html')])
-    return '<h1>Hello, web!</h1>'
-```
-编写一个`server.py`，负责启动WSGI服务器，加载`application()`函数：
-```
-# server.py
-# 从wsgiref模块导入:
-from wsgiref.simple_server import make_server
-# 导入我们自己编写的application函数:
-from hello import application
-
-# 创建一个服务器，IP地址为空，端口是8000，处理函数是application:
-httpd = make_server('', 8000, application)
-print "Serving HTTP on port 8000..."
-# 开始监听HTTP请求:
-httpd.serve_forever()
-```
-确保以上两个文件在同一个目录下，然后在命令行输入`python server.py`来启动WSGI服务器：
-如果8000端口已被其他程序占用，启动将失败，请修改成其他端口。启动成功后，打开浏览器，输入`http://localhost:8000/`，就可以看到结果了 按Ctrl+C终止服务器。
-
-如果你觉得这个Web应用太简单了，可以稍微改造一下，从environ里读取PATH_INFO，这样可以显示更加动态的内容：
-```
-# hello.py
-
-def application(environ, start_response):
-    start_response('200 OK', [('Content-Type', 'text/html')])
-    return '<h1>Hello, %s!</h1>' % (environ['PATH_INFO'][1:] or 'web')
-```
-可以在地址栏输入用户名作为URL的一部分，将返回Hello, xxx!：
