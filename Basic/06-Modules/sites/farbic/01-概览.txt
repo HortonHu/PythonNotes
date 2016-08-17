@@ -1,0 +1,33 @@
+Hello, fab
+
+def hello():
+    print("Hello world!")
+
+执行 fab + 函数名： $ fab hello
+
+
+
+任务参数
+参数用法： <任务名>:<参数>, <关键字参数名>=<参数值>,...
+fab hello:name=Jeff
+
+
+
+本地命令 local('xxx')
+
+
+
+故障：自动退出
+故障处理：warn_only
+
+
+
+建立连接
+
+
+
+与远程交互
+
+
+
+预定义连接
