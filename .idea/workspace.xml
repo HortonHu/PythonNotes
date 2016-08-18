@@ -1,40 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/01-概览.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/02-环境字典env.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/03-执行模式.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/fabfile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/112.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/113.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12/121.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12/122.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12/123.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/13.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/13/131.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/13/132.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/13/133.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/21.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/21/211.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/21/212.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/21/213.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/22.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/22/221.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/22/222.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/22/223.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/23.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3/31.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3/32.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3/33.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/test.py" />
+    <list default="true" id="4136100c-0894-4fea-997d-a4e4eaf07d27" name="Default" comment="添加farbic的使用">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/md5_inside_project.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/md5_json.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111/1111.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111/1112.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/test.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic/06-Modules/built-in/os_sys/my_os.py" afterPath="$PROJECT_DIR$/Basic/06-Modules/built-in/os_sys/my_os.py" />
     </list>
     <ignored path="PythonStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,9 +26,9 @@
     <SUITE FILE_PATH="coverage/PythonNotes$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1467959023644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/PythonNotes$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1467715604987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonStudy$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1467549037246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonNotes$test.coverage" NAME="test Coverage Results" MODIFIED="1471404704435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonNotes$test.coverage" NAME="test Coverage Results" MODIFIED="1471506957917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonStudy$SQLite.coverage" NAME="SQLite Coverage Results" MODIFIED="1467536481718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic/12-Database" />
-    <SUITE FILE_PATH="coverage/PythonNotes$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1471421868994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update" />
+    <SUITE FILE_PATH="coverage/PythonNotes$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1471509813528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -71,24 +46,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fabfile.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/fabfile.py">
+      <file leaf-file-name="md5_inside_project.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/md5_inside_project.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="250">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
-                <element signature="e#25#34#0" expanded="true" />
+                <element signature="e#23#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_os.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Basic/06-Modules/built-in/os_sys/my_os.py">
+      <file leaf-file-name="md5_json.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/md5_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="175">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="21" />
+              <folding>
+                <element signature="e#24#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,32 +90,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Basic/06-Modules/built-in/copy.md" />
-        <option value="$PROJECT_DIR$/Basic/05-Function/Function.md" />
-        <option value="$PROJECT_DIR$/Basic/05-Function/function-built-in" />
-        <option value="$PROJECT_DIR$/Basic/05-Function/a.md" />
-        <option value="$PROJECT_DIR$/Basic/01-IO/calc.md" />
-        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/Modules-sites.md" />
-        <option value="$PROJECT_DIR$/Library/2.Built-in Functions.py" />
-        <option value="$PROJECT_DIR$/Library/2.Built-in_Functions/2.Built-in_Functions.md" />
-        <option value="$PROJECT_DIR$/Library/2.Built-in_Functions/2.Built-in_Functions.py" />
-        <option value="$PROJECT_DIR$/1.py" />
-        <option value="$PROJECT_DIR$/test1.py" />
-        <option value="$PROJECT_DIR$/Library/02.Built-in_Functions/2.Built-in_Functions.py" />
-        <option value="$PROJECT_DIR$/Library/02.Built-in_Functions/2.Built-in_Functions.md" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/1.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/fabfile.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/files/1/1.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/files/2/21.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/1.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/files/1/11/112.txt" />
-        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/test.py" />
-        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/fabfile.py" />
-        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2.txt" />
-        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/13.txt" />
@@ -163,7 +121,26 @@
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3/31.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3/32.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3/33.txt" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/fabfile.py" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111/1112.txt" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/13.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/21.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/22.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1.txt" />
         <option value="$PROJECT_DIR$/Basic/06-Modules/built-in/os_sys/my_os.py" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3.txt" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/module_test.md5" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111/1111.txt" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/md5_json.py" />
+        <option value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/test.py" />
       </list>
     </option>
   </component>
@@ -206,7 +183,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -220,8 +197,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
@@ -234,189 +221,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="06-Modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="06-Modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="06-Modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="farbic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="06-Modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="farbic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="incremental_update" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="06-Modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="built-in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonNotes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="06-Modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="built-in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="os_sys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AlgorithmNotes" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -460,19 +268,19 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\module_test\1\11\111" />
+      <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\files\2\22" />
+      <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\files\2\21" />
+      <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\files\2" />
+      <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\files\1\13" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\files" />
       <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update" />
       <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites" />
       <recent name="C:\Users\dell\Documents\GitHub\PythonNotes\Library\2.Built-in_Functions" />
       <recent name="C:\Users\dell\Documents\GitHub\PythonStudy\Basic\06-Modules\built-in" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\files\2\22" />
-      <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\files\2\21" />
-      <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\files\2" />
-      <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\files\1\13" />
-      <recent name="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\files\1\12" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test (2)">
@@ -507,7 +315,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonNotes" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/test.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\K\Documents\codes\PythonNotes\Basic\06-Modules\sites\farbic\incremental_update\md5_inside_project.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -766,13 +574,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460102644828</updated>
-    </task>
-    <task id="LOCAL-00109" summary="update">
-      <created>1464255054972</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1464255054972</updated>
     </task>
     <task id="LOCAL-00110" summary="update">
       <created>1464351771009</created>
@@ -1110,7 +911,14 @@
       <option name="project" value="LOCAL" />
       <updated>1471436448146</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="添加farbic的使用">
+      <created>1471436711044</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1471436711044</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1131,26 +939,26 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18656716" sideWeight="0.8110599" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18869936" sideWeight="0.8110599" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220859" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37694705" sideWeight="0.5090618" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2689512" sideWeight="0.51119405" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21055438" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40565032" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32668713" sideWeight="0.49107143" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2689512" sideWeight="0.48880598" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24307036" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.748702" sideWeight="0.4854369" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16220239" sideWeight="0.1889401" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37694705" sideWeight="0.49093816" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1176,180 +984,16 @@
     <MESSAGE value="update" />
     <MESSAGE value="PSL notes update" />
     <MESSAGE value="os模块关于os.path更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="os模块关于os.path更新" />
+    <MESSAGE value="添加farbic的使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加farbic的使用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Basic/05-Function/Functional-Programing.md" />
-    <entry file="file://C:/Python27/Lib/site-packages/PIL/Image.py" />
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/Modules-sites.md" />
-    <entry file="file://$PROJECT_DIR$/test/test1.py" />
-    <entry file="file://$PROJECT_DIR$/test1.py" />
-    <entry file="file://$PROJECT_DIR$/test/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/test/test.py" />
-    <entry file="file://$PROJECT_DIR$/Library/02.Built-in_Functions/2.Built-in_Functions.md" />
-    <entry file="file://$PROJECT_DIR$/Basic/05-Function/Function.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.1/system/python_stubs/-762174762/_md5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/hashlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/genericpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/built-in/hashlib/my_MD5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/files/2/21/111.txt" />
-    <entry file="file://$PROJECT_DIR$/Basic/04-Encoding/coding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.1/system/python_stubs/-762174762/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="1954" column="8" selection-start-line="1954" selection-start-column="8" selection-end-line="1954" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/fabric/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/fabric/operations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="248" column="4" selection-start-line="248" selection-start-column="4" selection-end-line="248" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/13.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/112.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/113.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12/121.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12/122.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12/123.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/13/131.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1365,13 +1009,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/13/133.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/21/211.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
@@ -1455,42 +1092,295 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+        <state relative-caret-position="-24">
+          <caret line="252" column="20" selection-start-line="252" selection-start-column="20" selection-end-line="252" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/21.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/22.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2/21/211.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/01-IO/file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/built-in/hashlib/my_MD5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/built-in/hashlib/my_MD5_salt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/PythonNotes.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39514">
+          <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Basic/06-Modules/built-in/os_sys/my_os.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+        <state relative-caret-position="1484">
+          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="208" column="21" selection-start-line="208" selection-start-column="14" selection-end-line="208" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/fabfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#25#34#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/13.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/12.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111/1112.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111/1111.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/111/111.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/11/11.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/1/1.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/module_test/module_test.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/md5_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic/06-Modules/sites/farbic/incremental_update/md5_inside_project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -54,7 +54,7 @@ print [x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1
 # os常用方法
 # os.remove()           删除文件
 # os.rename()           重命名文件
-# os.walk()             生成目录树下的所有文件名
+# os.walk()             生成目录树下的所有文件名 topdown=True 前序遍历 False后序遍历
 # os.chdir()            改变目录
 # os.mkdir/makedirs     创建目录/多层目录
 # os.rmdir/removedirs   删除目录/多层目录
@@ -86,7 +86,7 @@ print [x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1
 # os.path.samefile(path1, path2)  #判断目录或文件是否相同
 # os.path.sameopenfile(fp1, fp2)  #判断fp1和fp2是否指向同一文件
 # os.path.samestat(stat1, stat2)  #判断stat tuple stat1和stat2是否指向同一个文件
-# os.path.walk(path, visit, arg)  #遍历path，进入每个目录都调用visit函数，visit函数必须有
+# os.path.walk(path, visit, arg)  #遍历path，进入每个目录都调用visit函数
 # os.path.supports_unicode_filenames  #设置是否支持unicode路径名
 
 
