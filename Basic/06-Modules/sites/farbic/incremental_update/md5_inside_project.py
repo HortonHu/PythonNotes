@@ -3,7 +3,7 @@ import os
 import hashlib
 import time
 
-# BASE_DIR = r'C:\Users\K\Desktop\test'
+# BASE_DIR = r'C:\Users\K\Documents\codes\temp'
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 module = 'module_test'
 
