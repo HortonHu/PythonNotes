@@ -8,6 +8,11 @@ import pymongo
 client = pymongo.MongoClient('localhost', 27017)
 # 连接到数据库 example, 不存在则创建 也可以用字典的形式访问client['example']
 db = client.example
+
+# 添加root用户(针对mongo2.4以上版本)
+admin = client.admin
+admin.add_user(name="root", password="123456", roles=["root"])
+
 # 获得数据库中的集合列表 如果没有添加任何集合则为空，添加文档的时候，会自动创建集合
 print db.collection_names()
 # 获得代表集合widgets的对象 或者用 db['widgets']
