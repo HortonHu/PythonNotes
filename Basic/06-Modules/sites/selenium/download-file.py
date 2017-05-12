@@ -24,3 +24,10 @@ driver.set_script_timeout(10)
 driver.get('http://192.168.1.51:9009/code_package_manager')
 driver.find_element_by_xpath('/html/body/table/tbody/tr[2]/td[6]/a').click()
 
+# 更多chrome支持的参数
+# 最大化启动
+# options.add_argument('--start-maximized')
+# 隐身模式
+# options.add_argument('--incognito')
+# 设置代理
+# options.add_argument('--proxy-server=http://127.0.0.1:1080')
