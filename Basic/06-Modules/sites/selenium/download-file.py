@@ -9,7 +9,9 @@ from selenium import webdriver
 options = webdriver.ChromeOptions()
 prefs = {
     'profile.default_content_settings.popups': 0,       # 禁止弹窗
-    'download.default_directory': r'D:\test'            # 设置下载地址
+    'download.default_directory': r'D:\test',            # 设置下载地址
+    "profile.managed_default_content_settings.images": 2,  # 2 禁止加载图片 1 加载图片
+    "profile.managed_default_content_settings.javascript": 2,  # 2 禁止加载JS 1 加载JS
 }
 options.add_experimental_option('prefs', prefs)
 
